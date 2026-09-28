@@ -2941,7 +2941,8 @@ Para uma análise quantitativa mais completa, seria necessário relacionar **qua
 
 ### 📈 Bugs por Severidade
 
-<img width="1781" height="1058" alt="bugs_por_severidade_fastix" src="https://github.com/user-attachments/assets/b90eea87-fdfd-4310-8645-402c3c800cce" />
+<img width="1522" height="902" alt="Bugs_por_Severidade_ATUALIZADO" src="https://github.com/user-attachments/assets/580a3af0-e3c8-4915-aabe-17a38c3fca22" />
+
 
 
 

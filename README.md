@@ -3034,7 +3034,8 @@ A análise abaixo foi construída a partir dos comportamentos observados nos cen
 
 ### 🫆 Causa Raiz 1: Validação de entrada
 
-<img width="1781" height="1059" alt="rca_bugs_por_causa_raiz_fastix (1)" src="https://github.com/user-attachments/assets/98d3e194-dc9f-416c-8449-2584462f2aa9" />
+<img width="1530" height="907" alt="Distribuicao_de_Bugs_por_Causa_Raiz_ATUALIZADO" src="https://github.com/user-attachments/assets/bf6fc9e8-a574-4978-b31f-85d41c96926c" />
+
 
 * **Validação de entrada:** concentra o maior número de ocorrências (**3 bugs: BUG-01, BUG-02 e BUG-03**).
 
@@ -3050,8 +3051,7 @@ Essa é a causa raiz provável com maior número de ocorrências dentro do conju
 
 ### 🫆 Causa Raiz 2: Gerenciamento e preservação de estado
 
-<img width="2141" height="1242" alt="rca_causa_raiz_bugs_fastix" src="https://github.com/user-attachments/assets/e9d9ecae-1efc-4cf1-aabe-a063aca57569" />
-
+<img width="1550" height="889" alt="Gráfico_RCA_Relação_Causa_Raiz_Bugs_ATUALIZADO" src="https://github.com/user-attachments/assets/fd079ccb-4130-47cc-b488-04be8caf6d5b" />
 
 * **Gerenciamento e preservação de estado:** agrupa **BUG-05 e BUG-06**, ambos relacionados à perda, duplicação ou alteração inesperada de informações previamente selecionadas pelo usuário.
 

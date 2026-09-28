@@ -2913,19 +2913,20 @@ A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por
 O gráfico apresenta **6 bugs encontrados**, distribuídos entre quatro Features da plataforma FasTix.
 
 ```text
-A maior concentração está em Comprar Ingressos (3 bugs — 50%), enquanto Explorar Eventos, Suporte e Ajuda e Publicar Eventos possuem 1 bug cada (aproximadamente 17% cada).
+A maior concentração está em Comprar Ingressos (3 bugs — 50,0%), enquanto Explorar Eventos,
+Suporte e Ajuda e Publicar Eventos possuem 1 bug cada (16,7% cada).
 ```
 
 A Feature **Comprar Ingressos** concentra metade dos bugs identificados no conjunto analisado. Os três problemas estão relacionados a diferentes comportamentos do checkout: limite de caracteres no campo E-mail durante o pagamento via PIX, geração duplicada de notificações ao copiar a chave PIX e duplicação do modal de pagamento após alternância de abas.
 
 ```text
-Explorar Eventos: 1 bug — 17%
-Suporte e Ajuda: 1 bug — 17%
-Comprar Ingressos: 3 bugs — 50%
-Publicar Eventos: 1 bug — 17%
+Comprar Ingressos:  3 bugs — 50,0%
+Explorar Eventos:   1 bug  — 16,7%
+Suporte e Ajuda:    1 bug  — 16,7%
+Publicar Eventos:   1 bug  — 16,7%
 ```
 
-Essa distribuição demonstra que **Comprar Ingressos foi a Feature com maior concentração de problemas dentro do conjunto de bugs analisado**. Entretanto, esse dado não deve ser interpretado isoladamente como prova de que a Feature apresenta maior taxa de defeitos, pois não temos, neste conjunto, a quantidade total de testes executados em cada Feature.
+Essa distribuição demonstra que **Comprar Ingressos foi a Feature com maior concentração de problemas dentro do conjunto de bugs analisado.** Entretanto, esse dado não deve ser interpretado isoladamente como prova de que a Feature apresenta maior taxa de defeitos, pois não temos, neste conjunto, a quantidade total de testes executados em cada Feature.
 
 **Do ponto de vista de Root Cause Analysis, a quantidade de bugs por Feature representa a concentração dos achados identificados dentro do escopo analisado, e não necessariamente a qualidade absoluta de cada Feature.**
 
@@ -2933,7 +2934,7 @@ A análise também mostra que os problemas encontrados possuem naturezas diferen
 
 ### 📈 Conclusão
 
-A distribuição evidencia uma concentração de **50% dos bugs na Feature Comprar Ingressos**, enquanto os demais problemas estão distribuídos entre diferentes pontos da jornada da plataforma.
+A distribuição evidencia uma concentração de **50,0% dos bugs na Feature Comprar Ingressos**, enquanto os demais problemas estão distribuídos entre diferentes pontos da jornada da plataforma.
 
 Para uma análise quantitativa mais completa, seria necessário relacionar **quantidade total de testes executados por Feature × bugs encontrados × severidade × causa raiz**, permitindo calcular, por exemplo, a concentração de bugs em relação ao esforço de teste.
 
@@ -2942,7 +2943,6 @@ Para uma análise quantitativa mais completa, seria necessário relacionar **qua
 ### 📈 Bugs por Severidade
 
 <img width="1522" height="902" alt="Bugs_por_Severidade_ATUALIZADO" src="https://github.com/user-attachments/assets/580a3af0-e3c8-4915-aabe-17a38c3fca22" />
-
 
 
 
@@ -3004,15 +3004,15 @@ A distribuição de severidade deve, entretanto, ser interpretada em conjunto co
 Os gráficos, analisados em conjunto, mostram duas dimensões diferentes dos achados:
 
 ```text
-Gráfico Bugs por Feature → Onde os bugs foram concentrados.
+Gráfico Bugs por Feature    → Onde os bugs foram concentrados.
 Gráfico Bugs por Severidade → Qual foi o perfil de severidade dos problemas encontrados.
 ```
 
-A análise conjunta demonstra que **Comprar Ingressos concentra 50% dos bugs identificados**, e dois desses três problemas estão relacionados a comportamentos do fluxo de pagamento. Entretanto, não é possível concluir que essa Feature possua a maior taxa de defeitos da plataforma, pois não foi fornecida a quantidade total de testes executados em cada Feature para estabelecer uma relação entre **bugs encontrados e cobertura de testes**.
+A análise conjunta demonstra que **Comprar Ingressos concentra 50,0% dos bugs identificados**, e dois desses três problemas estão relacionados a comportamentos do fluxo de pagamento. Entretanto, não é possível concluir que essa Feature possua a maior taxa de defeitos da plataforma, pois não foi fornecida a quantidade total de testes executados em cada Feature para estabelecer uma relação entre **bugs encontrados e cobertura de testes.**
 
-O conjunto analisado também demonstra que a severidade não está necessariamente relacionada à quantidade de bugs de uma Feature. Por exemplo, Comprar Ingressos possui três ocorrências, com severidades **Alta, Média e Baixa**, enquanto Explorar Eventos possui uma única ocorrência classificada como **Alta**.
+O conjunto analisado também demonstra que a severidade não está necessariamente relacionada à quantidade de bugs de uma Feature. Por exemplo, Comprar Ingressos possui três ocorrências distribuídas entre as três categorias de severidade: **1 Alta, 1 Média e 1 Baixa**, enquanto Explorar Eventos possui uma única ocorrência, classificada como **Alta**. Ou seja, a feature com mais bugs não é necessariamente a que concentra os problemas de maior impacto.
 
-Dessa maneira, a quantidade de bugs deve ser analisada conjuntamente com a severidade e a causa raiz. O board **Bug × Feature × Causa Raiz** complementa essa visão ao demonstrar que os problemas estão associados principalmente a padrões relacionados a **validação de dados, gerenciamento de estado e controle de componentes da interface**.
+Dessa maneira, a quantidade de bugs deve ser analisada conjuntamente com a severidade e a causa raiz. O board **Bug × Feature × Causa Raiz** complementa essa visão ao demonstrar que os problemas estão associados principalmente a padrões relacionados a **validação de dados, gerenciamento de estado e controle de componentes da interface.**
 
 Para uma análise de causa raiz mais completa, o próximo passo seria cruzar os dados em uma matriz:
 

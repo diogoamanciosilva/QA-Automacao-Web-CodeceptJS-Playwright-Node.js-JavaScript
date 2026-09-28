@@ -3039,17 +3039,18 @@ A análise abaixo foi construída a partir dos comportamentos observados nos cen
 
 * **Validação de entrada:** concentra o maior número de ocorrências (**3 bugs: BUG-01, BUG-02 e BUG-03**).
 
-* O **BUG-01** apresenta comportamento inconsistente na pesquisa de eventos por local: ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, o sistema retorna **"Nenhum evento encontrado"**, apesar da existência de eventos associados ao local.
+Lógica de busca e matching: concentra 1 bug (BUG-01) — 16,7% dos achados. O BUG-01 apresenta comportamento inconsistente na pesquisa de eventos por local: ao pesquisar por "Fabrique" ou "Fabrique Club", o sistema retorna "Nenhum evento encontrado", apesar da existência de eventos associados ao local. A causa raiz inferida está no algoritmo de busca e matching, que não encontra correspondência entre o termo pesquisado e os registros existentes.
 
-* O **BUG-02** está relacionado ao comportamento do campo **"Nome"** diante de uma entrada superior ao limite esperado de caracteres, indicando uma possível ausência ou insuficiência de validação do tamanho máximo permitido.
+Validação de entrada: concentra 2 bugs (BUG-02 e BUG-03) — 33,3% dos achados. O BUG-02 está relacionado ao comportamento do campo "Nome" diante de uma entrada superior ao limite esperado de caracteres, indicando uma possível ausência ou insuficiência de validação do tamanho máximo permitido.
 
-* O **BUG-03** apresenta comportamento semelhante no campo **E-mail** do pagamento via PIX, permitindo a inserção de até **510 caracteres**, acima do limite esperado de 255 caracteres.
+O BUG-03 apresenta comportamento semelhante no campo E-mail do pagamento via PIX, permitindo a inserção de até 510 caracteres, acima do limite esperado de 255 caracteres. Os dois problemas possuem em comum o tratamento inadequado ou insuficiente de entradas fornecidas pelo usuário. Entretanto, não é possível afirmar, apenas pelos testes, se a falha está localizada no frontend, backend, camada de validação ou combinação dessas camadas. Essa é a causa raiz provável com maior número de ocorrências dentro do conjunto analisado, empatada com Gerenciamento de estado, representando 33,3% dos bugs identificados cada.
 
 * Os três problemas possuem em comum o tratamento inadequado ou insuficiente de entradas fornecidas pelo usuário. Entretanto, **não é possível afirmar, apenas pelos testes, se a falha está localizada no frontend, backend, camada de validação ou combinação dessas camadas**.
 
-Essa é a causa raiz provável com maior número de ocorrências dentro do conjunto analisado, representando **50% dos bugs identificados**.
+Gerenciamento de estado: concentra 2 bugs (BUG-05 e BUG-06) — 33,3% dos achados.
+Controle de componentes: concentra 1 bug (BUG-04) — 16,7% dos achados.
 
-### 🫆 Causa Raiz 2: Gerenciamento e preservação de estado
+### 🫆 Causa Raiz 2: Gerenciamento e preservação de estado (FAZENDO...)
 
 <img width="1550" height="889" alt="Gráfico_RCA_Relação_Causa_Raiz_Bugs_ATUALIZADO" src="https://github.com/user-attachments/assets/fd079ccb-4130-47cc-b488-04be8caf6d5b" />
 

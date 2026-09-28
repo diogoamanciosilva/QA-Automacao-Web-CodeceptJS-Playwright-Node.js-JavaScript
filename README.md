@@ -2965,7 +2965,7 @@ BUG-01 — Falha na busca de eventos por local — Explorar Eventos
 BUG-05 — Duplicação do modal de pagamento após alternância de abas — Comprar Ingressos
 ```
 
-O BUG-01 impede que uma busca por um local com eventos associados apresente os resultados esperados. O cenário registra que tanto `"Fabrique"` quanto `"Fabrique Club"` retornam **"Nenhum evento encontrado"**.
+O BUG-01 impede que uma busca por um local com eventos associados apresente os resultados esperados. O cenário registra que tanto "Fabrique" quanto "Fabrique Club" retornam **"Nenhum evento encontrado".**
 
 O BUG-05 apresenta um comportamento mais complexo, relacionado à duplicação do modal de pagamento após a alternância entre abas do navegador. O cenário também registra evidências de DOM, Console e comportamento do Payment Brick, além da ocorrência da mensagem de erro após a interação com o segundo modal.
 
@@ -2982,9 +2982,9 @@ Já o **BUG-04**, classificado como Baixa, está relacionado à geração de mú
 Sob a perspectiva de Root Cause Analysis, os problemas não apresentam uma única origem aparente. Os cenários apontam para diferentes áreas de investigação:
 
 ```text
-Validação de dados → BUG-01, BUG-02 e BUG-03
-Gerenciamento de estado → BUG-05 e BUG-06
-Controle de componentes/notificações → BUG-04
+Validação de dados          → BUG-01, BUG-02 e BUG-03
+Gerenciamento de estado     → BUG-05 e BUG-06
+Controle de componentes     → BUG-04
 ```
 
 É importante destacar que essas classificações representam **causas raiz prováveis/inferidas a partir dos comportamentos observados**, e não causas técnicas definitivamente comprovadas. A confirmação exigiria análise de código, logs, arquitetura ou evidências adicionais de implementação.
@@ -2993,7 +2993,7 @@ Controle de componentes/notificações → BUG-04
 
 **Dos 6 bugs identificados, 5 estão nas categorias Alta ou Média (83,3%), enquanto 1 está classificado como Baixa (16,7%).**
 
-O resultado demonstra que a suíte foi capaz de identificar problemas que ultrapassam inconsistências puramente visuais, abrangendo **busca, validação de dados, checkout, gerenciamento de estado, permissões e comportamento de componentes da interface**.
+O resultado demonstra que a suíte foi capaz de identificar problemas que ultrapassam inconsistências puramente visuais, abrangendo **busca, validação de dados, checkout, gerenciamento de estado, permissões e comportamento de componentes da interface.**
 
 A distribuição de severidade deve, entretanto, ser interpretada em conjunto com **impacto, frequência, alcance, possibilidade de reprodução e criticidade da jornada afetada**, e não apenas pela quantidade de ocorrências.
 

@@ -2878,6 +2878,18 @@ https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
 
+| ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
+| :--- | :--- | :---: | :--- | :--- |
+| **BUG-04** | Ao clicar repetidamente no botão **"Copiar chave"** do PIX, o sistema gera **múltiplos toasts de notificação** com a mesma mensagem, causando duplicidade visual de notificações e comportamento inconsistente da interface. | **Baixa** | Acessar o pagamento via PIX → preencher o e-mail → clicar em **"Pagar"** → clicar repetidamente em **"Copiar chave"** → observar os toasts exibidos no topo da página. | `Cenário 0000000101` — Feature **Comprar Ingressos** |
+
+**Vídeo:**
+
+https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
+
+
+
+
+
 
 
 

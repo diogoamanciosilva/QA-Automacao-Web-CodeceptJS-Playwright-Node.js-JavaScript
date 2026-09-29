@@ -3050,7 +3050,7 @@ A análise abaixo foi construída a partir dos comportamentos observados nos cen
 **Gerenciamento de estado:** concentra **2 bugs (BUG-05 e BUG-06)** — 33,3% dos achados.
 **Controle de componentes:** concentra **1 bug (BUG-04)** — 16,7% dos achados.
 
-### 🫆 Causa Raiz 2: Gerenciamento e preservação de estado (FAZENDO...)
+### 🫆 Causa Raiz 2: Gerenciamento e preservação de estado 
 
 <img width="1550" height="889" alt="Gráfico_RCA_Relação_Causa_Raiz_Bugs_ATUALIZADO" src="https://github.com/user-attachments/assets/fd079ccb-4130-47cc-b488-04be8caf6d5b" />
 
@@ -3068,7 +3068,7 @@ No caso do BUG-05, existem evidências adicionais de comportamento relacionado a
 ⚠️ Causas inferidas a partir dos comportamentos observados. A confirmação técnica requer análise de código, logs ou arquitetura pelo time de desenvolvimento.
 ```
 
-### 🫆 Causa Raiz 3: Controle de componentes e notificações
+### 🫆 Causa Raiz 3: Controle de componentes e notificações (FAZENDO...)
 
 * **Controle de componentes e notificações:** está associado ao **BUG-04**, relacionado à geração de múltiplos Toasts ao clicar repetidamente no botão **"Copiar chave"** durante o pagamento via PIX.
 

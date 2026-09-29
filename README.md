@@ -2917,13 +2917,13 @@ https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 ```text
 Os bugs acima foram identificados a partir da execução e análise dos cenários de teste correspondentes. As severidades foram atribuídas considerando o impacto funcional observado em cada ocorrência.
 
-Os BUG-01, BUG-03 e BUG-05 apresentam impacto diretamente relacionado à execução de jornadas importantes da plataforma, como pesquisa de eventos e checkout, enquanto os demais representam limitações de validação, inconsistências de interface ou perda de configuração.
+BUG-01, BUG-03 e BUG-05 apresentam impacto diretamente relacionado à execução de jornadas importantes da plataforma, como pesquisa de eventos e checkout, enquanto os demais representam limitações de validação, inconsistências de interface ou perda de configuração.
 
 O BUG-05 possui comportamento intermitente quanto ao momento exato de reprodução. Conforme observado no cenário, não existe um intervalo fixo para que o problema ocorra: em determinadas execuções o comportamento é reproduzido rapidamente, enquanto em outras pode ser necessário repetir o fluxo de alternância entre abas.
 
 O BUG-06 também apresenta impacto sobre a configuração de permissões, uma vez que a alteração de uma permissão pode fazer com que o template previamente selecionado deixe de ser preservado.
 
-As informações utilizadas neste board foram mantidas de acordo com os cenários, resultados atuais e resultados esperados apresentados nos testes analisados.
+As informações utilizadas neste documento foram mantidas de acordo com os cenários, resultados atuais e resultados esperados apresentados nos testes analisados.
 ```
 ---
 

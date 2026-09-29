@@ -2888,7 +2888,14 @@ https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 
 
 
+| ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
+| :--- | :--- | :---: | :--- | :--- |
+| **BUG-05** | Ao retornar para a aba da compra de ingressos após abrir uma nova aba do navegador, o sistema pode **duplicar o modal de pagamento**, incluindo as opções de pagamento e os botões **"Pagar"**. Ao interagir com o segundo modal, pode ser exibida a mensagem **"Ocorreu um erro. Por favor, tente novamente mais tarde."** O comportamento não possui tempo fixo de reprodução e pode exigir a repetição do fluxo. | **Alta** | Acessar a compra de ingressos → avançar até a etapa de pagamento → permanecer na página → abrir uma nova aba → permanecer alguns segundos → retornar à aba da compra → verificar se o modal foi duplicado → interagir com o segundo modal. | `Cenário 0000000127` — Feature **Comprar Ingressos** |
 
+
+**Vídeo:**
+
+https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 
 
 

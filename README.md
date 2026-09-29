@@ -2859,7 +2859,13 @@ https://github.com/user-attachments/assets/76fcb818-db36-4132-b3bc-c9567879893c
 
 
 
+| ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
+| :--- | :--- | :---: | :--- | :--- |
+| **BUG-02** | O campo **"Nome"** da página **Suporte e Ajuda** não apresenta comportamento adequado ao receber uma quantidade de caracteres superior ao limite esperado. O cenário exige que o sistema limite o conteúdo, informe o limite ao usuário e preserve exatamente o texto truncado permitido. | **Média** | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo. | `Cenário 0036` — Feature **Suporte e Ajuda** |
 
+**Vídeo:**
+
+https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 
 
 

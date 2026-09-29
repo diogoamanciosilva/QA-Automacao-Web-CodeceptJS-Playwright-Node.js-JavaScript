@@ -3232,23 +3232,27 @@ Não é correto concluir que uma Feature é mais problemática apenas por concen
 
 ## 🧪 Metodologia de teste
 
-A construção da suíte seguiu um processo iterativo, combinando técnicas formais de design de testes com investigação exploratória sempre que o comportamento da plataforma não estava documentado previamente.
+A construção da suíte seguiu um processo iterativo, combinando técnicas formais de design de testes com investigação exploratória sempre que o comportamento da plataforma não estava documentado previamente. A aplicação das técnicas não foi uniforme entre as Features: cada área recebeu o conjunto de abordagens mais relevante para o risco que representa — um formulário de checkout exige rigor diferente de uma página institucional de suporte.
 
-**Particionamento de equivalência e análise de valor-limite** foram aplicados de forma sistemática em diferentes Features: campos testados com valores válidos, valores vazios, valores no limite de tamanho e valores fora do padrão esperado (caracteres especiais, texto muito longo, espaços em branco isolados ou combinados).
+**Particionamento de equivalência e análise de valor-limite** foram aplicados de forma sistemática em diferentes Features: campos testados com valores válidos, valores vazios, valores no limite de tamanho e valores fora do padrão esperado (caracteres especiais, texto muito longo, espaços em branco isolados ou combinados). Essa técnica foi especialmente relevante nos campos de Nome e E-mail da Feature Suporte e Ajuda, no campo E-mail do pagamento PIX e nos campos de quantidade de ingressos da Feature Comprar Ingressos — todos com comportamentos de limite identificados como bugs durante a execução.
 
-- **Teste negativo:** utilizado para garantir que a plataforma rejeita corretamente entradas inválidas sem quebrar — credenciais incorretas, buscas sem resultado, campos com excesso de caracteres, tentativas de avançar etapas sem preencher dados obrigatórios e interações em estados inconsistentes da interface.
+- **Teste negativo:** utilizado para garantir que a plataforma rejeita corretamente entradas inválidas sem quebrar — credenciais incorretas, buscas sem resultado, campos com excesso de caracteres, tentativas de avançar etapas sem preencher dados obrigatórios e interações em estados inconsistentes da interface. Essa técnica foi central na cobertura de robustez das seis Features e está diretamente associada à identificação dos BUG-01, BUG-02 e BUG-03.
 
-- **Teste exploratório:** técnica central para descobrir comportamentos não óbvios da plataforma. Bugs como a busca por local sem retorno de resultados e a duplicação do modal de pagamento após alternância de abas não foram encontrados por casos de teste pré-planejados, mas por investigação incremental: cada resultado inesperado gerava uma nova hipótese, testada isoladamente até isolar o padrão do problema.
+- **Teste exploratório:** técnica central para descobrir comportamentos não óbvios da plataforma. Bugs como a busca por local sem retorno de resultados (BUG-01) e a duplicação do modal de pagamento após alternância de abas (BUG-05) não foram encontrados por casos de teste pré-planejados, mas por investigação incremental: cada resultado inesperado gerava uma nova hipótese, testada isoladamente até isolar o padrão do problema. O teste exploratório também orientou a cobertura de cenários que não existiriam em um roteiro estritamente funcional, como testes anti-flaky com cálculo de taxa de flakiness e varredura de mais de 200 códigos de país no combobox de DDD.
 
-- **Teste de regressão implícito:** ocorre a cada nova execução completa da suíte, servindo como rede de segurança para identificar quebras de comportamento após alterações na plataforma.
+- **Teste de regressão implícito:** ocorre a cada nova execução completa da suíte, servindo como rede de segurança para identificar quebras de comportamento após alterações na plataforma. Os 586 cenários funcionam coletivamente como base de regressão contínua — qualquer alteração em produção pode ser validada contra o conjunto existente antes de atingir o usuário final.
 
-- **Teste de condição de corrida (concorrência):** aplicado em pontos críticos de interação repetida — como cliques consecutivos no botão "Copiar chave" do PIX — para verificar se a plataforma processa múltiplas ações quase simultâneas sem gerar duplicidade de notificações ou submissões indevidas.
+- **Teste de condição de corrida (concorrência):** aplicado em pontos críticos de interação repetida — como cliques consecutivos no botão "Copiar chave" do PIX e múltiplas submissões do formulário de Criar Conta — para verificar se a plataforma processa múltiplas ações quase simultâneas sem gerar duplicidade de notificações, pedidos ou requisições indevidas. O BUG-04 (toasts duplicados) é um achado direto dessa abordagem.
 
-- **Teste de limite de caracteres e validação de entrada:** aplicado em campos de formulário (Nome, E-mail, Template) para verificar se a plataforma impõe e comunica corretamente os limites máximos de caracteres aceitos, sem permitir entradas que ultrapassem o esperado sem tratamento adequado.
+- **Teste de limite de caracteres e validação de entrada:** aplicado em campos de formulário em múltiplas Features (Nome e E-mail em Suporte e Ajuda, E-mail PIX em Comprar Ingressos, campos de criação de conta) para verificar se a plataforma impõe e comunica corretamente os limites máximos de caracteres aceitos. A técnica combinou inserção direta via interface e manipulação do `value` nativo do input para garantir que o truncamento real fosse testado, não apenas o comportamento visual.
 
-- **Teste de persistência e gerenciamento de estado:** validou o comportamento da plataforma em situações de mudança de contexto — alternância entre abas do navegador, alteração de permissões dentro de um modal — verificando se as seleções e configurações realizadas pelo usuário são preservadas corretamente.
+- **Teste de persistência e gerenciamento de estado:** validou o comportamento da plataforma em situações de mudança de contexto — alternância entre abas do navegador, reload durante preenchimento, logout em aba paralela, alteração de permissões dentro de um modal e troca de idioma seguida de refresh. Essa abordagem foi responsável pela identificação dos BUG-05 e BUG-06, ambos relacionados à perda ou duplicação de estado após mudanças de contexto.
 
-Essa combinação de técnicas planejadas e exploratórias permitiu não apenas confirmar que as funcionalidades atendem ao comportamento esperado, mas também identificar bugs reais que não estariam cobertos por um roteiro de teste estritamente linear.
+- **Teste orientado a dados (data-driven):** aplicado nos cenários de RBAC da Feature Publicar Eventos, onde as seções disponíveis são descobertas dinamicamente via DOM em tempo de execução em vez de uma lista fixa, e no cenário de varredura completa de DDDs na Feature Criar Conta, com mais de 200 iterações sobre dados reais. Essa abordagem torna os cenários mais resilientes a mudanças de conteúdo e mais representativos de uso real do que testes com valores hardcoded.
+
+- **Teste de internacionalização (i18n):** aplicado na Feature Criar Conta com profundidade em três idiomas — Português, English e Español — verificando cruzadamente rótulos, placeholders, mensagens de erro e persistência da preferência de idioma após refresh. A técnica incluiu verificação ativa de que texto do idioma anterior não permanece no DOM após a troca, um tipo de validação que raramente aparece em roteiros funcionais convencionais.
+
+Essa combinação de técnicas planejadas e exploratórias permitiu não apenas confirmar que as funcionalidades atendem ao comportamento esperado, mas também identificar seis bugs reais — cinco de severidade Média ou Alta — que não estariam cobertos por um roteiro de teste estritamente linear.
 
 > ⚠️ **Observação:** todos os testes foram realizados diretamente em **ambiente de produção**, sem acesso a um ambiente de testes dedicado, logs internos, dados reais de usuários ou histórico de incidentes. Isso reforça o caráter exploratório e observacional da suíte — os comportamentos descritos representam o que foi possível observar e reproduzir a partir da interface pública da plataforma.
 
@@ -3258,56 +3262,76 @@ Essa combinação de técnicas planejadas e exploratórias permitiu não apenas 
 
 Por se tratar de um projeto realizado integralmente em **ambiente de produção** — sem acesso a um ambiente de testes dedicado, dados internos, logs ou configurações administrativas —, o escopo foi definido exclusivamente a partir do que estava disponível e observável pela interface pública da plataforma FasTix.
 
-Diferente de um ciclo completo de QA, onde o analista tem acesso a logs, dados reais de usuários, histórico de incidentes, variações de cenários trazidas por bugfixes e hotfixes recorrentes, este projeto foi construído com as informações que puderam ser confirmadas manualmente, tela a tela, ao longo da exploração da plataforma em produção.
+Diferente de um ciclo completo de QA, onde o analista tem acesso a logs, dados reais de usuários, histórico de incidentes e variações de cenários trazidas por bugfixes e hotfixes recorrentes, este projeto foi construído com as informações que puderam ser confirmadas manualmente, tela a tela, ao longo da exploração da plataforma em produção. Essa condição moldou diretamente as decisões de escopo e deve ser considerada na leitura de qualquer métrica ou análise apresentada nesta suíte.
 
-Isso significa que alguns cenários ficaram intencionalmente fora do escopo por impossibilidade técnica ou falta de acesso:
+Alguns cenários ficaram intencionalmente fora do escopo por impossibilidade técnica ou falta de acesso:
 
-- **Ciclo E2E completo de compra de ingressos:** não foi possível concluir o fluxo de compra em sua totalidade. As etapas de confirmação de pagamento (PIX e Cartão de Crédito), geração e validação do QR Code, verificação dos dados bancários, disponibilização dos ingressos na plataforma para impressão, e confirmações de compra via e-mail e SMS estão fora do escopo desta suíte por ausência de acesso real ao fluxo transacional completo.
+- **Ciclo E2E completo de compra de ingressos:** não foi possível concluir o fluxo de compra em sua totalidade. As etapas de confirmação de pagamento (PIX e Cartão de Crédito), geração e validação real do QR Code, verificação de dados bancários, disponibilização dos ingressos para impressão e confirmações via e-mail e SMS estão fora do escopo desta suíte por ausência de acesso ao fluxo transacional completo. A cobertura da Feature Comprar Ingressos alcança até a etapa de seleção da forma de pagamento, com validações de formulário, segurança e estado do checkout — mas não inclui a confirmação efetiva da transação.
 
-- **Ambiente de testes dedicado:** todos os cenários foram executados diretamente em produção, o que impossibilitou testes destrutivos, simulações de falha, injeção de dados controlados ou qualquer interação que pudesse impactar usuários reais da plataforma.
+- **Ambiente de testes dedicado:** todos os cenários foram executados diretamente em produção, o que impossibilitou testes destrutivos, simulações de falha de infraestrutura, injeção de dados controlados ou qualquer interação com potencial de impactar usuários reais da plataforma. Cenários de estresse e robustez foram cuidadosamente construídos para permanecer dentro do que é seguro executar em produção — o que, por si só, limita a profundidade máxima de alguns testes de carga e concorrência.
 
-- **Acesso administrativo e back-office:** funcionalidades de gestão interna de eventos, relatórios, controle de acesso (check-in) e configurações avançadas de produtores não foram testadas por exigirem credenciais administrativas não disponíveis no escopo deste projeto.
+- **Acesso administrativo e back-office:** funcionalidades de gestão interna de eventos, relatórios financeiros, controle de acesso (check-in no dia do evento) e configurações avançadas de produtores não foram testadas por exigirem credenciais administrativas não disponíveis neste escopo. A Feature Publicar Eventos cobre o fluxo do produtor até a configuração do evento e das equipes, mas não inclui a gestão operacional pós-publicação.
 
-- **Confirmação de integrações externas:** o comportamento real de integrações com gateways de pagamento, serviços de e-mail/SMS e sistemas de emissão de ingressos não pôde ser validado de ponta a ponta.
+- **Confirmação de integrações externas de ponta a ponta:** o comportamento real das integrações com gateways de pagamento (processamento efetivo da transação), serviços de e-mail e SMS (entrega das confirmações) e sistemas de emissão de ingressos (geração do ingresso virtual) não pôde ser validado além da camada de interface. Os testes verificam o comportamento da UI e dos campos de formulário, não a resposta final dos sistemas integrados.
 
-- **Testes de carga e performance em escala:** a ausência de ambiente dedicado impossibilitou simulações de múltiplos usuários simultâneos ou cenários de pico de acesso.
+- **Testes de carga e performance em escala:** a ausência de ambiente dedicado impossibilitou simulações de múltiplos usuários simultâneos, testes de throughput, latência sob carga ou cenários de pico de acesso. Os cenários de estresse presentes na suíte simulam comportamento intensivo de um único usuário sobre componentes específicos — não substituem ferramentas de load testing como k6, Locust ou JMeter aplicadas contra um ambiente de homologação.
 
-Essas exclusões não representam falhas na cobertura, mas sim **decisões conscientes de escopo**, tomadas com base nas condições reais de acesso disponíveis — uma prática comum e necessária em qualquer ciclo de testes conduzido sem infraestrutura de QA completa.
+- **Cross-browser:** todos os testes foram executados exclusivamente no Google Chrome (Chromium via Playwright). Não há cobertura de Firefox, Edge ou Safari. A ausência é documentada explicitamente nas Features onde seria mais relevante e representa uma oportunidade de expansão, não uma falha da suíte.
+
+Essas exclusões não representam falhas na cobertura, mas sim **decisões conscientes de escopo**, tomadas com base nas condições reais de acesso disponíveis. Documentar o que ficou fora é tão importante quanto documentar o que foi coberto: permite que qualquer analista que utilize esta suíte no futuro compreenda exatamente os seus limites e planeje a expansão da cobertura a partir deles.
 
 ---
 
 ## 🚀 Próximos passos (CI/CD)
 
-Atualmente, a suíte é executada manualmente, com os testes disparados via terminal utilizando os comandos `npx codeceptjs run` diretamente na máquina local do desenvolvedor. A automação da execução via **GitHub Actions** foi avaliada como evolução natural do projeto, mas não foi implementada nesta fase por razões técnicas e de escopo, não por falta de planejamento.
+Atualmente, a suíte é executada manualmente via terminal com o comando `npx codeceptjs run` na máquina local. A automação da execução via **GitHub Actions** foi avaliada como evolução natural do projeto, mas não foi implementada nesta fase por razões técnicas objetivas — não por falta de planejamento.
 
-Diferente de um stack mobile como o Maestro (que depende de um emulador Android ativo e de uma ponte ADB para funcionar), o CodeceptJS com Playwright oferece uma vantagem estrutural importante para CI/CD: os testes rodam em **modo headless** nativamente, sem necessidade de emulador físico ou ambiente gráfico. Isso torna a integração com GitHub Actions tecnicamente mais simples do que em projetos mobile.
+O CodeceptJS com Playwright oferece uma vantagem estrutural importante para CI/CD: os testes rodam em **modo headless** nativamente, sem necessidade de emulador físico ou ambiente gráfico. Isso torna a integração com GitHub Actions tecnicamente mais direta do que em stacks mobile (como o Maestro, que depende de emulador Android ativo e ponte ADB). A base técnica para o pipeline já existe — o que falta é a infraestrutura de suporte necessária para executá-lo com segurança.
 
-Entretanto, alguns fatores limitaram a implementação nesta fase:
+Três fatores limitaram a implementação nesta fase:
 
-- **Execução realizada em produção:** como todos os testes foram executados diretamente no ambiente de produção da FasTix, a automação via CI exigiria controle cuidadoso sobre quais cenários podem ser disparados automaticamente sem impacto real para usuários da plataforma — especialmente os fluxos que interagem com formulários, buscas e navegação em páginas públicas.
-- **Ausência de ambiente de testes dedicado:** sem um ambiente de staging ou homologação disponível, rodar a suíte completa de forma automatizada e recorrente em produção representa um risco que precisa ser avaliado antes da implementação do pipeline.
-- **Cobertura E2E incompleta:** como o ciclo de compra de ingressos não pôde ser concluído de ponta a ponta (confirmação de pagamento, QR Code, e-mail/SMS de confirmação), a automação de um pipeline que inclua esses cenários parciais exigiria definição clara de quais etapas são seguras para execução automatizada recorrente.
+- **Execução em produção:** automatizar a execução recorrente de 586 cenários diretamente em produção exigiria controle rigoroso sobre quais testes podem ser disparados sem gerar efeitos colaterais para usuários reais — especialmente fluxos que interagem com formulários públicos, buscas e navegação. Sem essa triagem, o risco de interferência é real.
+- **Ausência de ambiente de staging:** sem um ambiente de homologação disponível, não há destino seguro para rodar a suíte completa de forma automatizada e recorrente. Essa é a dependência mais crítica para a implementação do pipeline.
+- **Cobertura E2E parcial no checkout:** como o ciclo de compra de ingressos não foi concluído de ponta a ponta, incluir esses cenários em um pipeline automatizado exigiria definição clara de quais etapas são seguras para execução recorrente e quais precisam de ambiente controlado com dados de teste reais.
 
-Diante dessas condicionantes, a decisão foi priorizar a qualidade e a cobertura da suíte nesta fase, deixando a automação via CI como **próximo passo declarado** do projeto. Uma futura implementação consideraria:
+Uma implementação futura seguiria estas etapas:
 
 ```text
-1. Configurar um ambiente de staging ou homologação para execução segura e recorrente dos testes.
-2. Criar um workflow no GitHub Actions com gatilho em pull requests e merges para a branch principal.
-3. Separar os cenários seguros para execução automatizada em produção dos que exigem ambiente controlado.
-4. Publicar automaticamente os relatórios de execução do CodeceptJS como artefato do workflow.
-5. Configurar notificações de falhas via integração com Slack ou e-mail.
-6. Avaliar serviços de nuvem para testes de ponta a ponta com suporte a fluxos transacionais reais (como BrowserStack ou Sauce Labs), para viabilizar a cobertura completa do ciclo de compra de ingressos em um ambiente controlado.
+1. Provisionar ambiente de staging ou homologação para execução segura e recorrente dos testes.
+2. Separar os cenários em dois grupos: "seguros para produção" (navegação, leitura, consultas)
+   e "restritos a staging" (formulários, checkout, interações com dados).
+3. Criar workflow no GitHub Actions com gatilho em pull requests e merges para a branch principal,
+   executando inicialmente apenas o grupo seguro para produção como smoke test.
+4. Expandir gradualmente para a suíte completa à medida que o ambiente de staging estiver estável.
+5. Publicar automaticamente os relatórios de execução do CodeceptJS como artefato do workflow.
+6. Configurar notificações de falhas via Slack ou e-mail para visibilidade imediata da equipe.
+7. Avaliar serviços de nuvem (BrowserStack, Sauce Labs) para viabilizar testes transacionais reais
+   em ambiente controlado, cobrindo as etapas de pagamento ainda fora do escopo atual.
 ```
 
-Essa análise técnica, por si só, já reflete uma etapa importante do planejamento de qualidade: reconhecer as limitações de infraestrutura e de escopo antes de tentar implementar uma automação que não seria sustentável ou segura nas condições atuais do projeto.
+O reconhecimento dessas dependências antes de iniciar a implementação é, em si, parte do planejamento de qualidade. Automatizar sem infraestrutura adequada criaria um pipeline instável e difícil de manter — o que prejudicaria a confiança da equipe nos resultados mais do que ajudaria.
 
 ---
 
 ## 💡 Aprendizados técnicos
 
+A execução deste projeto gerou aprendizados técnicos concretos em quatro áreas:
 
----
+**1. Automação em ambiente de produção exige disciplina de escopo**
 
+Testar diretamente em produção sem staging força decisões que não aparecem em projetos com infraestrutura completa: quais cenários são seguros de executar repetidamente, quais podem gerar efeitos colaterais e onde o teste precisa parar antes de ultrapassar o limite do observável. Essa restrição, que inicialmente parece uma limitação, também treina uma habilidade importante: construir cenários precisos que validam o comportamento necessário sem depender de condições que só existem em ambientes controlados.
+
+**2. Classificação por dimensões de qualidade evita análises enganosas**
+
+Tratar E2E, Regressão, Stress e Funcional como categorias equivalentes é um erro comum em suítes grandes. Ao separar escopo da jornada (E2E) de objetivo funcional (Funcional) de condição de execução (Stress), ficou possível identificar com precisão o que cada cenário realmente valida — e comunicar isso sem ambiguidade para equipes de desenvolvimento, produto e operação. A distinção também evita que uma suíte pareça mais abrangente do que é: um teste de stress de carrossel não é um teste de performance de infraestrutura.
+
+**3. Comportamento de terceiros precisa de tratamento explícito nos testes**
+
+Os cenários de login social (Google/Apple) evidenciaram que, em automação, bloqueios antibot de provedores externos são resultados esperados, não falhas. Tratar o redirecionamento correto para o domínio do provedor como critério de sucesso — sem tentar completar a autenticação — é uma decisão de design de teste que evita falsos negativos e torna a suíte mais estável. O mesmo raciocínio se aplica à integração com Google Maps/Places: validar que a entrada retornou uma sugestão é diferente de validar que a sugestão é geográfica ou semanticamente correta.
+
+**4. Testes que documentam comportamento em vez de assumir um resultado fixo são mais duráveis**
+
+Alguns cenários desta suíte aceitam mais de um resultado como válido — o formulário de Criar Conta pode ou não preservar dados após refresh, e ambos os comportamentos são aceitáveis desde que o estado final seja consistente. Esse padrão, aplicado nos cenários 0035 e 0047 da Feature Criar Conta, representa uma abordagem mais madura do que afirmar "o campo deve estar vazio" sem confirmar qual é o comportamento de negócio pretendido. Testes que documentam o comportamento atual sem presumir uma única resposta correta tendem a ser mais estáveis ao longo do tempo e geram descobertas mais úteis do que testes que apenas confirmam o que já se sabe.
 
 ## ✅ Contato
 

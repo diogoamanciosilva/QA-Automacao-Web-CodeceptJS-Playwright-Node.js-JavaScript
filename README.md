@@ -67,7 +67,7 @@ O **CodeceptJS** utiliza recursos do ecossistema **Node.js e JavaScript**, dessa
 * **Node.js**
 * **JavaScript**
 * **CodeceptJS**
-* **Playwright:Para a execução de testes automatizados da aplicação Web da FasTix.**
+* **Playwright: Para a execução de testes automatizados da aplicação Web da FasTix.**
 
 ---
 

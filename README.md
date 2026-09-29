@@ -2869,6 +2869,14 @@ https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 
 
 
+| ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
+| :--- | :--- | :---: | :--- | :--- |
+| **BUG-03** | O campo **E-mail** da etapa de pagamento via PIX permite a inserção de até **510 caracteres**, ultrapassando o limite de 255 caracteres esperado para o campo. Ao tentar prosseguir, o sistema apresenta as mensagens **"Formato inválido"** e **"Preencha todos os dados para continuar"**, em vez de impedir ou informar previamente o excesso de caracteres. | **Média** | Acessar um evento → selecionar ingressos → clicar em **"Comprar ingressos"** → realizar login → selecionar **PIX** → informar um e-mail com mais de 255 caracteres → clicar em **"Pagar"**. | `Cenário 000000089` — Feature **Comprar Ingressos** |
+
+**Vídeo:**
+
+https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
+
 
 
 

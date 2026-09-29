@@ -2914,7 +2914,9 @@ https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 | **ISSUE-07** | O ícone do Twitter presente no rodapé (*footer*) do sistema encontra-se desatualizado, utilizando a identidade visual antiga da rede social. | **Baixa** | Acessar a página → rolar até o rodapé (*footer*) → localizar o ícone do Twitter na seção de redes sociais → verificar a imagem do ícone exibido. | `Cenário 00028` — Feature **Vídeo** |
 
 **Vídeo:**
-https://github.com/user-attachments/assets/cb7f6528-446f-49b7-822a-09f9565670e4
+
+https://github.com/user-attachments/assets/72b551e7-ced7-49f5-9f4d-930eee71736e
+
 
 ---
 

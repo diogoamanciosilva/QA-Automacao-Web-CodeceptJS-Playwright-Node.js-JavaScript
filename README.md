@@ -2909,6 +2909,12 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 
 
+| ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
+| :--- | :--- | :---: | :--- | :--- |
+| **ISSUE-07** | O ícone do Twitter presente no rodapé (*footer*) do sistema encontra-se desatualizado, utilizando a identidade visual antiga da rede social. | **Baixa** | Acessar a página → rolar até o rodapé (*footer*) → localizar o ícone do Twitter na seção de redes sociais → verificar a imagem do ícone exibido. | `Cenário 00028` — Feature **Vídeo** |
+
+**Vídeo:**
+https://github.com/user-attachments/assets/cb7f6528-446f-49b7-822a-09f9565670e4
 
 ---
 
@@ -2924,6 +2930,11 @@ O BUG-05 possui comportamento intermitente quanto ao momento exato de reproduç�
 O BUG-06 também apresenta impacto sobre a configuração de permissões, uma vez que a alteração de uma permissão pode fazer com que o template previamente selecionado deixe de ser preservado.
 
 As informações utilizadas neste documento foram mantidas de acordo com os cenários, resultados atuais e resultados esperados apresentados nos testes analisados.
+
+A ISSUE-07, é relacionado ao link do rodapé que redireciona corretamente para o perfil no X, mas exibe a logo desatualizada do Twitter.
+
+O comportamento esperado é de substituir o ícone antigo do Twitter pela nova logomarca do X no site da FasTix.
+
 ```
 ---
 

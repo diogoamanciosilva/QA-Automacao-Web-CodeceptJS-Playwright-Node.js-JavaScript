@@ -2853,6 +2853,15 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 | **BUG-01** | A busca de eventos por **local** não retorna os eventos associados ao local pesquisado. Ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, mesmo existindo eventos associados ao local, o sistema exibe a mensagem **"Nenhum evento encontrado"**. | **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
 
 
+**Vídeo:**
+
+https://github.com/user-attachments/assets/76fcb818-db36-4132-b3bc-c9567879893c
+
+
+
+
+
+
 
 
 
@@ -2861,8 +2870,10 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 
 
 | ID         | Bug                                                                                                                                                                                                                                                                                                                                                                                                                 | Severidade | Passos para reproduzir                                                                                                                                                                                                                                           | Evidência (teste)                                    |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| **BUG-01** | A busca de eventos por **local** não retorna os eventos associados ao local pesquisado. Ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, mesmo existindo eventos associados ao local, o sistema exibe a mensagem **"Nenhum evento encontrado"**.                                                                                                                                                                 | **Alta**   | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados.                                                                                        | `Cenário 09` — Feature **Explorar Eventos**          |
+
+
+
+
 | **BUG-02** | O campo **"Nome"** da página **Suporte e Ajuda** não apresenta comportamento adequado ao receber uma quantidade de caracteres superior ao limite esperado. O cenário exige que o sistema limite o conteúdo, informe o limite ao usuário e preserve exatamente o texto truncado permitido.                                                                                                                           | **Média**  | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo.                                                                          | `Cenário 0036` — Feature **Suporte e Ajuda**         |
 | **BUG-03** | O campo **E-mail** da etapa de pagamento via PIX permite a inserção de até **510 caracteres**, ultrapassando o limite de 255 caracteres esperado para o campo. Ao tentar prosseguir, o sistema apresenta as mensagens **"Formato inválido"** e **"Preencha todos os dados para continuar"**, em vez de impedir ou informar previamente o excesso de caracteres.                                                     | **Média**  | Acessar um evento → selecionar ingressos → clicar em **"Comprar ingressos"** → realizar login → selecionar **PIX** → informar um e-mail com mais de 255 caracteres → clicar em **"Pagar"**.                                                                      | `Cenário 000000089` — Feature **Comprar Ingressos**  |
 | **BUG-04** | Ao clicar repetidamente no botão **"Copiar chave"** do PIX, o sistema gera **múltiplos toasts de notificação** com a mesma mensagem, causando duplicidade visual de notificações e comportamento inconsistente da interface.                                                                                                                                                                                        | **Baixa**  | Acessar o pagamento via PIX → preencher o e-mail → clicar em **"Pagar"** → clicar repetidamente em **"Copiar chave"** → observar os toasts exibidos no topo da página.                                                                                           | `Cenário 0000000101` — Feature **Comprar Ingressos** |

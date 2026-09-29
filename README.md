@@ -3054,17 +3054,19 @@ A análise abaixo foi construída a partir dos comportamentos observados nos cen
 
 <img width="1550" height="889" alt="Gráfico_RCA_Relação_Causa_Raiz_Bugs_ATUALIZADO" src="https://github.com/user-attachments/assets/fd079ccb-4130-47cc-b488-04be8caf6d5b" />
 
-* **Gerenciamento e preservação de estado:** agrupa **BUG-05 e BUG-06**, ambos relacionados à perda, duplicação ou alteração inesperada de informações previamente selecionadas pelo usuário.
+****Gerenciamento de estado:** agrupa BUG-05 e BUG-06,** ambos relacionados à perda, duplicação ou alteração inesperada de informações previamente selecionadas pelo usuário.
 
-* No **BUG-05**, após a alternância entre abas do navegador, o sistema pode apresentar **duplicação do modal de pagamento**, incluindo opções e botões de pagamento. O cenário também registra a ocorrência de mensagem de erro após a interação com o segundo modal.
+No **BUG-05,** após a alternância entre abas do navegador, o sistema pode apresentar duplicação do modal de pagamento, incluindo opções e botões de pagamento. O cenário também registra a ocorrência de mensagem de erro após a interação com o segundo modal.
 
-* No **BUG-06**, a seleção realizada no campo **"Template"** não é preservada quando uma permissão de seção é alterada. O valor previamente selecionado pode ser substituído por **"Templates"**.
+No **BUG-06,** a seleção realizada no campo "Template" não é preservada quando uma permissão de seção é alterada. O valor previamente selecionado pode ser substituído por "Templates".
 
-* Embora os dois comportamentos sejam diferentes, ambos apresentam indícios de problemas relacionados à **manutenção do estado da interface durante mudanças de contexto ou interação**.
+Embora os dois comportamentos sejam diferentes, ambos apresentam indícios de problemas relacionados à manutenção do estado da interface durante mudanças de contexto ou interação.
 
-* No caso do BUG-05, entretanto, existem evidências adicionais de comportamento relacionado ao DOM, console e componentes do fluxo de pagamento. Essas evidências ajudam a direcionar a investigação, mas **não comprovam isoladamente qual componente ou camada é responsável pela causa raiz**.
+No caso do BUG-05, existem evidências adicionais de comportamento relacionado ao DOM, console e componentes do fluxo de pagamento. Essas evidências ajudam a direcionar a investigação, mas não comprovam isoladamente qual componente ou camada é responsável pela causa raiz.
 
-Assim como no exemplo de referência, essa causa deve ser tratada com cautela: o comportamento observado pode resultar de uma falha de implementação, de sincronização de estado ou de uma condição específica do fluxo. A confirmação deve ser realizada pelo time técnico.
+```text
+⚠️ Causas inferidas a partir dos comportamentos observados. A confirmação técnica requer análise de código, logs ou arquitetura pelo time de desenvolvimento.
+```
 
 ### 🫆 Causa Raiz 3: Controle de componentes e notificações
 

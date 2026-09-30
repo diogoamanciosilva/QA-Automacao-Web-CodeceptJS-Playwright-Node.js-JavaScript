@@ -2860,7 +2860,7 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-02** | O campo **"Nome"** da página **Suporte e Ajuda** não apresenta comportamento adequado ao receber uma quantidade de caracteres superior ao limite esperado. O cenário exige que o sistema limite o conteúdo, informe o limite ao usuário e preserve exatamente o texto truncado permitido. | **Média** | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo. | `Cenário 0036` — Feature **Suporte e Ajuda** |
+| **BUG-02** | O campo **"Nome"** da página **Suporte e Ajuda** não apresenta comportamento adequado ao receber uma quantidade de caracteres superior ao limite esperado. O cenário exige que o sistema limite o conteúdo, informe o limite ao usuário e preserve exatamente o texto truncado permitido. | 🔸 **Média** | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo. | `Cenário 0036` — Feature **Suporte e Ajuda** |
 
 **Vídeo:**
 
@@ -2870,7 +2870,7 @@ https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-03** | O campo **E-mail** da etapa de pagamento via PIX permite a inserção de até **510 caracteres**, ultrapassando o limite de 255 caracteres esperado para o campo. Ao tentar prosseguir, o sistema apresenta as mensagens **"Formato inválido"** e **"Preencha todos os dados para continuar"**, em vez de impedir ou informar previamente o excesso de caracteres. | **Média** | Acessar um evento → selecionar ingressos → clicar em **"Comprar ingressos"** → realizar login → selecionar **PIX** → informar um e-mail com mais de 255 caracteres → clicar em **"Pagar"**. | `Cenário 000000089` — Feature **Comprar Ingressos** |
+| **BUG-03** | O campo **E-mail** da etapa de pagamento via PIX permite a inserção de até **510 caracteres**, ultrapassando o limite de 255 caracteres esperado para o campo. Ao tentar prosseguir, o sistema apresenta as mensagens **"Formato inválido"** e **"Preencha todos os dados para continuar"**, em vez de impedir ou informar previamente o excesso de caracteres. | 🔸 **Média** | Acessar um evento → selecionar ingressos → clicar em **"Comprar ingressos"** → realizar login → selecionar **PIX** → informar um e-mail com mais de 255 caracteres → clicar em **"Pagar"**. | `Cenário 000000089` — Feature **Comprar Ingressos** |
 
 **Vídeo:**
 
@@ -2879,7 +2879,7 @@ https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-04** | Ao clicar repetidamente no botão **"Copiar chave"** do PIX, o sistema gera **múltiplos toasts de notificação** com a mesma mensagem, causando duplicidade visual de notificações e comportamento inconsistente da interface. | **Baixa** | Acessar o pagamento via PIX → preencher o e-mail → clicar em **"Pagar"** → clicar repetidamente em **"Copiar chave"** → observar os toasts exibidos no topo da página. | `Cenário 0000000101` — Feature **Comprar Ingressos** |
+| **BUG-04** | Ao clicar repetidamente no botão **"Copiar chave"** do PIX, o sistema gera **múltiplos toasts de notificação** com a mesma mensagem, causando duplicidade visual de notificações e comportamento inconsistente da interface. | 🔹 **Baixa** | Acessar o pagamento via PIX → preencher o e-mail → clicar em **"Pagar"** → clicar repetidamente em **"Copiar chave"** → observar os toasts exibidos no topo da página. | `Cenário 0000000101` — Feature **Comprar Ingressos** |
 
 **Vídeo:**
 

@@ -22,19 +22,19 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🤖 Codecept](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
 - [⚙️ Estrutura da Suíte de Testes FasTix](#️-estrutura-da-suíte-de-testes-fastix)
-- [📝 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
+- [📋 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
 - [▶️ Como executar este projeto](#%EF%B8%8F-como-executar-este-projeto)
 - [🧰 Ambiente e rotina diária](#-ambiente-e-rotina-diária)
 - [✅ Uso](#-uso)
 - [📁 Estrutura do repositório](#-estrutura-do-repositório)
 - [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
 - [🎯 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
-- [🔍 Feature Explorar Eventos ](#-feature-explorar-eventos)
-- [🔍 Feature Suporte e Ajuda ](#-feature-suporte-e-ajuda)
-- [🔍 Feature Tela Inicial ](#-feature-tela-inicial)
-- [🔍 Feature Publicar Eventos ](#-feature-publicar-eventos)
-- [🔍 Feature Comprar Ingressos ](#-feature-comprar-ingressos)
-- [🔍 Feature Criar Conta ](#-feature-criar-conta)
+- [🔭 Feature Explorar Eventos ](#-feature-explorar-eventos)
+- [🙋 Feature Suporte e Ajuda ](#-feature-suporte-e-ajuda)
+- [🏠 Feature Tela Inicial ](#-feature-tela-inicial)
+- [📢 Feature Publicar Eventos ](#-feature-publicar-eventos)
+- [🎟️ Feature Comprar Ingressos ](#-feature-comprar-ingressos)
+- [👤 Feature Criar Conta ](#-feature-criar-conta)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
 - [🔗 Bug × Feature × Causa Raiz](#-bug--feature--causa-raiz)
 - [📊 Análise da Suíte de Testes](#-análise-da-suíte-de-testes)
@@ -43,7 +43,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🚧 Limitações e escopo](#-limitações-e-escopo)
 - [🚀 Próximos passos (CI/CD)](#-próximos-passos-cicd)
 - [💡 Aprendizados técnicos](#-aprendizados-técnicos)
-- [✅ Contato](#-contato)
+- [📬 Contato](#-contato)
 
 
 - ---
@@ -104,7 +104,7 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 ---
 
-## 📋 Tipos de teste realizados na suíte
+## 📝 Tipos de teste realizados na suíte
 
 | Tipos de Testes |
 | ------------------------- |
@@ -535,7 +535,7 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 > 📌 **Nota de revisão:** Este documento aplica as correções de coerência e padronização identificadas na revisão geral da suíte — tabelas de cenários corrigidas para coluna única, nomes de dimensão unificados entre título de seção e matriz, nível de heading padronizado (H2 para todas as seções de "Regressão" e "Matriz de cobertura"), e legendas padronizadas em formato de tabela.
 
-## 🔍 Feature Explorar Eventos
+## 🔭 Feature Explorar Eventos
 
 | Feature |
 | --- |
@@ -896,7 +896,7 @@ RCA / Bug Report
 
 ---
 
-## 🔍 Feature Suporte e Ajuda
+## 🙋 Feature Suporte e Ajuda
 
 | Feature |
 | --- |
@@ -1235,7 +1235,7 @@ RCA / Bug Report
 
 ---
 
-# 🔍 Feature Tela Inicial
+# 🏠 Feature Tela Inicial
 
 | Feature                                                                                          |
 | ------------------------------------------------------------------------------------------------ |
@@ -1655,7 +1655,7 @@ Portanto, o GAP não caracteriza um defeito da aplicação, mas uma oportunidade
 
 ---
 
-## 🔍 Feature Publicar Eventos
+## 📢 Feature Publicar Eventos
 
 | Feature |
 | ------------------------- |
@@ -2026,7 +2026,7 @@ RCA / Bug Report
 
 ---
 
-## 🔍 Feature Comprar Ingressos
+## 🎟️ Feature Comprar Ingressos
 
 | Feature                                                                                                                                     |         |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
@@ -2522,7 +2522,7 @@ Portanto, os GAPs identificados nos **127 cenários analisados** devem ser inter
 
 ---
 
-## 🔍 Feature Criar Conta
+## 👤 Feature Criar Conta
 
 | Feature |
 | ------------------------- |

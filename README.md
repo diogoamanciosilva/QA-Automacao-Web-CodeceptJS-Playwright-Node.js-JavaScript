@@ -3,17 +3,15 @@
 
 <img width="1912" height="741" alt="image" src="https://github.com/user-attachments/assets/8dc7f870-7960-4e7a-99ba-97a38786b6df" />
 
-A FasTix é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 
+A **FasTix** é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 
 
-O projeto consiste na documentação Gherkin (linguagem para descrever o comportamento do software) e BDD (Behavior-Driven Development), em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa publicada em julho de 2026:**
+O projeto consiste na documentação **Gherkin** (linguagem para descrever o comportamento do software) e **BDD** (Behavior-Driven Development), em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa publicada em julho de 2026:**
 
 O site foi desenvolvido pela **empresa americana Web Solutions FL** (https://www.websolutionsfl.com/).
 
 Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio.**
 
 ---
-
-#-como-executar-este-projeto
 
   ## 📑 Índice
 
@@ -312,7 +310,7 @@ npx codeceptjs init
 
 ---
 
-> ⚠️ **Importante:** a pasta `output/` armazena screenshots, vídeos e relatórios de falhas gerados automaticamente durante a execução dos testes — não deve ser versionada no repositório (adicione ao `.gitignore`).
+> ⚠️ **Importante:** A pasta `output/` armazena screenshots, vídeos e relatórios de falhas gerados automaticamente durante a execução dos testes não deve ser versionada no repositório (adicione ao `.gitignore`).
 
 ### 📍 9. Criar um teste de exemplo
 
@@ -443,7 +441,9 @@ MeuProjeto/
 
 ## 🧭 A Jornada do usuário
 
-A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro da FasTix. Diferente de um fluxo estritamente linear, a plataforma atende dois perfis de usuário com caminhos próprios o comprador de ingressos e o produtor de eventos além de uma camada de suporte acessível a qualquer momento:
+A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro da FasTix. 
+
+Diferente de um fluxo estritamente linear, a plataforma atende dois perfis de usuário com caminhos próprios o comprador de ingressos e o produtor de eventos além de uma camada de suporte acessível a qualquer momento:
 
 ```text
 Fluxo do Comprador:
@@ -463,20 +463,20 @@ Os testes não validam apenas funcionalidades isoladas, mas também simulam comp
 
 As informações a seguir apresentam a estrutura completa da suíte de testes da FasTix, organizada em seis Features que representam, em conjunto, a jornada do usuário na plataforma.
 
-Cada Feature possui um conjunto de cenários que cobre desde o caminho feliz até casos de borda, testes de estresse, acessibilidade, performance e segurança, permitindo visualizar de forma clara o que é validado em cada etapa desde a descoberta do evento na Tela Inicial até a confirmação do pagamento na etapa de Comprar Ingressos, passando pelo suporte ao usuário e pela publicação de novos eventos por produtores.
+Cada **Feature** possui um conjunto de cenários que cobre desde o caminho feliz até casos de borda, testes de estresse, acessibilidade, performance e segurança, permitindo visualizar de forma clara o que é validado em cada etapa desde a descoberta do evento na Tela Inicial até a confirmação do pagamento na etapa de Comprar Ingressos, passando pelo suporte ao usuário e pela publicação de novos eventos por produtores.
 
 ---
 
 ## 🎯 Estratégia e cobertura de Testes 
 
 
-A suíte automatizada do FasTix reúne 586 testes distribuídos em 6 Features, cobrindo toda a jornada do usuário na plataforma do primeiro acesso à compra de ingressos sob 17 dimensões de qualidade diferentes, não apenas validação funcional. 
+**A suíte automatizada do FasTix reúne 586 testes distribuídos em 6 Features**, cobrindo toda a jornada do usuário na plataforma do primeiro acesso à compra de ingressos sob 17 dimensões de qualidade diferentes, não apenas validação funcional. 
 
 A cobertura foi dimensionada por risco de negócio: as áreas com maior impacto em receita e alcance de usuários (Tela Inicial e Comprar Ingressos) concentram o maior volume de testes.
 
 A FasTix é uma plataforma de venda, distribuição e intermediação de ingressos, atuando como ticketeira para produtores de eventos de todos os portes como shows, festivais, cursos, palestras, exposições e eventos esportivos. Além da venda ao público, oferece aos organizadores ferramentas de gestão de vendas e controle de acesso (check-in) no dia do evento. 
 
-Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e operação em tempo real, o que torna qualquer falha silenciosa potencialmente cara — seja em receita, confiança do produtor ou experiência do público na entrada do evento.
+Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e operação em tempo real, o que torna qualquer falha silenciosa potencialmente cara seja em receita, confiança do produtor ou experiência do público na entrada do evento.
 
 ### Distribuição da cobertura
 
@@ -531,7 +531,7 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 # Suíte de Testes Automatizados 
 
-> 📌 **Nota de revisão:** Este documento aplica as correções de coerência e padronização identificadas na revisão geral da suíte — tabelas de cenários corrigidas para coluna única, nomes de dimensão unificados entre título de seção e matriz, nível de heading padronizado (H2 para todas as seções de "Regressão" e "Matriz de cobertura"), e legendas padronizadas em formato de tabela.
+> ⚠️ **Importante:** Este documento aplica as correções de coerência e padronização identificadas na revisão geral da suíte, tabelas de cenários corrigidas para coluna única, nomes de dimensão unificados entre título de seção e matriz, nível de heading padronizado (H2 para todas as seções de "Regressão" e "Matriz de cobertura") e legendas padronizadas em formato de tabela.
 
 ## 🔭 Feature Explorar Eventos
 
@@ -801,7 +801,7 @@ Verificam se diferentes mecanismos de navegação continuam funcionando corretam
 * **0056:** utilização de múltiplas abas;
 * **0067–0068:** navegação por foco e teclado.
 
-> Essa categoria representa **compatibilidade entre diferentes mecanismos de navegação**, e não compatibilidade entre diferentes browsers. A suíte atual não demonstra, pelos cenários analisados, uma estratégia completa de cross-browser testing.
+> ⚠️ **Importante:** Essa categoria representa **compatibilidade entre diferentes mecanismos de navegação**, e não compatibilidade entre diferentes browsers. A suíte atual não demonstra, pelos cenários analisados, uma estratégia completa de cross-browser testing.
 
 ### 🚨 Testes de Monitoramento de Erros
 
@@ -1125,7 +1125,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0053–0054:** navegação e retorno via menu superior e via botões Entrar/Criar Conta;
 * **0055:** combinação de todos os mecanismos de navegação (voltar do navegador + menu + Entrar/Criar Conta) em um único fluxo.
 
-> Assim como na feature de referência, essa categoria trata de **diferentes mecanismos de navegação** dentro do mesmo navegador — não caracteriza uma estratégia de teste cross-browser.
+> ⚠️ **Importante:** Assim como na feature de referência, essa categoria trata de **diferentes mecanismos de navegação** dentro do mesmo navegador — não caracteriza uma estratégia de teste cross-browser.
 
 ### 🚨 Testes de Monitoramento de Erros
 
@@ -1151,7 +1151,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0041:** recuperação do formulário após dois reloads consecutivos;
 * **0065–0066:** testes anti-flaky com retry automático (até 2 tentativas por execução) e cálculo formal de taxa de flakiness.
 
-> **Precisão técnica:** assim como destacado na feature de referência, esses cenários validam **recuperação/resiliência da interface**, não persistência de dados de negócio em backend — o formulário nunca é de fato submetido com sucesso em nenhum cenário desta suíte (o botão permanece desabilitado sem validação humana, cenário 0012).
+> ⚠️ **Importante:** **Precisão técnica:** assim como destacado na feature de referência, esses cenários validam **recuperação/resiliência da interface**, não persistência de dados de negócio em backend o formulário nunca é de fato submetido com sucesso em nenhum cenário desta suíte (o botão permanece desabilitado sem validação humana, cenário 0012).
 
 ### 📡 Observabilidade e Analytics (dataLayer)
 
@@ -1444,7 +1444,7 @@ Submetem componentes ou funcionalidades a operações repetitivas ou intensivas 
 * **0016:** múltiplas navegações consecutivas para esquerda e direita;
 * **0046:** múltiplas navegações consecutivas no carrossel.
 
-> **Importante:** esses cenários representam estresse de componentes e interações da aplicação. Não devem ser apresentados como testes formais de carga ou performance de infraestrutura, pois não simulam múltiplos usuários ou carga concorrente.
+> ⚠️ **Importante:**  esses cenários representam estresse de componentes e interações da aplicação. Não devem ser apresentados como testes formais de carga ou performance de infraestrutura, pois não simulam múltiplos usuários ou carga concorrente.
 
 ## 🛡️ Testes de Robustez
 
@@ -1504,7 +1504,7 @@ Portanto:
 | **Compatibilidade de Navegação** | 🔴 Não coberta |
 | **Cross-Browser**                | 🔴 Não coberta |
 
-> **Precisão técnica:** Compatibilidade de Navegação e Cross-Browser são dimensões diferentes. A utilização de diferentes mecanismos de interação, como teclado, cliques, abas ou resoluções, não comprova compatibilidade entre Chrome, Edge, Firefox ou Safari.
+> ⚠️ **Importante:** **Precisão técnica:** Compatibilidade de Navegação e Cross-Browser são dimensões diferentes. A utilização de diferentes mecanismos de interação, como teclado, cliques, abas ou resoluções, não comprova compatibilidade entre Chrome, Edge, Firefox ou Safari.
 
 ## 🚨 Testes de Monitoramento de Erros
 
@@ -1539,7 +1539,7 @@ Avaliam o comportamento da aplicação após atualização da página ou altera�
 
 O cenário verifica se a preferência de idioma permanece após o refresh ou se a aplicação retorna ao idioma padrão.
 
-> **Precisão técnica:** esse cenário demonstra comportamento de estado/preferência após reload, mas não comprova, isoladamente, persistência em banco de dados, sessão, cookie ou armazenamento local.
+> ⚠️ **Importante:**  **Precisão técnica:** esse cenário demonstra comportamento de estado/preferência após reload, mas não comprova, isoladamente, persistência em banco de dados, sessão, cookie ou armazenamento local.
 
 ## 🔍 Observabilidade e Contrato — Analytics
 
@@ -1800,7 +1800,7 @@ Assim como na Feature Explorar Eventos, todos os testes foram classificados por 
 * **0064, 0066:** preenchimento completo dos três campos de data/hora em sequência;
 * **0083–0098:** criação de equipe → adicionar membro → configurar controle de acesso → validar estado final — a jornada mais longa da suíte, atravessando 4 sub-fluxos distintos.
 
-> **Observação:** assim como na feature de referência, E2E representa o **escopo da jornada**, não uma categoria isolada.
+> ⚠️ **Importante:**  **Observação:** assim como na feature de referência, E2E representa o **escopo da jornada**, não uma categoria isolada.
 
 ---
 
@@ -1852,7 +1852,7 @@ Esta Feature tem a cobertura de estresse mais extensa da suíte, com uma escalad
 * **0072:** estresse multiusuário com 3 sessões `Playwright` paralelas;
 * **0096–0097:** estresse de alteração de permissões (5 e 2 ciclos completos, cobrindo múltiplas seções e perfis).
 
-> **Importante:** assim como na feature de referência, esses cenários caracterizam robustez de componentes sob uso intensivo — não substituem uma ferramenta dedicada de load testing com carga real de múltiplos usuários de produção (com exceção do cenário 0072, que é o único desta suíte a usar sessões de browser genuinamente paralelas via `session()`).
+> ⚠️ **Importante:** assim como na feature de referência, esses cenários caracterizam robustez de componentes sob uso intensivo — não substituem uma ferramenta dedicada de load testing com carga real de múltiplos usuários de produção (com exceção do cenário 0072, que é o único desta suíte a usar sessões de browser genuinamente paralelas via `session()`).
 
 ---
 
@@ -1918,7 +1918,7 @@ Avaliam o comportamento da aplicação ao integrar com serviços de terceiros �
 * **0022–0035:** integração com o autocomplete do Google Places, incluindo casos de entrada sem correspondência;
 * **0038–0040:** iframe do Google Maps incorporado, com verificação condicional de controles (o teste se adapta caso um controle não esteja disponível na configuração atual do mapa).
 
-> **Observação técnica:** os cenários 0003 e 0004 são particularmente sofisticados do ponto de vista de QA — eles reconhecem que a automação de login de terceiros (Google/Apple) é frequentemente **bloqueada intencionalmente** por essas plataformas como proteção antibot, e tratam esse bloqueio como confirmação de que a integração está funcionando (a aplicação redirecionou corretamente para o provedor), não como um erro do fluxo.
+> ⚠️ **Importante: Observação técnica** os cenários 0003 e 0004 são particularmente sofisticados do ponto de vista de QA — eles reconhecem que a automação de login de terceiros (Google/Apple) é frequentemente **bloqueada intencionalmente** por essas plataformas como proteção antibot, e tratam esse bloqueio como confirmação de que a integração está funcionando (a aplicação redirecionou corretamente para o provedor), não como um erro do fluxo.
 
 ---
 
@@ -2201,7 +2201,7 @@ RCA / Bug Report
 - **0083–0107:** checkout → seleção de PIX → preenchimento do e-mail → processamento → geração do QR Code → cópia da chave → validação de expiração e submissões;
 - **0108–0125:** alterações de estado durante o checkout → logout, refresh, expiração, retorno, múltiplas abas e criação de novo pedido.
 
-> **Observação:** assim como na feature de referência, E2E representa o **escopo da jornada**, e não uma categoria isolada de teste.
+> ⚠️ **Importante observação:** assim como na feature de referência, E2E representa o **escopo da jornada**, e não uma categoria isolada de teste.
 
 ---
 
@@ -2218,7 +2218,7 @@ RCA / Bug Report
 - **0120–0121:** abertura e expiração do mesmo checkout em múltiplas abas;
 - **0126–0127:** alternância entre abas e retorno ao checkout para validar a integridade dos elementos.
 
-> **Observação:** os cenários cobrem **compatibilidade de navegação**, especialmente histórico, retorno, refresh, novas abas e múltiplas abas. Isso não equivale a **Cross-Browser**, pois não há cenários específicos utilizando Chrome, Edge, Firefox e Safari.
+> ⚠️ **Importante observação:** os cenários cobrem **compatibilidade de navegação**, especialmente histórico, retorno, refresh, novas abas e múltiplas abas. Isso não equivale a **Cross-Browser**, pois não há cenários específicos utilizando Chrome, Edge, Firefox e Safari.
 
 ---
 
@@ -2268,7 +2268,7 @@ A Feature apresenta cobertura de estresse principalmente por meio de **interaç�
 - **0125:** múltiplas expirações consecutivas do checkout;
 - **0126–0127:** alternância repetida entre abas e validação da não duplicação de componentes.
 
-> ⚠️ **Importante:** esses cenários caracterizam testes de robustez e estresse de interação da aplicação. Eles não substituem testes de carga ou performance com múltiplos usuários reais, realizados por ferramentas especializadas de performance/load testing.
+> ⚠️ **Importante:** Esses cenários caracterizam testes de robustez e estresse de interação da aplicação. Eles não substituem testes de carga ou performance com múltiplos usuários reais, realizados por ferramentas especializadas de performance/load testing.
 
 ---
 
@@ -2423,7 +2423,7 @@ A Feature apresenta cobertura de compatibilidade relacionada ao comportamento do
 - **0121:** expiração do checkout em múltiplas abas simultaneamente;
 - **0126–0127:** alternância entre abas e retorno ao checkout.
 
-> **Observação:** a cobertura acima trata de **navegação, histórico e múltiplas abas**. Não foram identificados cenários específicos de **Cross-Browser**, portanto não é possível considerar Chrome, Edge, Firefox e Safari como cobertos por esta Feature.
+> ⚠️ **Importante observação:** a cobertura acima trata de **navegação, histórico e múltiplas abas**. Não foram identificados cenários específicos de **Cross-Browser**, portanto não é possível considerar Chrome, Edge, Firefox e Safari como cobertos por esta Feature.
 
 ---
 
@@ -2514,9 +2514,6 @@ Além dessa limitação de fluxo, os 127 cenários analisados não apresentam co
 A cobertura de **Performance/Tempo de Resposta** é pontual, com um cenário específico para validação do tempo de exibição do QR Code PIX, não caracterizando uma estratégia ampla de testes de performance. Da mesma forma, **Cross-Browser** permanece sem cobertura explícita, pois os cenários de múltiplas abas, Back, Refresh e navegação não demonstram execução em diferentes navegadores. Isso é diferente de **Compatibilidade de Navegação**, que está contemplada pelos cenários **0114, 0116, 0119–0121 e 0126–0127**.
 
 Portanto, os GAPs identificados nos **127 cenários analisados** devem ser interpretados considerando tanto as limitações impostas pelo ambiente de produção quanto a ausência de acesso às etapas posteriores da jornada de compra.
-
-
-
 
 ---
 
@@ -2747,7 +2744,7 @@ Assim como nas Features anteriores, todos os testes foram classificados por dime
 * **0012–0013:** início do fluxo de login social (Google e Apple), validando o redirecionamento para o domínio correto do provedor (`accounts.google.com`, `appleid.apple.com`);
 * **0051–0052:** cancelamento do fluxo OAuth e retorno seguro à página `/signup`, validando que o formulário permanece acessível e funcional mesmo após uma tentativa de login social interrompida.
 
-> Assim como observado na Feature Publicar Eventos, esta suíte trata o redirecionamento correto para o provedor externo como critério de sucesso — sem tentar completar a autenticação de fato, já que isso está fora do controle da aplicação sob teste.
+> ⚠️ **Importante:** Assim como observado na Feature Publicar Eventos, esta suíte trata o redirecionamento correto para o provedor externo como critério de sucesso — sem tentar completar a autenticação de fato, já que isso está fora do controle da aplicação sob teste.
 
 ---
 
@@ -2764,7 +2761,7 @@ Avaliam a consistência da aplicação em três idiomas — Português, English 
 * **0044:** os placeholders dos campos mudam corretamente entre os três idiomas, incluindo a observação de que o campo "CPF/CNPJ" (`document`) pode não ser exibido nos idiomas EN/ES — um comportamento de negócio documentado, não assumido como erro;
 * **0045:** as mensagens de erro de validação também mudam de idioma corretamente, com verificação cruzada para garantir que mensagens do idioma anterior não permaneçam visíveis no DOM.
 
-> Esta é, de longe, a dimensão mais elaborada da suíte: nenhuma outra Feature testa 3 idiomas em paralelo através de 4 camadas diferentes (rótulos, placeholders, mensagens de erro, persistência). O nível de detalhe aqui — como a observação sobre o campo `document` desaparecer em outros idiomas — é o tipo de achado que só aparece quando o teste é desenhado para **descobrir** comportamento, não apenas confirmar uma expectativa fixa.
+> ⚠️ **Importante:**  Esta é, de longe, a dimensão mais elaborada da suíte: nenhuma outra Feature testa 3 idiomas em paralelo através de 4 camadas diferentes (rótulos, placeholders, mensagens de erro, persistência). O nível de detalhe aqui como a observação sobre o campo `document` desaparecer em outros idiomas é o tipo de achado que só aparece quando o teste é desenhado para **descobrir** comportamento, não apenas confirmar uma expectativa fixa.
 
 ---
 

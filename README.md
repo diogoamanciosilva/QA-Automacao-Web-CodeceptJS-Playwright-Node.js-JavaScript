@@ -25,7 +25,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [✅ Uso](#-uso)
 - [📁 Estrutura do repositório](#-estrutura-do-repositório)
 - [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
-- [🎯 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
+- [🏹 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
 - [🔭 Feature Explorar Eventos ](#-feature-explorar-eventos)
 - [🙋 Feature Suporte e Ajuda ](#-feature-suporte-e-ajuda)
 - [🏠 Feature Tela Inicial ](#-feature-tela-inicial)
@@ -467,7 +467,7 @@ Cada **Feature** possui um conjunto de cenários que cobre desde o caminho feliz
 
 ---
 
-## 🎯 Estratégia e cobertura de Testes 
+## 🏹 Estratégia e cobertura de Testes 
 
 
 **A suíte automatizada do FasTix reúne 586 testes distribuídos em 6 Features**, cobrindo toda a jornada do usuário na plataforma do primeiro acesso à compra de ingressos sob 17 dimensões de qualidade diferentes, não apenas validação funcional. 
@@ -478,7 +478,7 @@ A FasTix é uma plataforma de venda, distribuição e intermediação de ingress
 
 Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e operação em tempo real, o que torna qualquer falha silenciosa potencialmente cara seja em receita, confiança do produtor ou experiência do público na entrada do evento.
 
-### Distribuição da cobertura
+### 🎯 Distribuição da cobertura
 
 | Feature                     | Testes Automatizados | Papel na jornada |
 | ---------------------------- | --------------------: | --- |
@@ -492,7 +492,7 @@ Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e o
 
 > ⚠️ **Importante:** A distribuição não é uniforme por decisão, não por lacuna: Tela Inicial e Comprar Ingressos concentram o maior volume porque representam, respectivamente, o ponto de contato de praticamente todo usuário e o fluxo com impacto financeiro direto — qualquer regressão ali tem o maior raio de dano possível ao negócio.
 
-### 🎯 Abordagem técnica
+### 🔨 Abordagem técnica
 
 Cada Feature é testada sob um subconjunto relevante de 17 dimensões de qualidade:
 
@@ -529,7 +529,7 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 ---
 
-## 🎯 Suíte de Testes Automatizados 
+## ⌨️ Suíte de Testes Automatizados 
 
 > ⚠️ **Importante:** Este documento aplica as correções de coerência e padronização identificadas na revisão geral da suíte, tabelas de cenários corrigidas para coluna única, nomes de dimensão unificados entre título de seção e matriz, nível de heading padronizado (H2 para todas as seções de "Regressão" e "Matriz de cobertura") e legendas padronizadas em formato de tabela.
 

@@ -655,7 +655,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas da apli
 
 > **Observação:** E2E representa o **escopo da jornada**, e não uma categoria funcional isolada. Um mesmo cenário E2E também pode ser funcional, de navegação, de robustez ou de recuperação.
 
-### 🧭 Testes de Navegação
+### 🗺️ Testes de Navegação
 
 Validam a movimentação do usuário entre páginas, componentes, links, histórico do navegador e diferentes pontos de acesso.
 
@@ -683,7 +683,7 @@ Avaliam a presença, interação e comportamento dos principais componentes da i
 * **0062:** imagens;
 * **0070:** integridade dos elementos do footer.
 
-### 📱 Testes de Responsividade
+### 📐 Testes de Responsividade
 
 Avaliam o comportamento da aplicação em diferentes dimensões de viewport.
 
@@ -778,7 +778,7 @@ Verificam se os dados inseridos, pesquisados, retornados ou apresentados pela ap
 * **0061:** validação dos dados exibidos nos cards;
 * **0069:** filtros e resultados.
 
-### 🔐 Testes de Integridade
+### 🔑 Testes de Integridade
 
 Avaliam se os dados e componentes permanecem consistentes após diferentes operações.
 
@@ -827,7 +827,7 @@ Avaliam se elementos visuais permanecem íntegros após diferentes interações.
 * **0062:** validação da integridade das imagens;
 * **0070:** integridade visual do footer.
 
-### 🔄 Recuperação e Estado da Aplicação
+### 🔃 Recuperação e Estado da Aplicação
 
 Nos cenários analisados, existem testes relacionados à manutenção e recuperação do estado da aplicação após determinadas operações.
 
@@ -1020,7 +1020,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 
 > **Observação:** assim como na Feature Explorar Eventos, E2E representa o **escopo da jornada**, não uma categoria funcional isolada.
 
-### 🧭 Testes de Navegação
+### 🗺️ Testes de Navegação
 
 **Exemplos:**
 
@@ -1037,7 +1037,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0032:** indicação visual de foco;
 * **0059–0060:** integridade visual do footer.
 
-### 📱 Testes de Responsividade
+### 📐 Testes de Responsividade
 
 **Exemplos:**
 
@@ -1109,7 +1109,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0050:** integridade dos `href` de 10 links distintos (Instagram, Email, WhatsApp, iOS, Android, LinkedIn, X/Twitter, WebSolutionsFL);
 * **0069–0070:** schema de eventos do dataLayer e presença de metadados de SEO.
 
-### 🔐 Testes de Integridade
+### 🔑 Testes de Integridade
 
 **Exemplos:**
 
@@ -1146,7 +1146,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0049:** variação de botões/inputs durante scroll contínuo;
 * **0059–0060:** estrutura visual do footer, incluindo responsividade.
 
-### 🔄 Recuperação e Estado da Aplicação
+### 🔃 Recuperação e Estado da Aplicação
 
 **Exemplos:**
 
@@ -1155,7 +1155,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 
 > **Precisão técnica:** assim como destacado na feature de referência, esses cenários validam **recuperação/resiliência da interface**, não persistência de dados de negócio em backend — o formulário nunca é de fato submetido com sucesso em nenhum cenário desta suíte (o botão permanece desabilitado sem validação humana, cenário 0012).
 
-### 📊 Observabilidade e Analytics (dataLayer)
+### 📡 Observabilidade e Analytics (dataLayer)
 
 Avaliam se eventos de rastreamento e metadados da página seguem um contrato/schema esperado — categoria não presente na Feature Explorar Eventos.
 
@@ -1164,7 +1164,7 @@ Avaliam se eventos de rastreamento e metadados da página seguem um contrato/sch
 * **0068:** presença de eventos no `dataLayer` relacionados a "Suporte"/"contact" após o clique;
 * **0069:** validação de **schema completo** do evento `gtm.linkClick` (campos obrigatórios `gtm.elementText`, `gtm.elementUrl`, `gtm.triggers`), sequência esperada de eventos (`gtm.js` → `gtm.dom` → `gtm.load` → `gtm.linkClick` → `gtm.historyChange`), e ausência de eventos duplicados.
 
-### 🔍 Testes de SEO e Metadados
+### 🏷️ Testes de SEO e Metadados
 
 **Exemplos:**
 
@@ -1352,7 +1352,7 @@ Validam jornadas completas envolvendo diferentes componentes, páginas ou camada
 
 > **Observação:** E2E representa o **escopo da jornada**, e não uma categoria funcional isolada. Um mesmo cenário pode ser simultaneamente E2E, funcional, de navegação, de integridade ou de observabilidade.
 
-## 🧭 Testes de Navegação
+## 🗺️ Testes de Navegação
 
 Validam a movimentação do usuário entre páginas, componentes, links e diferentes pontos de acesso da aplicação.
 
@@ -1380,7 +1380,7 @@ Avaliam a presença, interação e comportamento dos principais componentes visu
 * **0056:** consistência dos links do footer;
 * **0063:** comportamento da interface quando as imagens não são carregadas.
 
-## 📱 Testes de Responsividade
+## 📐 Testes de Responsividade
 
 Avaliam o comportamento da Home em diferentes dimensões de viewport.
 
@@ -1423,7 +1423,7 @@ Avaliam o comportamento da aplicação em relação ao tempo de resposta e à ef
 
 A cobertura de Performance é pontual. Os cenários não caracterizam uma estratégia completa de load testing, stress de infraestrutura, throughput ou teste de múltiplos usuários concorrentes.
 
-## 🔄 Testes de Estabilidade
+## ⚖️ Testes de Estabilidade
 
 Avaliam se a aplicação permanece funcional após repetição de operações, múltiplas interações ou alterações de condições durante a execução.
 
@@ -1474,7 +1474,7 @@ Verificam se dados inseridos, retornados, apresentados ou utilizados pelos compo
 * **0057–0059:** validação dos resultados da pesquisa;
 * **0062:** validação da resposta da API de eventos.
 
-## 🔐 Testes de Integridade
+## 🔑 Testes de Integridade
 
 Avaliam se dados, componentes e estruturas permanecem consistentes após diferentes operações.
 
@@ -1531,7 +1531,7 @@ Avaliam se os elementos visuais permanecem consistentes após diferentes condiç
 * **0056:** consistência visual dos links do footer;
 * **0063:** comportamento visual da interface sem carregamento das imagens.
 
-## 🔄 Recuperação e Estado da Aplicação
+## 🔃 Recuperação e Estado da Aplicação
 
 Avaliam o comportamento da aplicação após atualização da página ou alteração de estado durante o fluxo.
 
@@ -1553,7 +1553,7 @@ Avaliam se ações relevantes do usuário geram eventos de rastreamento esperado
 
 A cobertura é pontual. O cenário demonstra a existência do evento relacionado à interação, mas não caracteriza uma validação completa de contrato do Analytics contendo todos os campos, tipos, valores e schemas possíveis.
 
-## 🔍 Testes de SEO e Metadados
+## 🏷️ Testes de SEO e Metadados
 
 Avaliam a presença e a estrutura dos principais metadados da página.
 
@@ -1806,7 +1806,7 @@ Assim como na Feature Explorar Eventos, todos os testes foram classificados por 
 
 ---
 
-## 🧭 Testes de Navegação
+## 🗺️ Testes de Navegação
 
 **Exemplos:**
 
@@ -1829,7 +1829,7 @@ Assim como na Feature Explorar Eventos, todos os testes foram classificados por 
 
 ---
 
-## 🔄 Testes de Estabilidade
+## ⚖️ Testes de Estabilidade
 
 **Exemplos:**
 
@@ -1881,7 +1881,7 @@ Esta Feature tem a cobertura de estresse mais extensa da suíte, com uma escalad
 
 ---
 
-## 🔐 Testes de Integridade
+## 🔑 Testes de Integridade
 
 **Exemplos:**
 
@@ -1901,7 +1901,7 @@ Esta Feature tem a cobertura de estresse mais extensa da suíte, com uma escalad
 
 ---
 
-## 🔄 Recuperação e Estado da Aplicação
+## 🔃 Recuperação e Estado da Aplicação
 
 **Exemplos:**
 
@@ -1910,7 +1910,7 @@ Esta Feature tem a cobertura de estresse mais extensa da suíte, com uma escalad
 
 ---
 
-## 🔗 Testes de Integração com Provedores Externos (dimensão nova nesta feature)
+## 🔌 Testes de Integração com Provedores Externos (dimensão nova nesta feature)
 
 Avaliam o comportamento da aplicação ao integrar com serviços de terceiros — autenticação social e geolocalização.
 
@@ -1933,7 +1933,7 @@ Avaliam o comportamento da aplicação ao integrar com serviços de terceiros �
 
 ---
 
-## 🔒 Testes de Controle de Acesso — RBAC (dimensão nova nesta feature)
+## 👥 Testes de Controle de Acesso — RBAC (dimensão nova nesta feature)
 
 Avaliam o sistema de papéis e permissões granulares por seção do evento — a área de maior complexidade de regras de negócio da suíte.
 
@@ -2207,7 +2207,7 @@ RCA / Bug Report
 
 ---
 
-## 🧭 Testes de Navegação
+## 🗺️ Testes de Navegação
 
 **Exemplos:**
 
@@ -2238,7 +2238,7 @@ RCA / Bug Report
 
 ---
 
-## 🔄 Testes de Estabilidade
+## ⚖️ Testes de Estabilidade
 
 **Exemplos:**
 
@@ -2327,7 +2327,7 @@ A Feature possui cenários específicos destinados à validação de comportamen
 
 ---
 
-## 🔐 Testes de Integridade
+## 🔑 Testes de Integridade
 
 **Exemplos:**
 
@@ -2359,7 +2359,7 @@ A Feature possui cenários específicos destinados à validação de comportamen
 
 ---
 
-## 🔄 Recuperação e Estado da Aplicação
+## 🔃 Recuperação e Estado da Aplicação
 
 **Exemplos:**
 
@@ -2622,7 +2622,7 @@ Assim como nas Features anteriores, todos os testes foram classificados por dime
 
 ---
 
-## 🧭 Testes de Navegação
+## 🗺️ Testes de Navegação
 
 **Exemplos:**
 
@@ -2651,7 +2651,7 @@ Assim como nas Features anteriores, todos os testes foram classificados por dime
 
 ---
 
-## 🔄 Testes de Estabilidade
+## ⚖️ Testes de Estabilidade
 
 **Exemplos:**
 
@@ -2696,7 +2696,7 @@ Assim como nas Features anteriores, todos os testes foram classificados por dime
 
 ---
 
-## 🔐 Testes de Integridade
+## 🔑 Testes de Integridade
 
 **Exemplos:**
 
@@ -2732,7 +2732,7 @@ Assim como nas Features anteriores, todos os testes foram classificados por dime
 
 ---
 
-## 🔄 Recuperação e Estado da Aplicação
+## 🔃 Recuperação e Estado da Aplicação
 
 **Exemplos:**
 
@@ -2742,7 +2742,7 @@ Assim como nas Features anteriores, todos os testes foram classificados por dime
 
 ---
 
-## 🔗 Testes de Integração com Provedores Externos
+## 🔌 Testes de Integração com Provedores Externos
 
 **Exemplos:**
 

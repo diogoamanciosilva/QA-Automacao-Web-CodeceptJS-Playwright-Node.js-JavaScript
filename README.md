@@ -529,7 +529,7 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 ---
 
-# Suíte de Testes Automatizados 
+# 🚀 Suíte de Testes Automatizados 
 
 > ⚠️ **Importante:** Este documento aplica as correções de coerência e padronização identificadas na revisão geral da suíte, tabelas de cenários corrigidas para coluna única, nomes de dimensão unificados entre título de seção e matriz, nível de heading padronizado (H2 para todas as seções de "Regressão" e "Matriz de cobertura") e legendas padronizadas em formato de tabela.
 

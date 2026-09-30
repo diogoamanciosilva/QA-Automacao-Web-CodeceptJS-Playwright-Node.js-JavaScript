@@ -468,7 +468,6 @@ Cada Feature possui um conjunto de cenários que cobre desde o caminho feliz at�
 
 ---
 
-
 ## 🎯 Estratégia e cobertura de Testes 
 
 
@@ -2850,7 +2849,7 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-01** | A busca de eventos por **local** não retorna os eventos associados ao local pesquisado. Ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, mesmo existindo eventos associados ao local, o sistema exibe a mensagem **"Nenhum evento encontrado"**. | **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
+| **BUG-01** | A busca de eventos por **local** não retorna os eventos associados ao local pesquisado. Ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, mesmo existindo eventos associados ao local, o sistema exibe a mensagem **"Nenhum evento encontrado"**. | 🔺 **Alta** 🔺| Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
 
 
 **Vídeo:**

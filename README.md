@@ -492,7 +492,7 @@ Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e o
 
 > ⚠️ **Importante:** A distribuição não é uniforme por decisão, não por lacuna: Tela Inicial e Comprar Ingressos concentram o maior volume porque representam, respectivamente, o ponto de contato de praticamente todo usuário e o fluxo com impacto financeiro direto — qualquer regressão ali tem o maior raio de dano possível ao negócio.
 
-### Abordagem técnica
+### 🎯 Abordagem técnica
 
 Cada Feature é testada sob um subconjunto relevante de 17 dimensões de qualidade:
 
@@ -529,7 +529,7 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 ---
 
-# 🚀 Suíte de Testes Automatizados 
+## 🎯 Suíte de Testes Automatizados 
 
 > ⚠️ **Importante:** Este documento aplica as correções de coerência e padronização identificadas na revisão geral da suíte, tabelas de cenários corrigidas para coluna única, nomes de dimensão unificados entre título de seção e matriz, nível de heading padronizado (H2 para todas as seções de "Regressão" e "Matriz de cobertura") e legendas padronizadas em formato de tabela.
 

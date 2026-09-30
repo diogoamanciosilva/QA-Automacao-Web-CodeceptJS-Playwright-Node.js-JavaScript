@@ -2852,7 +2852,7 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 | **BUG-01** | A busca de eventos por **local** não retorna os eventos associados ao local pesquisado. Ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, mesmo existindo eventos associados ao local, o sistema exibe a mensagem **"Nenhum evento encontrado"**. | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
 
 
-**Vídeo:**
+🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 
@@ -2862,7 +2862,7 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 | :--- | :--- | :---: | :--- | :--- |
 | **BUG-02** | O campo **"Nome"** da página **Suporte e Ajuda** não apresenta comportamento adequado ao receber uma quantidade de caracteres superior ao limite esperado. O cenário exige que o sistema limite o conteúdo, informe o limite ao usuário e preserve exatamente o texto truncado permitido. | 🔸 **Média** | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo. | `Cenário 0036` — Feature **Suporte e Ajuda** |
 
-**Vídeo:**
+🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 
@@ -2872,7 +2872,7 @@ https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 | :--- | :--- | :---: | :--- | :--- |
 | **BUG-03** | O campo **E-mail** da etapa de pagamento via PIX permite a inserção de até **510 caracteres**, ultrapassando o limite de 255 caracteres esperado para o campo. Ao tentar prosseguir, o sistema apresenta as mensagens **"Formato inválido"** e **"Preencha todos os dados para continuar"**, em vez de impedir ou informar previamente o excesso de caracteres. | 🔸 **Média** | Acessar um evento → selecionar ingressos → clicar em **"Comprar ingressos"** → realizar login → selecionar **PIX** → informar um e-mail com mais de 255 caracteres → clicar em **"Pagar"**. | `Cenário 000000089` — Feature **Comprar Ingressos** |
 
-**Vídeo:**
+🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
@@ -2881,7 +2881,7 @@ https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 | :--- | :--- | :---: | :--- | :--- |
 | **BUG-04** | Ao clicar repetidamente no botão **"Copiar chave"** do PIX, o sistema gera **múltiplos toasts de notificação** com a mesma mensagem, causando duplicidade visual de notificações e comportamento inconsistente da interface. | 🔹 **Baixa** | Acessar o pagamento via PIX → preencher o e-mail → clicar em **"Pagar"** → clicar repetidamente em **"Copiar chave"** → observar os toasts exibidos no topo da página. | `Cenário 0000000101` — Feature **Comprar Ingressos** |
 
-**Vídeo:**
+🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 
@@ -2892,7 +2892,7 @@ https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 | **BUG-05** | Ao retornar para a aba da compra de ingressos após abrir uma nova aba do navegador, o sistema pode **duplicar o modal de pagamento**, incluindo as opções de pagamento e os botões **"Pagar"**. Ao interagir com o segundo modal, pode ser exibida a mensagem **"Ocorreu um erro. Por favor, tente novamente mais tarde."** O comportamento não possui tempo fixo de reprodução e pode exigir a repetição do fluxo. | **Alta** | Acessar a compra de ingressos → avançar até a etapa de pagamento → permanecer na página → abrir uma nova aba → permanecer alguns segundos → retornar à aba da compra → verificar se o modal foi duplicado → interagir com o segundo modal. | `Cenário 0000000127` — Feature **Comprar Ingressos** |
 
 
-**Vídeo:**
+🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 
@@ -2903,7 +2903,7 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 | **BUG-06** | O campo **"Template"** do modal **"Permissões de Acesso"** não preserva a seleção realizada quando uma permissão de seção é alterada. Após selecionar, por exemplo, o template **"Marketing"** e alterar a permissão de uma seção, o valor selecionado é substituído por **"Templates"**, fazendo com que a configuração previamente escolhida não seja mantida. | **Média** | Acessar **Publicar Eventos** → criar/acessar um evento → acessar **"Gerenciar Equipes"** → abrir **"Permissões de Acesso"** → selecionar um template, como **"Marketing"** → alterar uma permissão de seção → verificar o valor exibido no campo **"Template"**. | `Cenário 000097` — Feature **Publicar Eventos** |
 
 
-**Vídeo:**
+🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 
@@ -2912,7 +2912,7 @@ https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 | :--- | :--- | :---: | :--- | :--- |
 | **ISSUE-07** | O ícone do Twitter presente no rodapé (*footer*) do sistema encontra-se desatualizado, utilizando a identidade visual antiga da rede social. | **Baixa** | Acessar a página → rolar até o rodapé (*footer*) → localizar o ícone do Twitter na seção de redes sociais → verificar a imagem do ícone exibido. | `Cenário 00028` — Feature **Vídeo** |
 
-**Vídeo:**
+🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/72b551e7-ced7-49f5-9f4d-930eee71736e
 
@@ -2954,7 +2954,7 @@ Essa visão consolidada evidencia que **a Feature Comprar Ingressos concentra tr
 
 Em relação às causas raiz, os problemas estão associados principalmente a **validação de dados, gerenciamento de estado e controle de componentes da interface**. O BUG-02 e o BUG-03 apresentam um padrão relacionado à ausência ou insuficiência de validação de limites de entrada, enquanto o BUG-05 e o BUG-06 envolvem problemas relacionados à preservação do estado da aplicação.
 
-### 🔗 Conclusão
+### 🛎️ Conclusão
 
 A análise demonstra que os bugs não estão concentrados exclusivamente em problemas visuais. O conjunto apresenta diferentes padrões técnicos, envolvendo **processamento de dados de busca, validação de entradas, gerenciamento de notificações e persistência de estado**.
 

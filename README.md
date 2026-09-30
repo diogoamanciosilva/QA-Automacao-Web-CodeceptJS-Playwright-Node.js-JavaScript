@@ -104,7 +104,7 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 ---
 
-## 📝 Tipos de teste realizados na suíte
+## 📋 Tipos de teste realizados na suíte
 
 | Tipos de Testes |
 | ------------------------- |
@@ -3333,7 +3333,7 @@ Os cenários de login social (Google/Apple) evidenciaram que, em automação, bl
 
 Alguns cenários desta suíte aceitam mais de um resultado como válido — o formulário de Criar Conta pode ou não preservar dados após refresh, e ambos os comportamentos são aceitáveis desde que o estado final seja consistente. Esse padrão, aplicado nos cenários 0035 e 0047 da Feature Criar Conta, representa uma abordagem mais madura do que afirmar "o campo deve estar vazio" sem confirmar qual é o comportamento de negócio pretendido. Testes que documentam o comportamento atual sem presumir uma única resposta correta tendem a ser mais estáveis ao longo do tempo e geram descobertas mais úteis do que testes que apenas confirmam o que já se sabe.
 
-## ✅ Contato
+## 📬 Contato
 
  
 | LinkedIn                   |  https://www.linkedin.com/in/diogoamanciosilva/ |

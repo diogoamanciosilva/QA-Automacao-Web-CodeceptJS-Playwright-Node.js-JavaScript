@@ -744,7 +744,7 @@ Submetem determinados componentes a operações repetitivas ou intensivas para v
 * **0054:** operações repetitivas sobre o carrossel;
 * **0058:** entradas extremas.
 
-> **Importante:** esses cenários caracterizam stress/robustez de componentes da aplicação. Eles não devem ser apresentados como um teste formal de **load/performance**, pois não simulam múltiplos usuários ou carga concorrente de infraestrutura.
+> ⚠️ **Importante:**  Esses cenários caracterizam stress/robustez de componentes da aplicação. Eles não devem ser apresentados como um teste formal de **load/performance**, pois não simulam múltiplos usuários ou carga concorrente de infraestrutura.
 
 ### 🛡️ Testes de Robustez
 
@@ -1016,7 +1016,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0052–0055:** navegação para páginas externas/internas → retorno à página de Suporte, incluindo fluxos de Entrar e Criar Conta;
 * **0073:** comparação entre a renderização vista pelo browser e a servida a um crawler headless — atravessa camada de frontend e de servidor.
 
-> **Observação:** assim como na Feature Explorar Eventos, E2E representa o **escopo da jornada**, não uma categoria funcional isolada.
+> ⚠️ **Importante observação:** Assim como na Feature Explorar Eventos, E2E representa o **Escopo da jornada**, não uma categoria funcional isolada.
 
 ### 🗺️ Testes de Navegação
 
@@ -1060,7 +1060,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0063:** métricas via Navigation Timing API (`domContentLoaded`, `TTFB`, `responseTime`), com thresholds definidos;
 * **0064:** comportamento de lazy loading do footer.
 
-> Assim como na feature de referência, a cobertura de performance é **pontual**, focada em tempo de navegação e carregamento — não caracteriza uma estratégia completa de load/stress de infraestrutura.
+> ⚠️ **Importante:** Assim como na feature de referência, a cobertura de performance é **pontual**, focada em tempo de navegação e carregamento — não caracteriza uma estratégia completa de load/stress de infraestrutura.
 
 ### 🔄 Testes de Estabilidade
 
@@ -1084,7 +1084,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0048:** 10 ciclos de clique simulado nos botões de contato (com neutralização de `href` para evitar navegação real);
 * **0058:** 5 loops × 4 cards = 20 interações de clique.
 
-> **Importante:** assim como na Explorar Eventos, esses cenários caracterizam stress/robustez de componentes da página — não simulam carga concorrente de múltiplos usuários nem substituem uma ferramenta dedicada de load testing.
+> ⚠️ **Importante:** Assim como na Explorar Eventos, esses cenários caracterizam stress/robustez de componentes da página — não simulam carga concorrente de múltiplos usuários nem substituem uma ferramenta dedicada de load testing.
 
 ### 🛡️ Testes de Robustez
 
@@ -1125,7 +1125,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0053–0054:** navegação e retorno via menu superior e via botões Entrar/Criar Conta;
 * **0055:** combinação de todos os mecanismos de navegação (voltar do navegador + menu + Entrar/Criar Conta) em um único fluxo.
 
-> ⚠️ **Importante:** Assim como na feature de referência, essa categoria trata de **diferentes mecanismos de navegação** dentro do mesmo navegador — não caracteriza uma estratégia de teste cross-browser.
+> ⚠️ **Importante:** Assim como na feature de referência, essa categoria trata de **diferentes mecanismos de navegação** dentro do mesmo navegador não caracteriza uma estratégia de teste cross-browser.
 
 ### 🚨 Testes de Monitoramento de Erros
 
@@ -1304,7 +1304,7 @@ RCA / Bug Report
 | 0064 - Validar disparo de evento de Analytics ao clicar em "Explorar Eventos"                    |
 | **Total: 64 cenários**                                                                           |
 
-Todos os testes foram classificados considerando diferentes dimensões de teste. Essa abordagem evita tratar conceitos distintos como E2E, Regressão, Acessibilidade, Estresse, Segurança e SEO como se fossem categorias equivalentes.
+> ⚠️ **Importante:** Todos os testes foram classificados considerando diferentes dimensões de teste. Essa abordagem evita tratar conceitos distintos como E2E, Regressão, Acessibilidade, Estresse, Segurança e SEO como se fossem categorias equivalentes.
 
 ## 📌 Dimensões de cobertura
 
@@ -1347,8 +1347,8 @@ Validam jornadas completas envolvendo diferentes componentes, páginas ou camada
 * **0057:** Home → busca → identificação do evento → acesso ao evento;
 * **0062:** Home → carregamento de eventos → comunicação com a API → disponibilização dos dados na interface;
 * **0064:** clique em "Explorar Eventos" → navegação → registro do evento de Analytics.
-
-> **Observação:** E2E representa o **escopo da jornada**, e não uma categoria funcional isolada. Um mesmo cenário pode ser simultaneamente E2E, funcional, de navegação, de integridade ou de observabilidade.
+* 
+> ⚠️ **Importante observação:** E2E representa o **escopo da jornada**, e não uma categoria funcional isolada. Um mesmo cenário pode ser simultaneamente E2E, funcional, de navegação, de integridade ou de observabilidade.
 
 ## 🗺️ Testes de Navegação
 
@@ -1444,7 +1444,7 @@ Submetem componentes ou funcionalidades a operações repetitivas ou intensivas 
 * **0016:** múltiplas navegações consecutivas para esquerda e direita;
 * **0046:** múltiplas navegações consecutivas no carrossel.
 
-> ⚠️ **Importante:**  esses cenários representam estresse de componentes e interações da aplicação. Não devem ser apresentados como testes formais de carga ou performance de infraestrutura, pois não simulam múltiplos usuários ou carga concorrente.
+> ⚠️ **Importante:**  Esses cenários representam estresse de componentes e interações da aplicação. Não devem ser apresentados como testes formais de carga ou performance de infraestrutura, pois não simulam múltiplos usuários ou carga concorrente.
 
 ## 🛡️ Testes de Robustez
 
@@ -1504,7 +1504,7 @@ Portanto:
 | **Compatibilidade de Navegação** | 🔴 Não coberta |
 | **Cross-Browser**                | 🔴 Não coberta |
 
-> ⚠️ **Importante:** **Precisão técnica:** Compatibilidade de Navegação e Cross-Browser são dimensões diferentes. A utilização de diferentes mecanismos de interação, como teclado, cliques, abas ou resoluções, não comprova compatibilidade entre Chrome, Edge, Firefox ou Safari.
+> ⚠️ **Importante precisão técnica:** Compatibilidade de Navegação e Cross-Browser são dimensões diferentes. A utilização de diferentes mecanismos de interação, como teclado, cliques, abas ou resoluções, não comprova compatibilidade entre Chrome, Edge, Firefox ou Safari.
 
 ## 🚨 Testes de Monitoramento de Erros
 
@@ -1515,7 +1515,7 @@ Monitoram sinais de falha durante a execução e verificam se erros técnicos n�
 * **0054:** validação da ausência de mensagens técnicas ao acessar uma URL inexistente;
 * **0061:** monitoramento de erros do console e de respostas de rede com status HTTP ≥ 500.
 
-> O cenário **0037** não deve ser classificado como Monitoramento de Erros, pois seu objetivo está relacionado à estrutura, landmarks e atributos da Home.
+> ⚠️ **Importante:** O cenário **0037** não deve ser classificado como Monitoramento de Erros, pois seu objetivo está relacionado à estrutura, landmarks e atributos da Home.
 
 ## 🎨 Testes de Integridade Visual
 
@@ -1539,7 +1539,7 @@ Avaliam o comportamento da aplicação após atualização da página ou altera�
 
 O cenário verifica se a preferência de idioma permanece após o refresh ou se a aplicação retorna ao idioma padrão.
 
-> ⚠️ **Importante:**  **Precisão técnica:** esse cenário demonstra comportamento de estado/preferência após reload, mas não comprova, isoladamente, persistência em banco de dados, sessão, cookie ou armazenamento local.
+> ⚠️ **Importante precisão técnica:** Esse cenário demonstra comportamento de estado/preferência após reload, mas não comprova, isoladamente, persistência em banco de dados, sessão, cookie ou armazenamento local.
 
 ## 🔍 Observabilidade e Contrato — Analytics
 
@@ -1800,7 +1800,7 @@ Assim como na Feature Explorar Eventos, todos os testes foram classificados por 
 * **0064, 0066:** preenchimento completo dos três campos de data/hora em sequência;
 * **0083–0098:** criação de equipe → adicionar membro → configurar controle de acesso → validar estado final — a jornada mais longa da suíte, atravessando 4 sub-fluxos distintos.
 
-> ⚠️ **Importante:**  **Observação:** assim como na feature de referência, E2E representa o **escopo da jornada**, não uma categoria isolada.
+> ⚠️ **Importante observação:** Assim como na Feature de referência, E2E representa o **escopo da jornada**, não uma categoria isolada.
 
 ---
 
@@ -1852,7 +1852,7 @@ Esta Feature tem a cobertura de estresse mais extensa da suíte, com uma escalad
 * **0072:** estresse multiusuário com 3 sessões `Playwright` paralelas;
 * **0096–0097:** estresse de alteração de permissões (5 e 2 ciclos completos, cobrindo múltiplas seções e perfis).
 
-> ⚠️ **Importante:** assim como na feature de referência, esses cenários caracterizam robustez de componentes sob uso intensivo — não substituem uma ferramenta dedicada de load testing com carga real de múltiplos usuários de produção (com exceção do cenário 0072, que é o único desta suíte a usar sessões de browser genuinamente paralelas via `session()`).
+> ⚠️ **Importante:** Assim como na feature de referência, esses cenários caracterizam robustez de componentes sob uso intensivo não substituem uma ferramenta dedicada de load testing com carga real de múltiplos usuários de produção (com exceção do cenário 0072, que é o único desta suíte a usar sessões de browser genuinamente paralelas via `session()`).
 
 ---
 
@@ -1918,7 +1918,7 @@ Avaliam o comportamento da aplicação ao integrar com serviços de terceiros �
 * **0022–0035:** integração com o autocomplete do Google Places, incluindo casos de entrada sem correspondência;
 * **0038–0040:** iframe do Google Maps incorporado, com verificação condicional de controles (o teste se adapta caso um controle não esteja disponível na configuração atual do mapa).
 
-> ⚠️ **Importante: Observação técnica** os cenários 0003 e 0004 são particularmente sofisticados do ponto de vista de QA — eles reconhecem que a automação de login de terceiros (Google/Apple) é frequentemente **bloqueada intencionalmente** por essas plataformas como proteção antibot, e tratam esse bloqueio como confirmação de que a integração está funcionando (a aplicação redirecionou corretamente para o provedor), não como um erro do fluxo.
+> ⚠️ **Importante observação técnica** Os cenários 0003 e 0004 são particularmente sofisticados do ponto de vista de QA — eles reconhecem que a automação de login de terceiros (Google/Apple) é frequentemente **bloqueada intencionalmente** por essas plataformas como proteção antibot, e tratam esse bloqueio como confirmação de que a integração está funcionando (a aplicação redirecionou corretamente para o provedor), não como um erro do fluxo.
 
 ---
 
@@ -1942,7 +1942,7 @@ Avaliam o sistema de papéis e permissões granulares por seção do evento — 
 * **0095:** aplicação do fluxo completo de 4 níveis de permissão a **todas** as seções disponíveis do evento, descobertas dinamicamente via DOM em vez de hardcoded;
 * **0096–0098:** estresse e validação cruzada entre múltiplos perfis (Agente, Marketing, Staff, Acesso Total) e todas as seções, com verificação de estado final e fechamento correto do modal.
 
-> Esta é a dimensão mais elaborada tecnicamente da suíte: os cenários usam retry automático (até 3 tentativas por seleção), descoberta dinâmica de seções via `grabTextFromAll`, e validação de estado final iterando sobre todas as combinações perfil × seção — um padrão de teste orientado a dados (data-driven), não apenas scripted.
+> ⚠️ **Importante:** Esta é a dimensão mais elaborada tecnicamente da suíte: os cenários usam retry automático (até 3 tentativas por seleção), descoberta dinâmica de seções via `grabTextFromAll`, e validação de estado final iterando sobre todas as combinações perfil × seção — um padrão de teste orientado a dados (data-driven), não apenas scripted.
 
 ---
 
@@ -2015,7 +2015,7 @@ RCA / Bug Report
 
 ---
 
-> ⚠️ **Importante:** **Observações finais comparando com as outras Features:**
+> ⚠️ **Importante observações finais comparando com as outras Features:**
 
 1. **Maior complexidade de regras de negócio da suíte**: Diferente das Features anteriores, esta lida com dependências entre campos (ex: cenário 0054 valida que "Encerrar Vendas" não pode ser anterior a datas já definidas) e com um sistema de permissões multidimensional (perfil × seção × nível de acesso).
 2. **Uso extensivo de dados dinâmicos**: Vários cenários (0095, 0097, 0098) descobrem as seções disponíveis via DOM em tempo de execução em vez de usar uma lista fixa, isso torna os testes mais resilientes a mudanças de conteúdo, mas também significa que a suíte depende da estrutura do DOM permanecer semanticamente consistente (`label`/`for`).
@@ -2321,7 +2321,7 @@ A Feature possui cenários específicos destinados à validação de comportamen
 - **0118:** validação da persistência indevida do checkout após logout;
 - **0121:** validação da expiração do checkout em múltiplas abas.
 
-> **Observação:** esses cenários demonstram **validações de segurança específicas**. Eles não representam uma auditoria completa de segurança, pentest ou avaliação abrangente de vulnerabilidades.
+> ⚠️ **Importante observação:** Esses cenários demonstram **validações de segurança específicas**. Eles não representam uma auditoria completa de segurança, pentest ou avaliação abrangente de vulnerabilidades.
 
 ---
 
@@ -2406,7 +2406,7 @@ A Feature possui uma cobertura **pontual** relacionada ao tempo de processamento
 
 - **0106:** validação do tempo de 5 segundos para exibição do QR Code PIX.
 
-> **Observação:** esse cenário representa uma validação temporal específica do fluxo PIX. Não caracteriza, isoladamente, uma suíte completa de **Testes de Performance**, pois não há cenários abrangentes de throughput, latência, carga, concorrência de usuários ou consumo de recursos.
+> ⚠️ **Importante observação:** Esse cenário representa uma validação temporal específica do fluxo PIX. Não caracteriza, isoladamente, uma suíte completa de **Testes de Performance**, pois não há cenários abrangentes de throughput, latência, carga, concorrência de usuários ou consumo de recursos.
 
 ---
 
@@ -2423,7 +2423,7 @@ A Feature apresenta cobertura de compatibilidade relacionada ao comportamento do
 - **0121:** expiração do checkout em múltiplas abas simultaneamente;
 - **0126–0127:** alternância entre abas e retorno ao checkout.
 
-> ⚠️ **Importante observação:** a cobertura acima trata de **navegação, histórico e múltiplas abas**. Não foram identificados cenários específicos de **Cross-Browser**, portanto não é possível considerar Chrome, Edge, Firefox e Safari como cobertos por esta Feature.
+> ⚠️ **Importante observação:** A cobertura acima trata de **navegação, histórico e múltiplas abas**. Não foram identificados cenários específicos de **Cross-Browser**, portanto não é possível considerar Chrome, Edge, Firefox e Safari como cobertos por esta Feature.
 
 ---
 
@@ -2576,7 +2576,7 @@ Portanto, os GAPs identificados nos **127 cenários analisados** devem ser inter
 | 0052 - Validar retorno seguro após cancelamento do login via Apple |
 | **Total** | **52** |
 
-Assim como nas Features anteriores, todos os testes foram classificados por dimensão, evitando tratar conceitos distintos como categorias equivalentes. Esta Feature introduz **uma dimensão específica de grande profundidade** — Internacionalização — e reutiliza a dimensão de Integração com Provedores Externos já vista na Publicar Eventos, mas aplicada a um fluxo diferente (cadastro, não login social completo).
+Assim como nas Features anteriores, todos os testes foram classificados por dimensão, evitando tratar conceitos distintos como categorias equivalentes. Esta Feature introduz **uma dimensão específica de grande profundidade**, uma internacionalização e reutiliza a dimensão de Integração com Provedores Externos já vista na Publicar Eventos, mas aplicada a um fluxo diferente (cadastro, não login social completo).
 
 ### 📌 Dimensões de cobertura
 
@@ -2666,7 +2666,7 @@ Assim como nas Features anteriores, todos os testes foram classificados por dime
 * **0041:** 5 variações de senha inválida (1 a 5 caracteres) em loop, cada uma reiniciando o formulário;
 * **0049:** 5 ciclos de hard refresh consecutivos.
 
-> **Importante:** o cenário 0018 é o teste de maior volume de dados desta suíte — mais de 200 iterações sobre uma lista real de códigos de país, incluindo tratamento de erro e reabertura do dropdown caso a busca não responda de primeira.
+> ⚠️ **Importante:** O cenário 0018 é o teste de maior volume de dados desta suíte — mais de 200 iterações sobre uma lista real de códigos de país, incluindo tratamento de erro e reabertura do dropdown caso a busca não responda de primeira.
 
 ---
 
@@ -2744,7 +2744,7 @@ Assim como nas Features anteriores, todos os testes foram classificados por dime
 * **0012–0013:** início do fluxo de login social (Google e Apple), validando o redirecionamento para o domínio correto do provedor (`accounts.google.com`, `appleid.apple.com`);
 * **0051–0052:** cancelamento do fluxo OAuth e retorno seguro à página `/signup`, validando que o formulário permanece acessível e funcional mesmo após uma tentativa de login social interrompida.
 
-> ⚠️ **Importante:** Assim como observado na Feature Publicar Eventos, esta suíte trata o redirecionamento correto para o provedor externo como critério de sucesso — sem tentar completar a autenticação de fato, já que isso está fora do controle da aplicação sob teste.
+> ⚠️ **Importante:** Assim como observado na Feature Publicar Eventos, esta suíte trata o redirecionamento correto para o provedor externo como critério de sucesso sem tentar completar a autenticação de fato, já que isso está fora do controle da aplicação sob teste.
 
 ---
 
@@ -2956,7 +2956,7 @@ A análise demonstra que os bugs não estão concentrados exclusivamente em prob
 
 A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por concentrar **três ocorrências distintas**, incluindo um problema relacionado ao estado do checkout após alternância de abas. Já os BUG-02 e BUG-03 indicam uma oportunidade de fortalecer as validações de limites de entrada em diferentes pontos da plataforma.
 
-> **Nota de RCA:** as causas apresentadas neste board representam a **causa raiz provável/inferida a partir dos comportamentos observados nos cenários de teste**. A confirmação da causa raiz técnica exigiria análise do código, logs, arquitetura ou evidências adicionais de implementação.
+> **Nota de RCA:** As causas apresentadas neste board representam a **causa raiz provável/inferida a partir dos comportamentos observados nos cenários de teste**. A confirmação da causa raiz técnica exigiria análise do código, logs, arquitetura ou evidências adicionais de implementação.
 
 
 ---
@@ -3048,7 +3048,7 @@ Gerenciamento de estado     → BUG-05 e BUG-06
 Controle de componentes     → BUG-04
 ```
 
-É importante destacar que essas classificações representam **causas raiz prováveis/inferidas a partir dos comportamentos observados**, e não causas técnicas definitivamente comprovadas. A confirmação exigiria análise de código, logs, arquitetura ou evidências adicionais de implementação.
+> ⚠️ **Importante:** É importante destacar que essas classificações representam **causas raiz prováveis/inferidas a partir dos comportamentos observados**, e não causas técnicas definitivamente comprovadas. A confirmação exigiria análise de código, logs, arquitetura ou evidências adicionais de implementação.
 
 ### 📈 Conclusão
 
@@ -3163,7 +3163,7 @@ A distribuição demonstra que **a maior concentração de ocorrências está re
 
 * **Nenhuma das três causas deve ser considerada tecnicamente confirmada apenas com base nos testes funcionais.** Para transformar essas hipóteses em uma RCA definitiva, seria necessário complementar a investigação com código-fonte, logs, arquitetura, traces, comportamento das APIs e análise do fluxo de estado da aplicação.
 
-Dessa maneira, a análise evita tratar cada bug como um caso isolado e direciona a investigação para **padrões sistêmicos de validação, gerenciamento de estado e controle de componentes**, mantendo a distinção entre **comportamento observado, hipótese de causa e causa raiz tecnicamente comprovada**.
+> ⚠️ **Importante:** Dessa maneira, a análise evita tratar cada bug como um caso isolado e direciona a investigação para **padrões sistêmicos de validação, gerenciamento de estado e controle de componentes**, mantendo a distinção entre **comportamento observado, hipótese de causa e causa raiz tecnicamente comprovada**.
 
 ---
 
@@ -3182,7 +3182,7 @@ Essa visão consolidada evidencia que **a Feature Comprar Ingressos concentra tr
 
 Em relação às causas raiz, diferente do exemplo de referência (onde a mesma causa atravessava múltiplas Features), aqui **cada causa raiz está associada a um padrão técnico distinto**: validação de entrada, gerenciamento de estado e controle de componentes. Os BUG-02 e BUG-03 apresentam um padrão comum de ausência de validação de limites, enquanto BUG-05 e BUG-06 envolvem problemas de preservação de estado em contextos diferentes da aplicação.
 
-> **Nota de RCA:** as causas raiz apresentadas representam a **hipótese provável inferida a partir dos comportamentos observados nos cenários de teste**. A confirmação técnica exigiria análise de código-fonte, logs, arquitetura e traces da aplicação.
+> **Nota de RCA:** As causas raiz apresentadas representam a **hipótese provável inferida a partir dos comportamentos observados nos cenários de teste**. A confirmação técnica exigiria análise de código-fonte, logs, arquitetura e traces da aplicação.
 
 ---
 
@@ -3207,11 +3207,11 @@ A Feature **Comprar Ingressos** concentra metade dos bugs identificados. Os trê
 
 A análise demonstra que os bugs não estão concentrados exclusivamente em problemas visuais nem em uma única camada da aplicação. O conjunto apresenta diferentes padrões técnicos envolvendo **processamento de dados de busca, validação de entradas, gerenciamento de notificações e preservação de estado**, confirmando o que a análise de causa raiz já havia sinalizado.
 
-A Feature **Comprar Ingressos** merece atenção especial na evolução da cobertura de testes, por concentrar **três ocorrências distintas** — incluindo um problema de alta severidade relacionado ao estado do checkout após alternância de abas (BUG-05). Já os BUG-02 e BUG-03 indicam uma oportunidade transversal de fortalecer as validações de limites de entrada em diferentes pontos da plataforma, independentemente da Feature onde se manifestam.
+A Feature **Comprar Ingressos** merece atenção especial na evolução da cobertura de testes, por concentrar **três ocorrências distintas** incluindo um problema de alta severidade relacionado ao estado do checkout após alternância de abas (BUG-05). Já os BUG-02 e BUG-03 indicam uma oportunidade transversal de fortalecer as validações de limites de entrada em diferentes pontos da plataforma, independentemente da Feature onde se manifestam.
 
 ---
 
-### Análise da Relação entre os Gráficos
+### 💭 Análise da Relação entre os Gráficos
 
 Os gráficos, analisados em conjunto, expõem duas dimensões complementares da estratégia de testes:
 

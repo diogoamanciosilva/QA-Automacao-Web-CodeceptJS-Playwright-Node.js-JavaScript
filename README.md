@@ -1,4 +1,3 @@
-### EM ATUALIZAÇÃO...
 
 ## 🤖 Automação Web CodeceptJS - Playwright - Node.js + JavaScript (FasTix)
 

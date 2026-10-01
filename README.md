@@ -3075,7 +3075,8 @@ Ao abrir a página com as opções de pagamento da FasTix e acessar uma nova aba
 
 ## 📢 Feature Publicar Eventos
 
-<img width="862" height="200" alt="image" src="https://github.com/user-attachments/assets/45a72529-57de-4633-b760-bc33f900eeb7" />
+<img width="1892" height="965" alt="image" src="https://github.com/user-attachments/assets/bbdd21bf-7342-4fe3-ab4e-70d8e005caa0" />
+
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |

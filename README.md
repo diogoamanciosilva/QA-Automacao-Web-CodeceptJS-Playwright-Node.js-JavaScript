@@ -2860,10 +2860,10 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 ## 📸 **Print:**
 
 
-**01**
+**01:**
 <img width="1185" height="635" alt="image" src="https://github.com/user-attachments/assets/171a1f8d-c30f-4d5f-ab58-74acdde421ee" />
 
-**02**
+**02:**
 <img width="1193" height="652" alt="image" src="https://github.com/user-attachments/assets/19b43547-95ad-4dea-8d8d-0a1cd872dce9" />
 
 ## ❗**Resultado Esperado:**
@@ -2881,7 +2881,7 @@ Exemplo de eventos cadastrados para o local, Fabrique:
 | :--- | :--- | :---: | :--- | :--- |
 | **BUG-02** | O campo **"Nome"** da página **Suporte e Ajuda** não apresenta comportamento adequado ao receber uma quantidade de caracteres superior ao limite esperado. O cenário exige que o sistema limite o conteúdo, informe o limite ao usuário e preserve exatamente o texto truncado permitido. | 🔸 **Média** | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo. | `Cenário 0036` — Feature **Suporte e Ajuda** |
 
-🎬 **Vídeo:**
+## 🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 
@@ -2889,10 +2889,10 @@ https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 ## 📸 **Print:**
 
 
-**01**
+**01:**
 <img width="1190" height="701" alt="image" src="https://github.com/user-attachments/assets/a7638912-5ba4-4c0f-aaf4-9f72df8e905e" />
 
-**02**
+**02:**
 <img width="1187" height="713" alt="image" src="https://github.com/user-attachments/assets/5b8252e8-2bb7-46e2-8fa3-948ddbe74d4e" />
 
 

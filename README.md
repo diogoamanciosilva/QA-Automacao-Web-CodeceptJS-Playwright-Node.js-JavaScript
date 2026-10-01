@@ -2855,7 +2855,7 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 
 https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 
-## 📸 **Print**
+## 📸 **Print:**
 
 * **Ao pesquisar por "Fabrique", é retornado a mensagem: Nenhum evento encontrado:**
 

@@ -2925,11 +2925,11 @@ https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
 ## 📸 **Print:**
 
-* **01**:
+* **01 - Ao acessar a opção de pagamento via PIX e selecionar o campo E-mail, foi possível inserir até 510 caracteres, ultrapassando o limite de 255 caracteres normalmente adotado para esse tipo de campo e amplamente utilizado em estruturas de armazenamento de dados (Padrão de caminhos de arquivos no Windows Explorer, campos de texto em bancos de dados (como VARCHAR) e registros de rede como DNS TXT):**:
 
 <img width="1151" height="647" alt="image" src="https://github.com/user-attachments/assets/a87ae6aa-3d26-4871-b6f9-356477d46c77" />
 
-* **02**:
+* **02 Ao clicar no botão pagar o sistema exibe uma mensagem de “Formato inválido” e “Preencha todos os dados para continuar”:**
 
 <img width="1151" height="612" alt="image" src="https://github.com/user-attachments/assets/901ead3f-ee7f-4f79-b20c-7b6e6ba8b731" />
 
@@ -2965,16 +2965,16 @@ https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 
 ## 📸 **Print:**
 
-* **01**:
+* **01 - Seleção da opção PIX realizada e preenchimento do campo E-mail:**
 
 <img width="1150" height="607" alt="image" src="https://github.com/user-attachments/assets/d9a19ac5-314a-43c9-bcd0-b47fedc7411d" />
 
-* **02**:
+* **02 - Após o preenchimento das opções acima, clicar no botão “Pagar”**:
 
 <img width="1152" height="615" alt="image" src="https://github.com/user-attachments/assets/5aec6fd0-cee7-4140-8e02-f724e244c761" />
 
 
-* **03**:
+* **03 Na sequência vai ser exibido o botão “Copiar chave”:**
 
 <img width="1151" height="625" alt="image" src="https://github.com/user-attachments/assets/97f29716-ea93-4904-a558-bd52c123bc30" />
 
@@ -2983,7 +2983,7 @@ https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 
 <img width="1157" height="612" alt="image" src="https://github.com/user-attachments/assets/aea4d3b9-64e3-4748-a103-5f543c4b2d8c" />
 
-* **05**:
+* **05 Ao clicar repetidamente no botão “Copiar chave” na parte superior da tela vão ser exibido vários toasts de notificações:**
 <img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/e33ba8c0-7802-45b1-9ff5-5df1d9088e31" />
 
 

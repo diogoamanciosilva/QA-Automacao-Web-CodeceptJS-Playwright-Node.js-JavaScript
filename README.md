@@ -2841,12 +2841,12 @@ RCA / Bug Report
 
 ---
 
-## 🐞 Bugs Encontrados
+# 🐞 Bugs Encontrados
 
 
 Durante a execução e análise da suíte de testes, além da validação funcional, foram identificados os seguintes comportamentos inesperados na plataforma FasTix. Cada ocorrência foi analisada a partir do cenário correspondente, reproduzida durante a execução dos testes e documentada com seu respectivo comportamento atual, resultado esperado e evidência.
 
-# 🙋 **Feature Suporte e Ajuda**
+## 🙋 **Feature Suporte e Ajuda**
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |

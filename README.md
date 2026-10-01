@@ -2925,7 +2925,7 @@ https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
 ## 📸 **Print:**
 
-* **01 - Ao acessar a opção de pagamento via PIX e selecionar o campo E-mail, foi possível inserir até 510 caracteres, ultrapassando o limite de 255 caracteres normalmente adotado para esse tipo de campo e amplamente utilizado em estruturas de armazenamento de dados (Padrão de caminhos de arquivos no Windows Explorer, campos de texto em bancos de dados (como VARCHAR) e registros de rede como DNS TXT):**:
+* **01 - Ao acessar a opção de pagamento via PIX e selecionar o campo E-mail, foi possível inserir até 510 caracteres, ultrapassando o limite de 255 caracteres normalmente adotado para esse tipo de campo e amplamente utilizado em estruturas de armazenamento de dados (Padrão de caminhos de arquivos no Windows Explorer, campos de texto em bancos de dados (como VARCHAR) e registros de rede como DNS TXT):**
 
 <img width="1151" height="647" alt="image" src="https://github.com/user-attachments/assets/a87ae6aa-3d26-4871-b6f9-356477d46c77" />
 

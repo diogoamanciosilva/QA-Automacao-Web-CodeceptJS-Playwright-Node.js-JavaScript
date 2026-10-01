@@ -2846,7 +2846,7 @@ RCA / Bug Report
 
 Durante a execução e análise da suíte de testes, além da validação funcional, foram identificados os seguintes comportamentos inesperados na plataforma FasTix. Cada ocorrência foi analisada a partir do cenário correspondente, reproduzida durante a execução dos testes e documentada com seu respectivo comportamento atual, resultado esperado e evidência.
 
-## 🙋 **Feature Suporte e Ajuda**
+## 🔭 Feature Explorar Eventos
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
@@ -2859,23 +2859,23 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 
 ## 📸 **Print:**
 
-* **Ao pesquisar por "Fabrique", é retornado a mensagem: Nenhum evento encontrado:**
 
+**01**
 <img width="1185" height="635" alt="image" src="https://github.com/user-attachments/assets/171a1f8d-c30f-4d5f-ab58-74acdde421ee" />
 
-
-* **Ao pesquisar por "Fabrique Club", é retornado a mensagem: Nenhum evento encontrado:**
-
+**02**
 <img width="1193" height="652" alt="image" src="https://github.com/user-attachments/assets/19b43547-95ad-4dea-8d8d-0a1cd872dce9" />
 
 ## ❗**Resultado Esperado:**
 
-O campo de busca acessado pelo botão "Explorar Eventos" deverá retornar todos os eventos associados ao local pesquisado. 
-Por exemplo, ao pesquisar por "Fabrique" ou "Fabrique Club", ambas as buscas devem exibir todos os eventos associados ao local pesquisado.
+O campo de busca acessado pelo botão **"Explorar Eventos"** deverá retornar todos os eventos associados ao local pesquisado. 
+Por exemplo, ao pesquisar por **"Fabrique" ou "Fabrique Club"**, ambas as buscas devem exibir todos os eventos associados ao local pesquisado.
 Exemplo de eventos cadastrados para o local, Fabrique:
 
 <img width="552" height="226" alt="image" src="https://github.com/user-attachments/assets/dddc7c2b-2720-4b1e-9c9c-8d70ded8481e" />
 
+
+## 🙋 **Feature Suporte e Ajuda**
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
@@ -2884,6 +2884,26 @@ Exemplo de eventos cadastrados para o local, Fabrique:
 🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
+
+
+## 📸 **Print:**
+
+
+**01**
+<img width="1190" height="701" alt="image" src="https://github.com/user-attachments/assets/a7638912-5ba4-4c0f-aaf4-9f72df8e905e" />
+
+**02**
+<img width="1187" height="713" alt="image" src="https://github.com/user-attachments/assets/5b8252e8-2bb7-46e2-8fa3-948ddbe74d4e" />
+
+
+## 🤖 Resultado do teste automatizado:
+
+<img width="1140" height="818" alt="image" src="https://github.com/user-attachments/assets/d38dcd3e-53cb-48ba-b110-3a47e8fe8527" />
+
+
+## ❗**Resultado Esperado:**
+
+O campo **"Nome"** deve possuir um limite máximo de caracteres, informar esse limite ao usuário e aceitar apenas a quantidade permitida, armazenando exatamente o conteúdo truncado até o limite definido. 
 
 
 

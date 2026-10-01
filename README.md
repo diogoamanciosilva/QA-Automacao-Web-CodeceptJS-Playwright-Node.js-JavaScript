@@ -28,7 +28,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🧠 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
 - [🎯 Distribuição da cobertura ](#-distribuição-da-cobertura)
 - [📲 Abordagem técnica ](#-abordagem-técnica)
-- [⌨️ Suíte de Testes Automatizados ](#-suíte-de-testes-automatizados)
+- [⌨️ Suíte de Testes Automatizados ](#%EF%B8%8F-suíte-de-testes-automatizados)
 - [🔭 Feature Explorar Eventos ](#-feature-explorar-eventos)
 - [🙋 Feature Suporte e Ajuda ](#-feature-suporte-e-ajuda)
 - [🏠 Feature Tela Inicial ](#-feature-tela-inicial)

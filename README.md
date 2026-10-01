@@ -2855,6 +2855,15 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 
 https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 
+📸 **Print**
+
+* **Ao pesquisar por: Fabrique, é retornado a mensagem: Nenhum evento encontrado:**
+
+<img width="1185" height="635" alt="image" src="https://github.com/user-attachments/assets/171a1f8d-c30f-4d5f-ab58-74acdde421ee" />
+
+* **Ao pesquisar por: Fabrique Club, é retornado a mensagem: Nenhum evento encontrado:**
+
+<img width="1193" height="652" alt="image" src="https://github.com/user-attachments/assets/19b43547-95ad-4dea-8d8d-0a1cd872dce9" />
 
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |

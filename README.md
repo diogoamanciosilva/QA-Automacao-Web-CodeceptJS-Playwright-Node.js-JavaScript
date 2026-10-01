@@ -2860,10 +2860,10 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 ## 📸 **Print:**
 
 
-**01:**
+* **01:**
 <img width="1185" height="635" alt="image" src="https://github.com/user-attachments/assets/171a1f8d-c30f-4d5f-ab58-74acdde421ee" />
 
-**02:**
+* **02:**
 <img width="1193" height="652" alt="image" src="https://github.com/user-attachments/assets/19b43547-95ad-4dea-8d8d-0a1cd872dce9" />
 
 ## ❗**Resultado Esperado:**
@@ -2889,10 +2889,10 @@ https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 ## 📸 **Print:**
 
 
-**01:**
+* **01:**
 <img width="1190" height="701" alt="image" src="https://github.com/user-attachments/assets/a7638912-5ba4-4c0f-aaf4-9f72df8e905e" />
 
-**02:**
+* **02:**
 <img width="1187" height="713" alt="image" src="https://github.com/user-attachments/assets/5b8252e8-2bb7-46e2-8fa3-948ddbe74d4e" />
 
 
@@ -2918,15 +2918,15 @@ https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
 ## 📸 **Print:**
 
-**01**:
+* **01**:
 
 <img width="1151" height="647" alt="image" src="https://github.com/user-attachments/assets/a87ae6aa-3d26-4871-b6f9-356477d46c77" />
 
-**02**:
+* **02**:
 
 <img width="1151" height="612" alt="image" src="https://github.com/user-attachments/assets/901ead3f-ee7f-4f79-b20c-7b6e6ba8b731" />
 
-**03**:
+* **03**:
 
 <img width="1156" height="626" alt="image" src="https://github.com/user-attachments/assets/a59d23be-65d0-4887-a79d-8e453ff83960" />
 
@@ -2955,25 +2955,25 @@ https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 
 ## 📸 **Print:**
 
-**01**:
+* **01**:
 
 <img width="1150" height="607" alt="image" src="https://github.com/user-attachments/assets/d9a19ac5-314a-43c9-bcd0-b47fedc7411d" />
 
-**02**:
+* **02**:
 
 <img width="1152" height="615" alt="image" src="https://github.com/user-attachments/assets/5aec6fd0-cee7-4140-8e02-f724e244c761" />
 
 
-**03**:
+* **03**:
 
 <img width="1151" height="625" alt="image" src="https://github.com/user-attachments/assets/97f29716-ea93-4904-a558-bd52c123bc30" />
 
 
-**04**:
+* **04**:
 
 <img width="1157" height="612" alt="image" src="https://github.com/user-attachments/assets/aea4d3b9-64e3-4748-a103-5f543c4b2d8c" />
 
-**05**:
+* **05**:
 <img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/e33ba8c0-7802-45b1-9ff5-5df1d9088e31" />
 
 
@@ -3004,48 +3004,52 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 
 ## 📸 **Print:**
 
-**01**: Ao acessar a página de formas de pagamento, é exibido um modal contendo as opções de pagamento:
+* **01: Ao acessar a página de formas de pagamento, é exibido um modal contendo as opções de pagamento:**
 
 <img width="1155" height="611" alt="image" src="https://github.com/user-attachments/assets/7a587b34-1e1e-4ac5-8004-e6d94a83305d" />
 
 
-**02**: Após acessar a página mencionada acima, abra uma nova aba no navegador:
+* **02: Após acessar a página mencionada acima, abra uma nova aba no navegador:**
 
 <img width="1155" height="651" alt="image" src="https://github.com/user-attachments/assets/99e4dabb-d89a-424b-96bf-e7e299fa309d" />
 
-**03**: Em seguida, retorne à página do evento que estava aberta anteriormente. Ao retornar, é possível observar que o modal com as formas de pagamento foi duplicado:
+* **03: Em seguida, retorne à página do evento que estava aberta anteriormente. Ao retornar, é possível observar que o modal com as formas de pagamento foi duplicado:**
 
 <img width="1152" height="655" alt="image" src="https://github.com/user-attachments/assets/db8ef1c7-e7c1-40e7-b0ad-f8cc56f205fd" />
 
 
-**04**: Selecione a opção "Cartão de Crédito" no segundo modal exibido e clique no segundo botão "Pagar":
+* **04: Selecione a opção "Cartão de Crédito" no segundo modal exibido e clique no segundo botão "Pagar":**
 
 <img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/f50e1406-9708-4df2-8827-2ca66db36639" />
 
 
-**05**: Após esse clique, o sistema exibirá o seguinte erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."
+* **05: Após esse clique, o sistema exibirá o seguinte erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."**
 
 <img width="1158" height="615" alt="image" src="https://github.com/user-attachments/assets/9251b666-b484-4f9b-9d29-94b301cc892a" />
 
 
-**06**: Console, antes de clicar no botão “Pagar”:
+* **06: Console, antes de clicar no botão “Pagar”:**
 
 <img width="1157" height="647" alt="image" src="https://github.com/user-attachments/assets/95da1505-4f17-4de5-abd4-8a53df239c03" />
 
 <img width="1157" height="551" alt="image" src="https://github.com/user-attachments/assets/d3408a5b-e76d-4626-9765-a82272681ded" />
 
-**06**: Sourcers, antes de clicar no botão "Pagar":
+
+
+* **07: Sourcers, antes de clicar no botão "Pagar":**
 
 <img width="1155" height="656" alt="image" src="https://github.com/user-attachments/assets/b96cf4a4-2929-4b31-9b58-833eb414d1f6" />
 
 
 <img width="1125" height="868" alt="image" src="https://github.com/user-attachments/assets/9e4a0e67-496c-4237-afc0-3b45265f17e8" />
 
-**07** Após clicar no botão “Pagar”, aparecerá a seguinte mensagem de erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."
+
+* **08 Após clicar no botão “Pagar”, aparecerá a seguinte mensagem de erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."**
 
 <img width="1158" height="555" alt="image" src="https://github.com/user-attachments/assets/28245b2c-cb96-4983-8ebc-82a34f157f14" />
 
-**08** Atualização do Console após clicar no botão “Pagar”:
+
+* **09 Atualização do Console após clicar no botão “Pagar”:**
 <img width="1156" height="660" alt="image" src="https://github.com/user-attachments/assets/8924c1d1-1b31-4da0-8d54-7082c6bf92c4" />
 
 <img width="1126" height="881" alt="image" src="https://github.com/user-attachments/assets/205a97d2-65b9-4fe9-b0b6-0472f2c0fd4e" />

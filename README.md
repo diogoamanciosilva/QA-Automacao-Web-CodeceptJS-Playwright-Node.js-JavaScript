@@ -2848,6 +2848,9 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 
 ## 🔭 Feature Explorar Eventos
 
+<img width="1906" height="902" alt="image" src="https://github.com/user-attachments/assets/d1fe12c9-b025-4cc3-944c-cdddf1369f31" />
+
+
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
 | **BUG-01** | A busca de eventos por **local** não retorna os eventos associados ao local pesquisado. Ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, mesmo existindo eventos associados ao local, o sistema exibe a mensagem **"Nenhum evento encontrado"**. | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
@@ -2860,10 +2863,10 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 ## 📸 **Print:**
 
 
-* **01:**
+* **01 - Ao pesquisar por: Fabrique, é retornado a mensagem: Nenhum evento encontrado:**
 <img width="1185" height="635" alt="image" src="https://github.com/user-attachments/assets/171a1f8d-c30f-4d5f-ab58-74acdde421ee" />
 
-* **02:**
+* **02 - Ao pesquisar por: Fabrique Club, é retornado a mensagem: Nenhum evento encontrado:**
 <img width="1193" height="652" alt="image" src="https://github.com/user-attachments/assets/19b43547-95ad-4dea-8d8d-0a1cd872dce9" />
 
 ## ❗**Resultado Esperado:**
@@ -2877,6 +2880,10 @@ Exemplo de eventos cadastrados para o local, Fabrique:
 
 ## 🙋 **Feature Suporte e Ajuda**
 
+<img width="1867" height="955" alt="image" src="https://github.com/user-attachments/assets/903b8614-cb01-4c57-b793-5297723280f6" />
+
+
+
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
 | **BUG-02** | O campo **"Nome"** da página **Suporte e Ajuda** não apresenta comportamento adequado ao receber uma quantidade de caracteres superior ao limite esperado. O cenário exige que o sistema limite o conteúdo, informe o limite ao usuário e preserve exatamente o texto truncado permitido. | 🔸 **Média** | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo. | `Cenário 0036` — Feature **Suporte e Ajuda** |
@@ -2889,10 +2896,10 @@ https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 ## 📸 **Print:**
 
 
-* **01:**
+* **01 - Visualizar o campo “NOME” no formulário disponível:**
 <img width="1190" height="701" alt="image" src="https://github.com/user-attachments/assets/a7638912-5ba4-4c0f-aaf4-9f72df8e905e" />
 
-* **02:**
+* **02 - Preencher o campo com 937 caracteres:**
 <img width="1187" height="713" alt="image" src="https://github.com/user-attachments/assets/5b8252e8-2bb7-46e2-8fa3-948ddbe74d4e" />
 
 
@@ -2945,6 +2952,9 @@ O sistema deve limitar o campo **E-mail** a 255 caracteres ou exibir uma mensage
 
 ## 🎟️ Feature Comprar Ingressos
 
+<img width="1896" height="852" alt="image" src="https://github.com/user-attachments/assets/d4a6af57-395f-47de-8826-3d0766c9e402" />
+
+
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
 | **BUG-04** | Ao clicar repetidamente no botão **"Copiar chave"** do PIX, o sistema gera **múltiplos toasts de notificação** com a mesma mensagem, causando duplicidade visual de notificações e comportamento inconsistente da interface. | 🔹 **Baixa** | Acessar o pagamento via PIX → preencher o e-mail → clicar em **"Pagar"** → clicar repetidamente em **"Copiar chave"** → observar os toasts exibidos no topo da página. | `Cenário 0000000101` — Feature **Comprar Ingressos** |
@@ -2991,6 +3001,8 @@ Ao clicar repetidamente no **botão "Copiar chave"**, o sistema deve exibir apen
 
 ## 🎟️ Feature Comprar Ingressos
 
+<img width="1896" height="852" alt="image" src="https://github.com/user-attachments/assets/d4a6af57-395f-47de-8826-3d0766c9e402" />
+
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
@@ -3004,31 +3016,31 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 
 ## 📸 **Print:**
 
-* **01: Ao acessar a página de formas de pagamento, é exibido um modal contendo as opções de pagamento:**
+* **01 - Ao acessar a página de formas de pagamento, é exibido um modal contendo as opções de pagamento:**
 
 <img width="1155" height="611" alt="image" src="https://github.com/user-attachments/assets/7a587b34-1e1e-4ac5-8004-e6d94a83305d" />
 
 
-* **02: Após acessar a página mencionada acima, abra uma nova aba no navegador:**
+* **02 - Após acessar a página mencionada acima, abra uma nova aba no navegador:**
 
 <img width="1155" height="651" alt="image" src="https://github.com/user-attachments/assets/99e4dabb-d89a-424b-96bf-e7e299fa309d" />
 
-* **03: Em seguida, retorne à página do evento que estava aberta anteriormente. Ao retornar, é possível observar que o modal com as formas de pagamento foi duplicado:**
+* **03 - Em seguida, retorne à página do evento que estava aberta anteriormente. Ao retornar, é possível observar que o modal com as formas de pagamento foi duplicado:**
 
 <img width="1152" height="655" alt="image" src="https://github.com/user-attachments/assets/db8ef1c7-e7c1-40e7-b0ad-f8cc56f205fd" />
 
 
-* **04: Selecione a opção "Cartão de Crédito" no segundo modal exibido e clique no segundo botão "Pagar":**
+* **04 - Selecione a opção "Cartão de Crédito" no segundo modal exibido e clique no segundo botão "Pagar":**
 
 <img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/f50e1406-9708-4df2-8827-2ca66db36639" />
 
 
-* **05: Após esse clique, o sistema exibirá o seguinte erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."**
+* **05 - Após esse clique, o sistema exibirá o seguinte erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."**
 
 <img width="1158" height="615" alt="image" src="https://github.com/user-attachments/assets/9251b666-b484-4f9b-9d29-94b301cc892a" />
 
 
-* **06: Console, antes de clicar no botão “Pagar”:**
+* **06 - Console, antes de clicar no botão “Pagar”:**
 
 <img width="1157" height="647" alt="image" src="https://github.com/user-attachments/assets/95da1505-4f17-4de5-abd4-8a53df239c03" />
 
@@ -3036,7 +3048,7 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 
 
 
-* **07: Sourcers, antes de clicar no botão "Pagar":**
+* **07 - Sourcers, antes de clicar no botão "Pagar":**
 
 <img width="1155" height="656" alt="image" src="https://github.com/user-attachments/assets/b96cf4a4-2929-4b31-9b58-833eb414d1f6" />
 
@@ -3044,12 +3056,12 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 <img width="1125" height="868" alt="image" src="https://github.com/user-attachments/assets/9e4a0e67-496c-4237-afc0-3b45265f17e8" />
 
 
-* **08 Após clicar no botão “Pagar”, aparecerá a seguinte mensagem de erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."**
+* **08 - Após clicar no botão “Pagar”, aparecerá a seguinte mensagem de erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."**
 
 <img width="1158" height="555" alt="image" src="https://github.com/user-attachments/assets/28245b2c-cb96-4983-8ebc-82a34f157f14" />
 
 
-* **09 Atualização do Console após clicar no botão “Pagar”:**
+* **09 - Atualização do Console após clicar no botão “Pagar”:**
 <img width="1156" height="660" alt="image" src="https://github.com/user-attachments/assets/8924c1d1-1b31-4da0-8d54-7082c6bf92c4" />
 
 <img width="1126" height="881" alt="image" src="https://github.com/user-attachments/assets/205a97d2-65b9-4fe9-b0b6-0472f2c0fd4e" />
@@ -3063,6 +3075,8 @@ Ao abrir a página com as opções de pagamento da FasTix e acessar uma nova aba
 
 ## 📢 Feature Publicar Eventos
 
+<img width="862" height="200" alt="image" src="https://github.com/user-attachments/assets/45a72529-57de-4633-b760-bc33f900eeb7" />
+
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
 | **BUG-06** | O campo **"Template"** do modal **"Permissões de Acesso"** não preserva a seleção realizada quando uma permissão de seção é alterada. Após selecionar, por exemplo, o template **"Marketing"** e alterar a permissão de uma seção, o valor selecionado é substituído por **"Templates"**, fazendo com que a configuração previamente escolhida não seja mantida. | **Média** | Acessar **Publicar Eventos** → criar/acessar um evento → acessar **"Gerenciar Equipes"** → abrir **"Permissões de Acesso"** → selecionar um template, como **"Marketing"** → alterar uma permissão de seção → verificar o valor exibido no campo **"Template"**. | `Cenário 000097` — Feature **Publicar Eventos** |
@@ -3075,18 +3089,36 @@ https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 
 ## 📸 **Print:**
 
-**01**:
+*  **01 - Clicar no campo “Templates”:**
 
-**01**:
+<img width="1158" height="653" alt="image" src="https://github.com/user-attachments/assets/3a31a2c1-c1b1-46cc-8f2c-05dea0bae640" />
 
-**01**:
 
-**01**:
+*  **02 - Visualizar todas as opções disponíveis: Agente, Marketing, Staff e Acesso Total:**
 
-**01**:
+<img width="1146" height="613" alt="image" src="https://github.com/user-attachments/assets/d60593bf-0e6f-45a8-ab7c-3b2ec1f320e5" />
 
-**01**:
 
+*  **03 - Selecionar a opção “Marketing”:**
+
+<img width="1153" height="647" alt="image" src="https://github.com/user-attachments/assets/afbc6e02-07cc-4971-8cd3-bc570ef8b62a" />
+
+ 
+*  **04 - Acessar o painel "Permissões de Acesso", localizar a seção "Visão Geral" e selecionar a opção "Acesso Total", verificar que a opção "Marketing", exibida no lado direito do modal, permanece selecionada após a alteração da permissão:**
+
+<img width="1151" height="647" alt="image" src="https://github.com/user-attachments/assets/33f32b6f-9faa-4587-a405-b73d5bdb6e35" />
+
+
+* **05 - Ao alterar a permissão da seção "Visão Geral" para "Acesso Total", a opção "Marketing", previamente selecionada no campo "Template", foi substituída por "Templates", não preservando a seleção realizada:**
+
+<img width="1153" height="647" alt="image" src="https://github.com/user-attachments/assets/40bf353e-de6c-408c-a43d-a1bd60091492" />
+
+
+## ❗**Resultado Esperado:**
+
+## 🏠 Feature Tela Inicial
+
+<img width="1152" height="683" alt="image" src="https://github.com/user-attachments/assets/4702da6d-3b9b-4ae4-b71f-d74ca34b3bd6" />
 
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
@@ -3097,7 +3129,19 @@ https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 
 https://github.com/user-attachments/assets/72b551e7-ced7-49f5-9f4d-930eee71736e
 
+## 📸 **Print:**
 
+*  **01 - Ao acessar o footer e clicar no ícone do Twitter (ícone desatualizado):**
+<img width="1151" height="612" alt="image" src="https://github.com/user-attachments/assets/5046973c-64fb-4341-8090-2fe783ce0e24" />
+
+
+*  **02 - É realizado o redirecionamento automático para a página oficial da FasTix no X:**
+
+<img width="1153" height="620" alt="image" src="https://github.com/user-attachments/assets/be1973f8-8b62-4bc8-9937-1e3926ea01b2" />
+
+## ❗**Resultado Esperado:**
+
+O ícone do Twitter exibido no footer encontra-se desatualizado e deve ser substituído pelo ícone oficial atual da plataforma X. 
 ---
 
 ### ⚠️ Observação

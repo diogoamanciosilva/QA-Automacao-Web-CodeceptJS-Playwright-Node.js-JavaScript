@@ -2915,6 +2915,7 @@ O campo **"Nome"** deve possuir um limite máximo de caracteres, informar esse l
 
 https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
+## 🎟️ Feature Comprar Ingressos
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
@@ -2924,6 +2925,31 @@ https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
 https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 
+## 📸 **Print:**
+
+**01:**
+
+<img width="1192" height="667" alt="image" src="https://github.com/user-attachments/assets/d7481eb2-8e50-42d3-8a29-0c82adc82e13" />
+
+**02:**
+
+<img width="1193" height="633" alt="image" src="https://github.com/user-attachments/assets/877c821c-7c31-46bc-aa7f-d8662877cbb1" />
+
+
+**03:**
+
+<img width="1192" height="642" alt="image" src="https://github.com/user-attachments/assets/050dc4e0-7906-44c3-bbdc-0842668a8db2" />
+
+
+
+## 🤖 Resultado do teste automatizado:
+
+<img width="1023" height="901" alt="image" src="https://github.com/user-attachments/assets/58594381-eb92-4719-a116-f478f1ec2743" />
+
+
+## ❗**Resultado Esperado:**
+
+O sistema deve limitar o campo E-mail a 255 caracteres ou exibir uma mensagem informando que o limite foi excedido, orientando o usuário a ajustar o valor informado.
 
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |

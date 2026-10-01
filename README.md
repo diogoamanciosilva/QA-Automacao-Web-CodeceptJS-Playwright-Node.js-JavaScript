@@ -2974,16 +2974,16 @@ https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 <img width="1152" height="615" alt="image" src="https://github.com/user-attachments/assets/5aec6fd0-cee7-4140-8e02-f724e244c761" />
 
 
-* **03 Na sequência vai ser exibido o botão “Copiar chave”:**
+* **03 - Na sequência vai ser exibido o botão “Copiar chave”:**
 
 <img width="1151" height="625" alt="image" src="https://github.com/user-attachments/assets/97f29716-ea93-4904-a558-bd52c123bc30" />
 
 
-* **04**:
+* **04 - Ao clicar repetidamente no botão “Copiar chave” na parte superior da tela vão ser exibido vários toasts de notificações:**
 
 <img width="1157" height="612" alt="image" src="https://github.com/user-attachments/assets/aea4d3b9-64e3-4748-a103-5f543c4b2d8c" />
 
-* **05 Ao clicar repetidamente no botão “Copiar chave” na parte superior da tela vão ser exibido vários toasts de notificações:**
+* **05 - Ao colocar o cursor do mouse em cima do toast de notificação exibido, outros toasts de notificações vão ser exibidos na página::**
 <img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/e33ba8c0-7802-45b1-9ff5-5df1d9088e31" />
 
 

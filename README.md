@@ -2929,11 +2929,9 @@ https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
 
 <img width="1151" height="647" alt="image" src="https://github.com/user-attachments/assets/a87ae6aa-3d26-4871-b6f9-356477d46c77" />
 
-* **02 Ao clicar no botão pagar o sistema exibe uma mensagem de “Formato inválido” e “Preencha todos os dados para continuar”:**
+* **02 - Ao clicar no botão pagar o sistema exibe uma mensagem de “Formato inválido” e “Preencha todos os dados para continuar”:**
 
 <img width="1151" height="612" alt="image" src="https://github.com/user-attachments/assets/901ead3f-ee7f-4f79-b20c-7b6e6ba8b731" />
-
-* **03**:
 
 <img width="1156" height="626" alt="image" src="https://github.com/user-attachments/assets/a59d23be-65d0-4887-a79d-8e453ff83960" />
 
@@ -3056,7 +3054,7 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 <img width="1125" height="868" alt="image" src="https://github.com/user-attachments/assets/9e4a0e67-496c-4237-afc0-3b45265f17e8" />
 
 
-* **08 - Após clicar no botão “Pagar”, aparecerá a seguinte mensagem de erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."**
+* **08 - Após clicar no botão “Pagar”, aparecerá a seguinte mensagem de erro: "Ocorreu um erro. Por favor, tente novamente mais tarde.":**
 
 <img width="1158" height="555" alt="image" src="https://github.com/user-attachments/assets/28245b2c-cb96-4983-8ebc-82a34f157f14" />
 

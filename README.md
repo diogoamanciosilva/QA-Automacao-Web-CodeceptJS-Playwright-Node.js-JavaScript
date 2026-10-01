@@ -2906,6 +2906,7 @@ https://github.com/user-attachments/assets/2624ed2e-d91e-4006-9de9-52857f05e001
 O campo **"Nome"** deve possuir um limite máximo de caracteres, informar esse limite ao usuário e aceitar apenas a quantidade permitida, armazenando exatamente o conteúdo truncado até o limite definido. 
 
 
+## 🎟️ Feature Comprar Ingressos
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
@@ -2914,6 +2915,33 @@ O campo **"Nome"** deve possuir um limite máximo de caracteres, informar esse l
 🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/4c152e77-1b72-43fa-a587-7742e58f17d3
+
+## 📸 **Print:**
+
+**01**:
+
+<img width="1151" height="647" alt="image" src="https://github.com/user-attachments/assets/a87ae6aa-3d26-4871-b6f9-356477d46c77" />
+
+**02**:
+
+<img width="1151" height="612" alt="image" src="https://github.com/user-attachments/assets/901ead3f-ee7f-4f79-b20c-7b6e6ba8b731" />
+
+**03**:
+
+<img width="1156" height="626" alt="image" src="https://github.com/user-attachments/assets/a59d23be-65d0-4887-a79d-8e453ff83960" />
+
+
+
+## 🤖 Resultado do teste automatizado:
+
+<img width="1021" height="901" alt="image" src="https://github.com/user-attachments/assets/60c25954-e404-4fd3-9f4b-3c92a39618eb" />
+
+
+
+## ❗**Resultado Esperado:**
+
+O sistema deve limitar o campo **E-mail** a 255 caracteres ou exibir uma mensagem informando que o limite foi excedido, orientando o usuário a ajustar o valor informado.
+
 
 ## 🎟️ Feature Comprar Ingressos
 
@@ -2927,29 +2955,41 @@ https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 
 ## 📸 **Print:**
 
-**01:**
+**01**:
 
-<img width="1192" height="667" alt="image" src="https://github.com/user-attachments/assets/d7481eb2-8e50-42d3-8a29-0c82adc82e13" />
+<img width="1150" height="607" alt="image" src="https://github.com/user-attachments/assets/d9a19ac5-314a-43c9-bcd0-b47fedc7411d" />
 
-**02:**
+**02**:
 
-<img width="1193" height="633" alt="image" src="https://github.com/user-attachments/assets/877c821c-7c31-46bc-aa7f-d8662877cbb1" />
+<img width="1152" height="615" alt="image" src="https://github.com/user-attachments/assets/5aec6fd0-cee7-4140-8e02-f724e244c761" />
 
 
-**03:**
+**03**:
 
-<img width="1192" height="642" alt="image" src="https://github.com/user-attachments/assets/050dc4e0-7906-44c3-bbdc-0842668a8db2" />
+<img width="1151" height="625" alt="image" src="https://github.com/user-attachments/assets/97f29716-ea93-4904-a558-bd52c123bc30" />
 
+
+**04**:
+
+<img width="1157" height="612" alt="image" src="https://github.com/user-attachments/assets/aea4d3b9-64e3-4748-a103-5f543c4b2d8c" />
+
+**05**:
+<img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/e33ba8c0-7802-45b1-9ff5-5df1d9088e31" />
 
 
 ## 🤖 Resultado do teste automatizado:
 
-<img width="1023" height="901" alt="image" src="https://github.com/user-attachments/assets/58594381-eb92-4719-a116-f478f1ec2743" />
+<img width="1107" height="736" alt="image" src="https://github.com/user-attachments/assets/16c9486f-6932-4aad-9901-9c809d93ae3b" />
+
+<img width="1152" height="552" alt="image" src="https://github.com/user-attachments/assets/80ce6baa-218e-4112-81ef-01dc85b0d47d" />
 
 
 ## ❗**Resultado Esperado:**
 
-O sistema deve limitar o campo E-mail a 255 caracteres ou exibir uma mensagem informando que o limite foi excedido, orientando o usuário a ajustar o valor informado.
+Ao clicar repetidamente no **botão "Copiar chave"**, o sistema deve exibir apenas um toast de notificação, impedindo a geração de notificações duplicadas e garantindo que apenas uma mensagem de confirmação seja apresentada ao usuário.
+
+
+## 🎟️ Feature Comprar Ingressos
 
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
@@ -2962,6 +3002,62 @@ O sistema deve limitar o campo E-mail a 255 caracteres ou exibir uma mensagem in
 https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 
 
+## 📸 **Print:**
+
+**01**: Ao acessar a página de formas de pagamento, é exibido um modal contendo as opções de pagamento:
+
+<img width="1155" height="611" alt="image" src="https://github.com/user-attachments/assets/7a587b34-1e1e-4ac5-8004-e6d94a83305d" />
+
+
+**02**: Após acessar a página mencionada acima, abra uma nova aba no navegador:
+
+<img width="1155" height="651" alt="image" src="https://github.com/user-attachments/assets/99e4dabb-d89a-424b-96bf-e7e299fa309d" />
+
+**03**: Em seguida, retorne à página do evento que estava aberta anteriormente. Ao retornar, é possível observar que o modal com as formas de pagamento foi duplicado:
+
+<img width="1152" height="655" alt="image" src="https://github.com/user-attachments/assets/db8ef1c7-e7c1-40e7-b0ad-f8cc56f205fd" />
+
+
+**04**: Selecione a opção "Cartão de Crédito" no segundo modal exibido e clique no segundo botão "Pagar":
+
+<img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/f50e1406-9708-4df2-8827-2ca66db36639" />
+
+
+**05**: Após esse clique, o sistema exibirá o seguinte erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."
+
+<img width="1158" height="615" alt="image" src="https://github.com/user-attachments/assets/9251b666-b484-4f9b-9d29-94b301cc892a" />
+
+
+**06**: Console, antes de clicar no botão “Pagar”:
+
+<img width="1157" height="647" alt="image" src="https://github.com/user-attachments/assets/95da1505-4f17-4de5-abd4-8a53df239c03" />
+
+<img width="1157" height="551" alt="image" src="https://github.com/user-attachments/assets/d3408a5b-e76d-4626-9765-a82272681ded" />
+
+**06**: Sourcers, antes de clicar no botão "Pagar":
+
+<img width="1155" height="656" alt="image" src="https://github.com/user-attachments/assets/b96cf4a4-2929-4b31-9b58-833eb414d1f6" />
+
+
+<img width="1125" height="868" alt="image" src="https://github.com/user-attachments/assets/9e4a0e67-496c-4237-afc0-3b45265f17e8" />
+
+**07** Após clicar no botão “Pagar”, aparecerá a seguinte mensagem de erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."
+
+<img width="1158" height="555" alt="image" src="https://github.com/user-attachments/assets/28245b2c-cb96-4983-8ebc-82a34f157f14" />
+
+**08** Atualização do Console após clicar no botão “Pagar”:
+<img width="1156" height="660" alt="image" src="https://github.com/user-attachments/assets/8924c1d1-1b31-4da0-8d54-7082c6bf92c4" />
+
+<img width="1126" height="881" alt="image" src="https://github.com/user-attachments/assets/205a97d2-65b9-4fe9-b0b6-0472f2c0fd4e" />
+
+
+
+## ❗**Resultado Esperado:**
+
+Ao abrir a página com as opções de pagamento da FasTix e acessar uma nova aba, ao retornar à página de compra de ingressos anteriormente acessada, o modal com as opções de pagamento não deve ser duplicado.
+
+
+## 📢 Feature Publicar Eventos
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
@@ -2971,6 +3067,22 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
+
+
+## 📸 **Print:**
+
+**01**:
+
+**01**:
+
+**01**:
+
+**01**:
+
+**01**:
+
+**01**:
+
 
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |

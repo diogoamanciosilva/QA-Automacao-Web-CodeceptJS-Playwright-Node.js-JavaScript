@@ -3117,6 +3117,10 @@ https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 
 ## ❗**Resultado Esperado:**
 
+Ao selecionar o template "Marketing" no modal "Permissões de Acesso" e alterar a permissão da seção "Visão Geral" para "Acesso Total", o template previamente selecionado deve permanecer visível e selecionado no campo "Template", preservando a configuração definida pelo usuário durante toda a edição das permissões.
+O valor do template selecionado deve ser mantido, sem que a seleção seja perdida após qualquer alteração nas permissões. Esse comportamento deve ocorrer independentemente do template escolhido.
+
+
 ## 🏠 Feature Tela Inicial
 
 <img width="1152" height="683" alt="image" src="https://github.com/user-attachments/assets/4702da6d-3b9b-4ae4-b71f-d74ca34b3bd6" />

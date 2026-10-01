@@ -2857,13 +2857,22 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 
 📸 **Print**
 
-* **Ao pesquisar por: Fabrique, é retornado a mensagem: Nenhum evento encontrado:**
+* **Ao pesquisar por "Fabrique", é retornado a mensagem: Nenhum evento encontrado:**
 
 <img width="1185" height="635" alt="image" src="https://github.com/user-attachments/assets/171a1f8d-c30f-4d5f-ab58-74acdde421ee" />
 
-* **Ao pesquisar por: Fabrique Club, é retornado a mensagem: Nenhum evento encontrado:**
+
+* **Ao pesquisar por "Fabrique Club", é retornado a mensagem: Nenhum evento encontrado:**
 
 <img width="1193" height="652" alt="image" src="https://github.com/user-attachments/assets/19b43547-95ad-4dea-8d8d-0a1cd872dce9" />
+
+❗ **Resultado Esperado:**
+
+O campo de busca acessado pelo botão "Explorar Eventos" deverá retornar todos os eventos associados ao local pesquisado. 
+Por exemplo, ao pesquisar por "Fabrique" ou "Fabrique Club", ambas as buscas devem exibir todos os eventos associados ao local pesquisado.
+Exemplo de eventos cadastrados para o local, Fabrique:
+
+<img width="552" height="226" alt="image" src="https://github.com/user-attachments/assets/dddc7c2b-2720-4b1e-9c9c-8d70ded8481e" />
 
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |

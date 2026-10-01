@@ -2851,11 +2851,11 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 | **BUG-01** | A busca de eventos por **local** não retorna os eventos associados ao local pesquisado. Ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, mesmo existindo eventos associados ao local, o sistema exibe a mensagem **"Nenhum evento encontrado"**. | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
 
 
-🎬 **Vídeo:**
+## 🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 
-📸 **Print**
+## 📸 **Print**
 
 * **Ao pesquisar por "Fabrique", é retornado a mensagem: Nenhum evento encontrado:**
 
@@ -2866,7 +2866,7 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 
 <img width="1193" height="652" alt="image" src="https://github.com/user-attachments/assets/19b43547-95ad-4dea-8d8d-0a1cd872dce9" />
 
-❗ **Resultado Esperado:**
+## ❗**Resultado Esperado:**
 
 O campo de busca acessado pelo botão "Explorar Eventos" deverá retornar todos os eventos associados ao local pesquisado. 
 Por exemplo, ao pesquisar por "Fabrique" ou "Fabrique Club", ambas as buscas devem exibir todos os eventos associados ao local pesquisado.

@@ -26,6 +26,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [📁 Estrutura do repositório](#-estrutura-do-repositório)
 - [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
 - [🏹 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
+- [🎯 Distribuição da cobertura ] (#-distribuição-da-cobertura)
 - [🔭 Feature Explorar Eventos ](#-feature-explorar-eventos)
 - [🙋 Feature Suporte e Ajuda ](#-feature-suporte-e-ajuda)
 - [🏠 Feature Tela Inicial ](#-feature-tela-inicial)
@@ -467,7 +468,7 @@ Cada **Feature** possui um conjunto de cenários que cobre desde o caminho feliz
 
 ---
 
-## 🏹 Estratégia e cobertura de Testes 
+## 🧠 Estratégia e cobertura de Testes 
 
 
 **A suíte automatizada do FasTix reúne 586 testes distribuídos em 6 Features**, cobrindo toda a jornada do usuário na plataforma do primeiro acesso à compra de ingressos sob 17 dimensões de qualidade diferentes, não apenas validação funcional. 

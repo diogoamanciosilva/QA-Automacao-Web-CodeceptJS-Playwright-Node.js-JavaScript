@@ -1,7 +1,11 @@
 
 ## 🤖 Automação Web CodeceptJS - Playwright - Node.js + JavaScript (FasTix)
 
-<img width="1912" height="741" alt="image" src="https://github.com/user-attachments/assets/8dc7f870-7960-4e7a-99ba-97a38786b6df" />
+<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/d824a189-1a3d-43a3-a951-29b8a8d5152b" />
+
+
+
+
 
 A **FasTix** é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 
 

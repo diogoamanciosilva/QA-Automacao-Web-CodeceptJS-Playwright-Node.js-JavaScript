@@ -2862,7 +2862,7 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-01** | **Cenário:** Buscar um local (Ex: Fabrique Club) no campo de pesquisa (Botão: Explorar eventos) <br><br> **Dado** que o usuário esteja na HomePage <br> **Quando** pesquisar pelo nome de um local específico **(Ex: Fabrique Club)** <br> **Então** os eventos associados ao local correspondente devem ser exibidos | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
+| **BUG-01** | **Cenário:** Buscar um local (Ex: Fabrique Club) no campo de pesquisa (Botão: Explorar eventos) <br><br> **Dado** que o usuário esteja na HomePage <br> **Quando** pesquisar pelo nome de um local específico **(Ex: Fabrique Club)** <br> **Então** os eventos associados ao local correspondente devem ser exibidos | 🔺 **Alta** | 1. Acesse: https://fastix.com.br/ <br> 2. Clique no botão "Explorar eventos". <br> 3. Aguarde o carregamento da página de eventos. <br> 4. Clique no campo "Pesquisar por evento, local, cidade...". <br> 5. Digite "Fabrique Club", ou, “Fabrique” no campo de pesquisa. | `Cenário 09` — Feature **Explorar Eventos** |
 
 
 ## 🎬 **Vídeo:**

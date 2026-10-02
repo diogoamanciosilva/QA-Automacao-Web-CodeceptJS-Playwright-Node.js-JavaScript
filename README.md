@@ -3424,6 +3424,21 @@ Em relação às causas raiz, diferente do exemplo de referência (onde a mesma 
 
 ## 📊 Análise da Suíte de Testes
 
+A suíte identificou 6 bugs distribuídos entre quatro Features:
+
+* **Explorar Eventos**
+* **Suporte e Ajuda**
+* **Comprar Ingressos**
+* **Publicar Eventos**
+
+Com concentração de 50% dos achados em Comprar Ingressos, área de maior criticidade para o negócio por envolver diretamente o fluxo de receita da plataforma. 
+
+Os três bugs desta Feature estão relacionados a camadas técnicas distintas: Validação de entrada (BUG-03), controle de notificações (BUG-04) e preservação de estado do checkout (BUG-05), o que descarta uma causa raiz única e aponta para oportunidades de melhoria em diferentes pontos do mesmo fluxo. 
+
+Transversalmente, o padrão de ausência de validação de limite de caracteres presente tanto no BUG-02 (Suporte e Ajuda) quanto no BUG-03 (Comprar Ingressos) indica uma oportunidade de fortalecimento das validações de entrada que vai além de uma Feature isolada.
+
+A ausência de bugs registrados nas Features Tela Inicial e Criar Conta reflete o escopo dos cenários executados, não a ausência de defeitos nessas áreas — distinção relevante para qualquer leitura desta análise.
+
 ### 📈 Distribuição de Bugs por Feature
 
 O gráfico apresenta **6 bugs encontrados**, distribuídos entre quatro Features da plataforma FasTix:

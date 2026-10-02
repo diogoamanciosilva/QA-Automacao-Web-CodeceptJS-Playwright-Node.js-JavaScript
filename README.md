@@ -3146,9 +3146,9 @@ https://github.com/user-attachments/assets/72b551e7-ced7-49f5-9f4d-930eee71736e
 
 <img width="1153" height="620" alt="image" src="https://github.com/user-attachments/assets/be1973f8-8b62-4bc8-9937-1e3926ea01b2" />
 
-## ❗**Resultado Esperado:**
+## ❗Resultado Esperado
 
-O ícone do Twitter exibido no footer encontra-se desatualizado e deve ser substituído pelo ícone oficial atual da plataforma X. 
+O ícone do Twitter exibido no footer encontra-se desatualizado e deve ser substituído pelo ícone oficial atual da plataforma X.
 ---
 
 ### ⚠️ Observação

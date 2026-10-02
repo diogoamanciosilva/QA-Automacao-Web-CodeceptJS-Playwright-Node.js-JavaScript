@@ -37,7 +37,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🙋 Feature Suporte e Ajuda ](#-feature-suporte-e-ajuda)
 - [🏠 Feature Tela Inicial ](#-feature-tela-inicial)
 - [📢 Feature Publicar Eventos ](#-feature-publicar-eventos)
-- [🎟️ Feature Comprar Ingressos ](#-feature-comprar-ingressos)
+- [🎟️ Feature Comprar Ingressos ](#%EF%B8%8F-feature-comprar-ingressos)
 - [👤 Feature Criar Conta ](#-feature-criar-conta)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
 - [🔗 Bug × Feature × Causa Raiz](#-bug--feature--causa-raiz)

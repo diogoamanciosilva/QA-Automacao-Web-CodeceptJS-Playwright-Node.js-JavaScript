@@ -14,6 +14,8 @@ A **FasTix** é uma plataforma de comercialização, distribuição e intermedia
 
 O projeto consiste na documentação **Gherkin (linguagem para descrever o comportamento do software)** e **BDD (Behavior-Driven Development)**, em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa publicada em julho de 2026:**
 
+A suíte automatizada do FasTix **reúne 586 testes distribuídos em 6 Features**, cobrindo toda a jornada do usuário na plataforma do primeiro acesso à compra de ingressos **sob 17 dimensões de qualidade diferentes, não apenas validação funcional.**
+
 O site foi desenvolvido pela **empresa americana Web Solutions FL** (https://www.websolutionsfl.com/).
 
 Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio.**

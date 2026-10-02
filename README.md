@@ -5,10 +5,9 @@
 
 <img width="1908" height="1020" alt="image" src="https://github.com/user-attachments/assets/c4a8dd60-10fc-4ad0-b3af-0026098aa6c5" />
 
-
 <img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/c23cd596-ee67-4ba2-a957-e3e0e85f0ed5" />
 
-
+<img width="1917" height="1020" alt="image" src="https://github.com/user-attachments/assets/5f897dc5-d6be-4261-beff-70c8222ec644" />
 
 
 A **FasTix** é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 

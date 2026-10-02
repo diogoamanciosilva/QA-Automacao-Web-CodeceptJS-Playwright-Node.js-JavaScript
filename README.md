@@ -12,7 +12,7 @@
 
 A **FasTix** é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 
 
-O projeto consiste na documentação **Gherkin** (linguagem para descrever o comportamento do software) e **BDD** (Behavior-Driven Development), em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa publicada em julho de 2026:**
+O projeto consiste na documentação **Gherkin (linguagem para descrever o comportamento do software)** e **BDD (Behavior-Driven Development)**, em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa publicada em julho de 2026:**
 
 O site foi desenvolvido pela **empresa americana Web Solutions FL** (https://www.websolutionsfl.com/).
 

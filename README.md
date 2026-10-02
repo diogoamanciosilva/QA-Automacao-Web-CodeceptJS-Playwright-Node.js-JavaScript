@@ -2865,12 +2865,10 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 | **BUG-01** | A busca de eventos por **local** não retorna os eventos associados ao local pesquisado. Ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, mesmo existindo eventos associados ao local, o sistema exibe a mensagem **"Nenhum evento encontrado"**. | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
 
 
+
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-01** | Dado que o usuário esteja na HomePage
-Quando pesquisar pelo nome de um local específico **(Ex: Fabrique Club)**
-Então os eventos associados ao local correspondente devem ser exibidos
-. | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
+| **BUG-01** | **Dado** que o usuário esteja na HomePage <br> **Quando** pesquisar pelo nome de um local específico (Ex: Fabrique Club) <br> **Então** os eventos associados ao local correspondente devem ser exibidos | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
 
 
 ## 🎬 **Vídeo:**

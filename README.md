@@ -5,15 +5,17 @@
 https://github.com/user-attachments/assets/ff99d504-0635-48ce-9098-cf41ed329670
 
 
-A **FasTix** é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 
+A **FasTix** é uma plataforma brasileira de comercialização, distribuição e intermediação de ingressos para o mercado de entretenimento, conectando o público a organizadores de eventos de diferentes portes de shows e festivais a cursos, palestras e eventos esportivos.
 
-O projeto consiste na documentação **Gherkin (linguagem para descrever o comportamento do software)** e **BDD (Behavior-Driven Development)**, em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa do site Fastix em Outubro de 2026.**
+O projeto consiste no desenvolvimento de uma suíte de testes automatizados para o site **FasTix** (https://fastix.com.br), com cenários documentados em **Gherkin** (Linguagem estruturada para descrever o comportamento do software) e organizados seguindo a abordagem **BDD (Behavior-Driven Development)**. 
 
-A suíte automatizada do FasTix **reúne 586 testes distribuídos em 6 Features**, cobrindo toda a jornada do usuário na plataforma do primeiro acesso à compra de ingressos **sob 17 dimensões de qualidade diferentes, não apenas validação funcional.**
+Todos os testes foram construídos e executados com base na **versão de produção ativa do site em Outubro de 2026**.
 
-O site foi desenvolvido pela **empresa americana Web Solutions FL** (https://www.websolutionsfl.com/).
+A suíte reúne **586 testes distribuídos em 6 Features**, cobrindo a jornada completa do usuário na plataforma do primeiro acesso à compra de ingressos, avaliada sob **17 dimensões de qualidade**, que vão além da validação funcional e incluem acessibilidade, segurança, internacionalização, performance, estresse e observabilidade, entre outras verificações.
 
-Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio.**
+O site foi desenvolvido pela empresa americana **Web Solutions FL** (https://www.websolutionsfl.com/). 
+
+Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio**.
 
 ---
 

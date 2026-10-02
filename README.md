@@ -3161,7 +3161,6 @@ BUG-01, BUG-03 e BUG-05 apresentam impacto diretamente relacionado à execução
 O BUG-05 possui comportamento intermitente quanto ao momento exato de reprodução. Conforme observado no cenário, não existe um intervalo fixo para que o problema ocorra: em determinadas execuções o comportamento é reproduzido rapidamente, enquanto em outras pode ser necessário repetir o fluxo de alternância entre abas.
 
 O BUG-06 também apresenta impacto sobre a configuração de permissões, uma vez que a alteração de uma permissão pode fazer com que o template previamente selecionado deixe de ser preservado.
-
 As informações utilizadas neste documento foram mantidas de acordo com os cenários, resultados atuais e resultados esperados apresentados nos testes analisados.
 
 A ISSUE-07, é relacionado ao link do rodapé que redireciona corretamente para o perfil no X, mas exibe a logo desatualizada do Twitter.
@@ -3182,15 +3181,21 @@ O comportamento esperado é de substituir o ícone antigo do Twitter pela nova l
 | BUG-05 | Comprar Ingressos | Alta       | Falha na preservação do estado do checkout após alternância de abas            |
 | BUG-06 | Publicar Eventos  | Média      | Falha na persistência do estado do template durante a alteração das permissões |
 
-Essa visão consolidada evidencia que **a Feature Comprar Ingressos concentra três dos seis bugs identificados**, sendo também a única Feature com mais de uma ocorrência no conjunto analisado. Os demais bugs estão distribuídos entre **Explorar Eventos, Suporte e Ajuda e Publicar Eventos**.
+Essa visão consolidada evidencia que **a Feature Comprar Ingressos concentra três dos seis bugs identificados**, sendo também a única Feature com mais de uma ocorrência no conjunto analisado. 
 
-Em relação às causas raiz, os problemas estão associados principalmente a **validação de dados, gerenciamento de estado e controle de componentes da interface**. O BUG-02 e o BUG-03 apresentam um padrão relacionado à ausência ou insuficiência de validação de limites de entrada, enquanto o BUG-05 e o BUG-06 envolvem problemas relacionados à preservação do estado da aplicação.
+Os demais bugs estão distribuídos entre **Explorar Eventos, Suporte e Ajuda e Publicar Eventos**.
+
+Em relação às causas raiz, os problemas estão associados principalmente a **validação de dados, gerenciamento de estado e controle de componentes da interface**. 
+
+O **BUG-02 e o BUG-03** apresentam um padrão relacionado à ausência ou insuficiência de validação de limites de entrada, enquanto **o BUG-05 e o BUG-06** envolvem problemas relacionados à preservação do estado da aplicação.
 
 ### 🛎️ Conclusão
 
 A análise demonstra que os bugs não estão concentrados exclusivamente em problemas visuais. O conjunto apresenta diferentes padrões técnicos, envolvendo **processamento de dados de busca, validação de entradas, gerenciamento de notificações e persistência de estado**.
 
-A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por concentrar **três ocorrências distintas**, incluindo um problema relacionado ao estado do checkout após alternância de abas. Já os BUG-02 e BUG-03 indicam uma oportunidade de fortalecer as validações de limites de entrada em diferentes pontos da plataforma.
+A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por concentrar **três ocorrências distintas**, incluindo um problema relacionado ao estado do checkout após alternância de abas. 
+
+Já os **BUG-02 e BUG-0**3 indicam uma oportunidade de fortalecer as validações de limites de entrada em diferentes pontos da plataforma.
 
 > **Nota de RCA:** As causas apresentadas neste board representam a **causa raiz provável/inferida a partir dos comportamentos observados nos cenários de teste**. A confirmação da causa raiz técnica exigiria análise do código, logs, arquitetura ou evidências adicionais de implementação.
 
@@ -3199,7 +3204,6 @@ A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por
 
 ## 📊 Análise da Suíte de Testes
 
-
 A suíte identificou 6 bugs distribuídos entre quatro Features:
 
 * **Explorar Eventos**
@@ -3207,11 +3211,11 @@ A suíte identificou 6 bugs distribuídos entre quatro Features:
 * **Comprar Ingressos** 
 * **Publicar Eventos** 
 
-A maior concentração de 50% está situado na Feature Comprar Ingressos, área de maior criticidade para o negócio por envolver diretamente o fluxo de receita da plataforma. 
+A maior concentração de **50% está situado na Feature Comprar Ingressos**, área de maior criticidade para o negócio por envolver diretamente o fluxo de receita da plataforma. 
 
-Os três bugs desta Feature estão relacionados a camadas técnicas distintas: validação de entrada (BUG-03), controle de notificações (BUG-04) e preservação de estado do checkout (BUG-05), o que descarta uma causa raiz única e aponta para oportunidades de melhoria em diferentes pontos do mesmo fluxo. 
+**Os três bugs desta Feature** estão relacionados a camadas técnicas distintas: **Validação de entrada (BUG-03), controle de notificações (BUG-04) e preservação de estado do checkout (BUG-05)**, o que descarta uma causa raiz única e aponta para oportunidades de melhoria em diferentes pontos do mesmo fluxo. 
 
-Transversalmente, o padrão de ausência de validação de limite de caracteres presente tanto no BUG-02 (Suporte e Ajuda) quanto no BUG-03 (Comprar Ingressos) indica uma oportunidade de fortalecimento das validações de entrada que vai além de uma Feature isolada. 
+Transversalmente, o padrão de ausência de validação de limite de caracteres presente tanto no **BUG-02 (Suporte e Ajuda) quanto no BUG-03 (Comprar Ingressos)** indica uma oportunidade de fortalecimento das validações de entrada que vai além de uma Feature isolada. 
 
 A ausência de bugs registrados nas Features Tela Inicial e Criar Conta reflete o escopo dos cenários executados, não a ausência de defeitos nessas áreas distinção relevante para qualquer leitura desta análise.
 
@@ -3351,7 +3355,7 @@ A análise abaixo foi construída a partir dos comportamentos observados nos cen
 
 * **Validação de entrada:** concentra o maior número de ocorrências (**3 bugs: BUG-01, BUG-02 e BUG-03**).
 
-**Lógica de busca e matching:** concentra **1 bug (BUG-01)** — 16,7% dos achados. O **BUG-01** apresenta comportamento inconsistente na pesquisa de eventos por local: ao pesquisar por "Fabrique" ou "Fabrique Club", o sistema retorna **"Nenhum evento encontrado"**, apesar da existência de eventos associados ao local. A causa raiz inferida está no algoritmo de busca e matching, que não encontra correspondência entre o termo pesquisado e os registros existentes.
+**Lógica de busca e matching:** concentra **1 bug (BUG-01)**: 16,7% dos achados. O **BUG-01** apresenta comportamento inconsistente na pesquisa de eventos por local: ao pesquisar por "Fabrique" ou "Fabrique Club", o sistema retorna **"Nenhum evento encontrado"**, apesar da existência de eventos associados ao local. A causa raiz inferida está no algoritmo de busca e matching, que não encontra correspondência entre o termo pesquisado e os registros existentes.
 
 **Validação de entrada:** concentra **2 bugs (BUG-02 e BUG-03**) — 33,3% dos achados. **O BUG-02** está relacionado ao comportamento do campo **"Nome"** diante de uma entrada superior ao limite esperado de caracteres, indicando uma possível ausência ou insuficiência de validação do tamanho máximo permitido.
 
@@ -3370,7 +3374,7 @@ A análise abaixo foi construída a partir dos comportamentos observados nos cen
 
 No **BUG-05,** após a alternância entre abas do navegador, o sistema pode apresentar duplicação do modal de pagamento, incluindo opções e botões de pagamento. O cenário também registra a ocorrência de mensagem de erro após a interação com o segundo modal.
 
-No **BUG-06,** a seleção realizada no campo "Template" não é preservada quando uma permissão de seção é alterada. O valor previamente selecionado pode ser substituído por "Templates".
+Já no **BUG-06,** a seleção realizada no campo "Template" não é preservada quando uma permissão de seção é alterada. O valor previamente selecionado pode ser substituído por "Templates".
 
 Embora os dois comportamentos sejam diferentes, ambos apresentam indícios de problemas relacionados à manutenção do estado da interface durante mudanças de contexto ou interação.
 
@@ -3382,7 +3386,7 @@ No caso do BUG-05, existem evidências adicionais de comportamento relacionado a
 
 ### 🫆 Causa Raiz 3: Controle de componentes e notificações (FAZENDO...)
 
-* **Controle de componentes e notificações:** está associado ao **BUG-04**, relacionado à geração de múltiplos Toasts ao clicar repetidamente no botão **"Copiar chave"** durante o pagamento via PIX.
+* **Controle de componentes e notificações:** Está associado ao **BUG-04**, relacionado à geração de múltiplos Toasts ao clicar repetidamente no botão **"Copiar chave"** durante o pagamento via PIX.
 
 * O comportamento indica que cada interação dispara uma nova notificação sem que exista, aparentemente, um mecanismo adequado de controle, deduplicação ou bloqueio de chamadas repetidas.
 
@@ -3420,6 +3424,8 @@ A distribuição demonstra que **a maior concentração de ocorrências está re
 
 ## 🔗 Bug × Feature × Causa Raiz
 
+Essa visão consolidada evidencia que **a Feature Comprar Ingressos concentra três dos seis bugs identificados (50%)**, sendo a única Feature com mais de uma ocorrência no conjunto analisado. Os demais bugs estão distribuídos individualmente entre **Explorar Eventos, Suporte e Ajuda e Publicar Eventos**.
+
 | Bug | Feature | Severidade | Causa Raiz |
 |---|---|---|---|
 | BUG-01 | Explorar Eventos | Alta | Validação de entrada — falha na normalização e/ou filtragem da busca por local |
@@ -3428,8 +3434,6 @@ A distribuição demonstra que **a maior concentração de ocorrências está re
 | BUG-04 | Comprar Ingressos | Baixa | Controle de componentes — falha no controle/deduplicação das notificações Toast |
 | BUG-05 | Comprar Ingressos | Alta | Gerenciamento de estado — falha na preservação do estado do checkout após alternância de abas |
 | BUG-06 | Publicar Eventos | Média | Gerenciamento de estado — falha na persistência do estado do template durante a alteração das permissões |
-
-Essa visão consolidada evidencia que **a Feature Comprar Ingressos concentra três dos seis bugs identificados (50%)**, sendo a única Feature com mais de uma ocorrência no conjunto analisado. Os demais bugs estão distribuídos individualmente entre **Explorar Eventos, Suporte e Ajuda e Publicar Eventos**.
 
 Em relação às causas raiz, diferente do exemplo de referência (onde a mesma causa atravessava múltiplas Features), aqui **cada causa raiz está associada a um padrão técnico distinto**: validação de entrada, gerenciamento de estado e controle de componentes. Os BUG-02 e BUG-03 apresentam um padrão comum de ausência de validação de limites, enquanto BUG-05 e BUG-06 envolvem problemas de preservação de estado em contextos diferentes da aplicação.
 

@@ -3200,6 +3200,21 @@ A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por
 ## 📊 Análise da Suíte de Testes
 
 
+A suíte identificou 6 bugs distribuídos entre quatro Features:
+
+* **Explorar Eventos**
+* **Suporte e Ajuda**
+* **Comprar Ingressos** 
+* **Publicar Eventos** 
+
+A maior concentração de 50% está situado na Feature Comprar Ingressos, área de maior criticidade para o negócio por envolver diretamente o fluxo de receita da plataforma. 
+
+Os três bugs desta Feature estão relacionados a camadas técnicas distintas: validação de entrada (BUG-03), controle de notificações (BUG-04) e preservação de estado do checkout (BUG-05), o que descarta uma causa raiz única e aponta para oportunidades de melhoria em diferentes pontos do mesmo fluxo. 
+
+Transversalmente, o padrão de ausência de validação de limite de caracteres presente tanto no BUG-02 (Suporte e Ajuda) quanto no BUG-03 (Comprar Ingressos) indica uma oportunidade de fortalecimento das validações de entrada que vai além de uma Feature isolada. 
+
+A ausência de bugs registrados nas Features Tela Inicial e Criar Conta reflete o escopo dos cenários executados, não a ausência de defeitos nessas áreas distinção relevante para qualquer leitura desta análise.
+
 ### 📈 Distribuição de Bugs por Feature
 
 <img width="1781" height="1060" alt="bugs_por_feature_fastix" src="https://github.com/user-attachments/assets/b4d8f1d7-b661-498f-b556-4a8ea2442196" />

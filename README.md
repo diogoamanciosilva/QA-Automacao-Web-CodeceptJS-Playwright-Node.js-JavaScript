@@ -3563,7 +3563,7 @@ Tratar E2E, Regressão, Stress e Funcional como categorias equivalentes é um er
 
 **3. Comportamento de terceiros precisa de tratamento explícito nos testes**
 
-Os cenários de login social (Google/Apple) evidenciaram que, em automação, bloqueios antibot de provedores externos são resultados esperados, não falhas. Tratar o redirecionamento correto para o domínio do provedor como critério de sucesso — sem tentar completar a autenticação é uma decisão de design de teste que evita falsos negativos e torna a suíte mais estável. O mesmo raciocínio se aplica à integração com Google Maps/Places: validar que a entrada retornou uma sugestão é diferente de validar que a sugestão é geográfica ou semanticamente correta.
+Os cenários de login social (Google/Apple) evidenciaram que, em automação, bloqueios antibot de provedores externos são resultados esperados, não falhas. Tratar o redirecionamento correto para o domínio do provedor como critério de sucesso sem tentar completar a autenticação é uma decisão de design de teste que evita falsos negativos e torna a suíte mais estável. O mesmo raciocínio se aplica à integração com Google Maps/Places: validar que a entrada retornou uma sugestão é diferente de validar que a sugestão é geográfica ou semanticamente correta.
 
 **4. Testes que documentam comportamento em vez de assumir um resultado fixo são mais duráveis**
 

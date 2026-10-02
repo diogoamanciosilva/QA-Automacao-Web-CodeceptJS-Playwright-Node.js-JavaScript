@@ -2964,8 +2964,7 @@ O sistema deve limitar o campo **E-mail** a 255 caracteres ou exibir uma mensage
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-04** | Ao clicar repetidamente no botão **"Copiar chave"** do PIX, o sistema gera **múltiplos toasts de notificação** com a mesma mensagem, causando duplicidade visual de notificações e comportamento inconsistente da interface. | 🔹 **Baixa** | Acessar o pagamento via PIX → preencher o e-mail → clicar em **"Pagar"** → clicar repetidamente em **"Copiar chave"** → observar os toasts exibidos no topo da página. | `Cenário 0000000101` — Feature **Comprar Ingressos** |
-
+| **BUG-04** | **Cenário:** Evitar múltiplos toasts de notificações ao clicar repetidamente no botão "Copiar chave" <br><br> **Dado** que o usuário seleciona a opção PIX como forma de pagamento <br> **Quando** preenche o campo de e-mail e clica no botão "Pagar" <br> **Então** o sistema deve exibir o QR Code do PIX e o botão "Copiar chave" <br> **E** ao clicar repetidamente em "Copiar chave", o usuário deve conseguir copiar a chave PIX para a área de transferência <br> **E** mesmo com cliques repetidos, o sistema deve exibir apenas um toast de notificação no topo da tela com a mensagem: "Código PIX - Código copiado para a área de transferência!" | 🔹 **Baixa** | Acessar o pagamento via PIX → preencher o e-mail → clicar em **"Pagar"** → clicar repetidamente em **"Copiar chave"** → observar os toasts exibidos no topo da página. | `Cenário 0000000101` — Feature **Comprar Ingressos** |
 🎬 **Vídeo:**
 
 https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b

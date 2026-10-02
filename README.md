@@ -3172,6 +3172,19 @@ O comportamento esperado é de substituir o ícone antigo do Twitter pela nova l
 
 ## 🔗 Bug × Feature × Causa Raiz
 
+Os **6 bugs identificados** estão distribuídos entre quatro Features, com Comprar Ingressos concentrando três ocorrências a única Feature com mais de um achado no conjunto analisado.
+As causas raiz se agrupam em três padrões técnicos distintos: 
+
+* **Ausência de validação de limite de entrada (BUG-02 e BUG-03);**
+
+* **Falha na preservação de estado (BUG-05 e BUG-06;** 
+
+* **Falha no controle de componentes da interface (BUG-04);**
+
+* **De forma diferente o BUG-01 envolve normalização e filtragem da busca por local).** 
+
+Esse agrupamento indica que os problemas não são isolados por Feature, mas sim manifestações de fragilidades técnicas que atravessam diferentes áreas da plataforma: a mesma ausência de validação de entrada que aparece em Suporte e Ajuda reaparece em Comprar Ingressos, e a falha de preservação de estado que compromete o checkout (BUG-05) tem paralelo direto no comportamento do template de permissões em Publicar Eventos (BUG-06).
+
 | Bug    | Feature           | Severidade | Causa Raiz                                                                     |
 | ------ | ----------------- | ---------- | ------------------------------------------------------------------------------ |
 | BUG-01 | Explorar Eventos  | Alta       | Falha na normalização e/ou filtragem da busca por local                        |

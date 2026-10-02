@@ -2876,7 +2876,9 @@ https://github.com/user-attachments/assets/879cdbc9-53fe-4cdd-8a92-98698e1bc2e7
 ## ❗**Resultado Esperado:**
 
 O campo de busca acessado pelo botão **"Explorar Eventos"** deverá retornar todos os eventos associados ao local pesquisado. 
+
 Por exemplo, ao pesquisar por **"Fabrique" ou "Fabrique Club"**, ambas as buscas devem exibir todos os eventos associados ao local pesquisado.
+
 Exemplo de eventos cadastrados para o local, Fabrique:
 
 <img width="552" height="226" alt="image" src="https://github.com/user-attachments/assets/dddc7c2b-2720-4b1e-9c9c-8d70ded8481e" />
@@ -3120,6 +3122,7 @@ https://github.com/user-attachments/assets/6b41a139-32b0-4bff-8afb-43816bd69253
 ## ❗**Resultado Esperado:**
 
 Ao selecionar o template "Marketing" no modal "Permissões de Acesso" e alterar a permissão da seção "Visão Geral" para "Acesso Total", o template previamente selecionado deve permanecer visível e selecionado no campo "Template", preservando a configuração definida pelo usuário durante toda a edição das permissões.
+
 O valor do template selecionado deve ser mantido, sem que a seleção seja perdida após qualquer alteração nas permissões. Esse comportamento deve ocorrer independentemente do template escolhido.
 
 

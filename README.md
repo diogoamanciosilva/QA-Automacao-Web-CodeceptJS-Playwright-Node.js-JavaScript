@@ -3135,7 +3135,7 @@ O valor do template selecionado deve ser mantido, sem que a seleção seja perdi
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **ISSUE-07** | **Cenário:** Clicar no ícone do Twitter no footer (Ícone desatualizado) <br><br> **Dado** que o usuário esteja na página inicial <br> **Quando** navegar até o footer da página <br> **E** clicar no ícone do Twitter (ícone desatualizado) situado no lado direito da página <br> **Então** o usuário deve ser redirecionado para a página oficial da FasTix no X | 🔹 **Baixa** | Acessar a página → rolar até o rodapé (*footer*) → localizar o ícone do Twitter na seção de redes sociais → verificar a imagem do ícone exibido. | `Cenário 00028` — Feature **Vídeo** |
+| **ISSUE-07** | **Cenário:** Clicar no ícone do Twitter no footer (Ícone desatualizado) <br><br> **Dado** que o usuário esteja na página inicial <br> **Quando** navegar até o footer da página <br> **E** clicar no ícone do Twitter (ícone desatualizado) situado no lado direito da página <br> **Então** o usuário deve ser redirecionado para a página oficial da FasTix no X | 🔹 **Baixa** | 1. Acessar a página inicial da FasTix. <br> 2. Navegar até o final da página (footer). <br> 3. Identificar o ícone do Twitter (ícone desatualizado) localizado no lado direito do footer. <br> 4. Clicar no ícone do Twitter. <br> 5. Aguardar o redirecionamento automático para a página oficial da FasTix no X. | `Cenário 00028` — Feature **Vídeo** |
 
 🎬 **Vídeo:**
 

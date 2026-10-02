@@ -2990,7 +2990,7 @@ https://github.com/user-attachments/assets/f8dc679c-3dca-4553-a6b4-eebf7521e95b
 
 <img width="1157" height="612" alt="image" src="https://github.com/user-attachments/assets/aea4d3b9-64e3-4748-a103-5f543c4b2d8c" />
 
-* **05 - Ao colocar o cursor do mouse em cima do toast de notificação exibido, outros toasts de notificações vão ser exibidos na página::**
+* **05 - Ao colocar o cursor do mouse em cima do toast de notificação exibido, outros toasts de notificações vão ser exibidos na página:**
 <img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/e33ba8c0-7802-45b1-9ff5-5df1d9088e31" />
 
 
@@ -3042,7 +3042,7 @@ https://github.com/user-attachments/assets/0ee197fe-a999-40ac-b5de-a743f692885c
 <img width="1155" height="612" alt="image" src="https://github.com/user-attachments/assets/f50e1406-9708-4df2-8827-2ca66db36639" />
 
 
-* **05 - Após esse clique, o sistema exibirá o seguinte erro: "Ocorreu um erro. Por favor, tente novamente mais tarde."**
+* **05 - Após esse clique, o sistema exibirá o seguinte erro: "Ocorreu um erro. Por favor, tente novamente mais tarde.":**
 
 <img width="1158" height="615" alt="image" src="https://github.com/user-attachments/assets/9251b666-b484-4f9b-9d29-94b301cc892a" />
 

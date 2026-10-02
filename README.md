@@ -3555,19 +3555,45 @@ A execução deste projeto gerou aprendizados técnicos concretos em quatro áre
 
 **1. Automação em ambiente de produção exige disciplina de escopo**
 
-Testar diretamente em produção sem staging força decisões que não aparecem em projetos com infraestrutura completa: quais cenários são seguros de executar repetidamente, quais podem gerar efeitos colaterais e onde o teste precisa parar antes de ultrapassar o limite do observável. Essa restrição, que inicialmente parece uma limitação, também treina uma habilidade importante: construir cenários precisos que validam o comportamento necessário sem depender de condições que só existem em ambientes controlados.
+Testar diretamente em produção sem staging força decisões que não aparecem em projetos com infraestrutura completa: quais cenários são seguros de executar repetidamente, quais podem gerar efeitos colaterais e onde o teste precisa parar antes de ultrapassar o limite do observável. 
+
+Essa restrição, que inicialmente parece uma limitação, também treina uma habilidade importante: construir cenários precisos que validam o comportamento necessário sem depender de condições que só existem em ambientes controlados.
 
 **2. Classificação por dimensões de qualidade evita análises enganosas**
 
-Tratar E2E, Regressão, Stress e Funcional como categorias equivalentes é um erro comum em suítes grandes. Ao separar escopo da jornada (E2E) de objetivo funcional (Funcional) de condição de execução (Stress), ficou possível identificar com precisão o que cada cenário realmente valida e comunicar isso sem ambiguidade para equipes de desenvolvimento, produto e operação. A distinção também evita que uma suíte pareça mais abrangente do que é: um teste de stress de carrossel não é um teste de performance de infraestrutura.
+Tratar E2E, Regressão, Stress e Funcional como categorias equivalentes é um erro comum em suítes grandes. 
+
+Ao separar escopo da jornada (E2E) de objetivo funcional (Funcional) de condição de execução (Stress), ficou possível identificar com precisão o que cada cenário realmente valida e comunicar isso sem ambiguidade para equipes de desenvolvimento, produto e operação. A distinção também evita que uma suíte pareça mais abrangente do que é: um teste de stress de carrossel não é um teste de performance de infraestrutura.
 
 **3. Comportamento de terceiros precisa de tratamento explícito nos testes**
 
-Os cenários de login social (Google/Apple) evidenciaram que, em automação, bloqueios antibot de provedores externos são resultados esperados, não falhas. Tratar o redirecionamento correto para o domínio do provedor como critério de sucesso sem tentar completar a autenticação é uma decisão de design de teste que evita falsos negativos e torna a suíte mais estável. O mesmo raciocínio se aplica à integração com Google Maps/Places: validar que a entrada retornou uma sugestão é diferente de validar que a sugestão é geográfica ou semanticamente correta.
+Os cenários de login social (Google/Apple) evidenciaram que, em automação, bloqueios antibot de provedores externos são resultados esperados, não falhas. 
+
+Tratar o redirecionamento correto para o domínio do provedor como critério de sucesso sem tentar completar a autenticação é uma decisão de design de teste que evita falsos negativos e torna a suíte mais estável. 
+
+O mesmo raciocínio se aplica à integração com Google Maps/Places: validar que a entrada retornou uma sugestão é diferente de validar que a sugestão é geográfica ou semanticamente correta.
 
 **4. Testes que documentam comportamento em vez de assumir um resultado fixo são mais duráveis**
 
-Alguns cenários desta suíte aceitam mais de um resultado como válido o formulário de Criar Conta pode ou não preservar dados após refresh, e ambos os comportamentos são aceitáveis desde que o estado final seja consistente. Esse padrão, aplicado nos cenários 0035 e 0047 da Feature Criar Conta, representa uma abordagem mais madura do que afirmar "o campo deve estar vazio" sem confirmar qual é o comportamento de negócio pretendido. Testes que documentam o comportamento atual sem presumir uma única resposta correta tendem a ser mais estáveis ao longo do tempo e geram descobertas mais úteis do que testes que apenas confirmam o que já se sabe.
+Alguns cenários desta suíte aceitam mais de um resultado como válido o formulário de Criar Conta pode ou não preservar dados após refresh, e ambos os comportamentos são aceitáveis desde que o estado final seja consistente. 
+
+Esse padrão, aplicado nos cenários 0035 e 0047 da Feature Criar Conta, representa uma abordagem mais madura do que afirmar "o campo deve estar vazio" sem confirmar qual é o comportamento de negócio pretendido. 
+
+Testes que documentam o comportamento atual sem presumir uma única resposta correta tendem a ser mais estáveis ao longo do tempo e geram descobertas mais úteis do que testes que apenas confirmam o que já se sabe.
+
+**5. Escalar uma suíte de testes em produção exige replanejamento contínuo**
+
+A construção desta suíte foi iterativa por necessidade, não por escolha inicial. O escopo cresceu significativamente ao longo da execução: cada Feature revelava dimensões de cobertura não previstas no planejamento original, o que exigiu revisões sucessivas da estrutura, da classificação dos cenários e da estratégia de abordagem por área funcional. 
+
+Esse processo evidenciou uma característica real do trabalho de QA em ambientes sem infraestrutura dedicada: a ausência de ambiente de testes, logs internos e acesso administrativo não elimina a necessidade de cobertura, ela desloca o esforço para a camada de design dos cenários. 
+
+Sem a possibilidade de injetar dados controlados ou simular falhas, a alternativa foi construir cenários que documentam o comportamento observável com precisão suficiente para serem úteis mesmo dentro dessas restrições. 
+
+O resultado prático foi uma suíte maior e mais densa do que o planejamento inicial previa, com cenários que, em alguns casos, aceitam mais de um estado como válido justamente porque o comportamento de negócio correto não pôde ser confirmado além da interface pública. 
+
+Essa é uma decisão técnica consciente: Um cenário que documenta dois resultados aceitáveis e falha apenas no estado inconsistente é mais honesto e mais durável do que um cenário que presume uma única resposta correta sem evidência suficiente para sustentá-la.
+
+
 
 ## 📬 Contato
 

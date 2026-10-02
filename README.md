@@ -4,16 +4,6 @@
 
 https://github.com/user-attachments/assets/aa01fb94-7514-4cea-b1a4-62f4478a15d6
 
-
-<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/d824a189-1a3d-43a3-a951-29b8a8d5152b" />
-
-<img width="1908" height="1020" alt="image" src="https://github.com/user-attachments/assets/c4a8dd60-10fc-4ad0-b3af-0026098aa6c5" />
-
-<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/c23cd596-ee67-4ba2-a957-e3e0e85f0ed5" />
-
-<img width="1917" height="1020" alt="image" src="https://github.com/user-attachments/assets/5f897dc5-d6be-4261-beff-70c8222ec644" />
-
-
 A **FasTix** é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 
 
 O projeto consiste na documentação **Gherkin (linguagem para descrever o comportamento do software)** e **BDD (Behavior-Driven Development)**, em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa publicada em julho de 2026.**

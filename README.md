@@ -2926,7 +2926,7 @@ O campo **"Nome"** deve possuir um limite máximo de caracteres, informar esse l
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-03** | O campo **E-mail** da etapa de pagamento via PIX permite a inserção de até **510 caracteres**, ultrapassando o limite de 255 caracteres esperado para o campo. Ao tentar prosseguir, o sistema apresenta as mensagens **"Formato inválido"** e **"Preencha todos os dados para continuar"**, em vez de impedir ou informar previamente o excesso de caracteres. | 🔸 **Média** | Acessar um evento → selecionar ingressos → clicar em **"Comprar ingressos"** → realizar login → selecionar **PIX** → informar um e-mail com mais de 255 caracteres → clicar em **"Pagar"**. | `Cenário 000000089` — Feature **Comprar Ingressos** |
+| **BUG-03** | **Cenário:** Validar o limite máximo do campo "Nome" <br><br> **Dado** que o usuário acesse a página inicial da plataforma <br> **E** navegue para a página "Suporte e Ajuda" <br> **Quando** preencher o campo "Nome" com um texto superior ao limite permitido <br> **Então** o sistema deve limitar a quantidade de caracteres aceitos no campo <br> **E** o campo não deve aceitar todo o conteúdo informado <br> **E** o campo não deve permanecer vazio após o preenchimento <br> **E** o valor armazenado no campo deve corresponder exatamente ao texto original truncado no limite permitido | 🔸 **Média** | Acessar um evento → selecionar ingressos → clicar em **"Comprar ingressos"** → realizar login → selecionar **PIX** → informar um e-mail com mais de 255 caracteres → clicar em **"Pagar"**. | `Cenário 000000089` — Feature **Comprar Ingressos** |
 
 🎬 **Vídeo:**
 

@@ -2862,7 +2862,7 @@ Durante a execução e análise da suíte de testes, além da validação funcio
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-01** | **Cenário:** Buscar um local (Ex: Fabrique Club) no campo de pesquisa (Botão: Explorar eventos) <br><br> **Dado** que o usuário esteja na HomePage <br> **Quando** pesquisar pelo nome de um local específico (Ex: Fabrique Club) <br> **Então** os eventos associados ao local correspondente devem ser exibidos | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
+| **BUG-01** | **Cenário:** Buscar um local (Ex: Fabrique Club) no campo de pesquisa (Botão: Explorar eventos) <br><br> **Dado** que o usuário esteja na HomePage <br> **Quando** pesquisar pelo nome de um local específico **(Ex: Fabrique Club)** <br> **Então** os eventos associados ao local correspondente devem ser exibidos | 🔺 **Alta** | Acessar a Home → clicar em **"Explorar eventos"** → acessar o campo de pesquisa → pesquisar por `"Fabrique"` ou `"Fabrique Club"` → verificar os resultados apresentados. | `Cenário 09` — Feature **Explorar Eventos** |
 
 
 ## 🎬 **Vídeo:**
@@ -2895,7 +2895,7 @@ Exemplo de eventos cadastrados para o local, Fabrique:
 
 | ID | Descrição | Severidade | Passos para reproduzir | Evidência (teste) |
 | :--- | :--- | :---: | :--- | :--- |
-| **BUG-02** | O campo **"Nome"** da página **Suporte e Ajuda** não apresenta comportamento adequado ao receber uma quantidade de caracteres superior ao limite esperado. O cenário exige que o sistema limite o conteúdo, informe o limite ao usuário e preserve exatamente o texto truncado permitido. | 🔸 **Média** | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo. | `Cenário 0036` — Feature **Suporte e Ajuda** |
+| **BUG-02** | **Cenário:** Validar o limite máximo do campo "Nome" <br><br> **Dado** que o usuário acesse a página inicial da plataforma <br> **E** navegue para a página "Suporte e Ajuda" <br> **Quando** preencher o campo "Nome" com um texto superior ao limite permitido <br> **Então** o sistema deve limitar a quantidade de caracteres aceitos no campo <br> **E** o campo não deve aceitar todo o conteúdo informado <br> **E** o campo não deve permanecer vazio após o preenchimento <br> **E** o valor armazenado no campo deve corresponder exatamente ao texto original truncado no limite permitido | 🔸 **Média** | Acessar **"Suporte e Ajuda"** → localizar o campo **"Nome"** → inserir um texto contendo **937 caracteres** → verificar o comportamento e a quantidade de caracteres aceita pelo campo. | `Cenário 0036` — Feature **Suporte e Ajuda** |
 
 ## 🎬 **Vídeo:**
 

@@ -435,14 +435,15 @@ npx codeceptjs run --steps --verbose
 ## 📁 Estrutura do repositório
 
 ```text
-MeuProjeto/
-├── tests/
-│   └── example_test.js
-├── output/
-├── steps_file.js
+QA-Automacao-Web-CodeceptJS-Playwright-Node.js-JavaScript/
+├── tests/                    # Arquivos de teste JavaScript
+├── docs/
+│   ├── plano-de-testes.md    # Plano de testes em Markdown
+│   └── bugs-e-issues.md      # Registro de bugs
+├── .gitignore
 ├── codecept.conf.js
 ├── package.json
-└── node_modules/
+└── README.md
 ```
 
 

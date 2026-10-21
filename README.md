@@ -77,12 +77,14 @@ Também oferece tecnologia para produtores, com controle total para os organizad
 
 O **CodeceptJS** utiliza recursos do ecossistema **Node.js e JavaScript**, dessa forma ele integra recursos do ecossistema **Node.js e JavaScript**, integrando o **Playwright** para a execução de testes automatizados em aplicações Web.
 
-### Pré-requisitos para utilização no Windows
-* **Node.js**
-* **JavaScript**
-* **CodeceptJS**
-* **Playwright: Para a execução de testes automatizados da aplicação Web da FasTix.**
+### 🛠️ Pré-requisitos para Execução no Windows
 
+| Ferramenta / Tecnologia | Função / Aplicação no Projeto |
+| :--- | :--- |
+| **Node.js** | Ambiente de execução JavaScript (*Runtime*) |
+| **JavaScript** | Linguagem de programação utilizada na automação |
+| **CodeceptJS** | Framework de testes E2E orientado a cenários (*BDD*) |
+| **Playwright** | Helper/Motor de automação para testes Web da FasTix |
 ---
 
 ## 🏷️ Tecnologias utilizadas

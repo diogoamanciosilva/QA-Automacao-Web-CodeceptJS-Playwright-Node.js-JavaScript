@@ -9,9 +9,7 @@ A **FasTix** é uma plataforma brasileira de comercialização, distribuição e
 
 O projeto consiste no desenvolvimento de uma suíte de testes automatizados para o site **FasTix** (https://fastix.com.br), com cenários documentados em **Gherkin** (Linguagem estruturada para descrever o comportamento do software) e organizados seguindo a abordagem **BDD (Behavior-Driven Development)**. 
 
-Todos os testes foram construídos e executados com base na **versão de produção ativa do site em Outubro de 2026**.
-
-A suíte reúne **586 testes distribuídos em 6 Features**, cobrindo a jornada completa do usuário na plataforma do primeiro acesso à compra de ingressos, avaliada sob **17 dimensões de qualidade**, que vão além da validação funcional e incluem acessibilidade, segurança, internacionalização, performance, estresse e observabilidade, entre outras verificações.
+Todos os testes foram construídos e executados com base na **versão de produção ativa do site em Outubro de 2026** e incluem testes de acessibilidade, segurança, internacionalização, performance, estresse e observabilidade, entre outras verificações.
 
 O site foi desenvolvido pela empresa americana **Web Solutions FL** (https://www.websolutionsfl.com/). 
 

@@ -3686,6 +3686,18 @@ O resultado prático foi uma suíte maior e mais densa do que o planejamento ini
 
 Essa é uma decisão técnica consciente: Um cenário que documenta dois resultados aceitáveis e falha apenas no estado inconsistente é mais honesto e mais durável do que um cenário que presume uma única resposta correta sem evidência suficiente para sustentá-la.
 
+---
+
+
+## 👨‍💻 Sobre o Autor
+
+**Diogo Amancio** - Analista de Testes (QA), focado em automação de testes web e boas práticas de qualidade de software.
+
+Este projeto foi desenvolvido de forma independente como parte do meu portfólio profissional,  
+com o objetivo de demonstrar capacidade técnica em **CodeceptJS**, **Playwright**, **Node.js** e **JavaScript**,  
+além de habilidades em planejamento de testes e reporte de defeitos.
+
+🔗 [LinkedIn](https://linkedin.com/in/SEU-PERFIL) · 📧 diogoamanciosilva@gmail.com · 🐙 [GitHub](https://github.com/diogoamanciosilva)
 
 
 ## 📬 Contato

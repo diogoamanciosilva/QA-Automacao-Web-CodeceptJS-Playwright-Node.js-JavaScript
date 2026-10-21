@@ -118,6 +118,26 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 ---
 
+
+## 📋 Plano de Testes
+
+A suíte cobre as principais jornadas do usuário na plataforma FasTix, organizadas em 6 Features:
+
+| Feature                  | Cenários | Foco Principal                                      |
+|--------------------------|----------|-----------------------------------------------------|    
+| 🎟️ Explorar Eventos      | 70       | Listagem, filtros, navegação entre eventos          |
+| 🆘 Suporte e Ajuda       | 75       | Formulários, links de contato, FAQ                 |
+| 🏠 Tela Inicial          | 164      | Hero, banners, componentes visuais, responsividade  |
+| 📢 Publicar Eventos      | 98       | Cadastro de evento, validações, fluxo do produtor  |
+| 🛒 Comprar Ingressos     | 127      | Seleção, checkout, validação de formulário          |
+| 👤 Criar Conta           | 52       | Cadastro, validação de campos, fluxo de onboarding |
+| **Total**                | **586**  |                                                     |
+
+📄 O plano de testes completo está disponível em [`2 - Plano de Testes/`](./2%20-%20Plano%20de%20Testes/).
+
+---
+
+
 ## 📝 Tipos de teste realizados na suíte
 
 | Tipos de Testes |
@@ -439,8 +459,6 @@ npx codeceptjs run --steps --verbose
 ```
 
 ---
-
-## 📁 Estrutura do repositório
 
 ## 📁 Estrutura do Projeto
 

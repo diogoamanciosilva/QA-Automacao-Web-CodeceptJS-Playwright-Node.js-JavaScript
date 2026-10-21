@@ -2890,10 +2890,19 @@ RCA / Bug Report
 
 # 🐞 Bugs Encontrados
 
-
 Durante a execução e análise da suíte de testes, além da validação funcional, foram identificados os seguintes comportamentos inesperados na plataforma FasTix. 
 
 Cada ocorrência foi analisada a partir do cenário correspondente, reproduzida durante a execução dos testes e documentada com seu respectivo comportamento atual, resultado esperado e evidência.
+
+Durante a execução dos testes foram identificados e documentados defeitos reais na plataforma FasTix.  
+Os relatórios seguem o padrão: **título · severidade · passos para reproduzir · resultado esperado vs. obtido · evidência**.
+
+📂 Acesse os registros completos em [`3 - Bugs e Issues/`](./3%20-%20Bugs%20e%20Issues/).
+
+| # | Título (resumo)                     | Severidade | Status   |
+|---|-------------------------------------|------------|----------|
+| 1 | _(exemplo — preencha com os reais)_ | Alta       | Aberto   |
+| 2 | _(exemplo)_                         | Média      | Fechado  |
 
 ## 🔭 Feature Explorar Eventos
 

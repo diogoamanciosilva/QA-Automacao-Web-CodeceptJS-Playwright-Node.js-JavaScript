@@ -17,6 +17,16 @@ O site foi desenvolvido pela empresa americana **Web Solutions FL** (https://www
 
 Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio**.
 
+
+[![Testes](https://img.shields.io/badge/Testes-586%20cenários-brightgreen)]()
+[![Features](https://img.shields.io/badge/Features-6-blue)]()
+[![Stack](https://img.shields.io/badge/Stack-CodeceptJS%20%7C%20Playwright%20%7C%20Node.js-yellow)]()
+[![Plataforma](https://img.shields.io/badge/Plataforma-FasTix-orange)](https://fastix.com.br)
+[![Licença](https://img.shields.io/badge/Licença-MIT-lightgrey)]()
+
+> Suíte de testes automatizados E2E desenvolvida para a plataforma de ingressos **FasTix** (fastix.com.br),  
+> cobrindo as principais jornadas do usuário com **CodeceptJS** e **Playwright**.
+
 ---
 
   ## 📑 Índice

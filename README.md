@@ -105,11 +105,11 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 | Feature | Testes Automatizados / Cenários | Foco Principal |
 | :--- | :---: | :--- |
-| 🎟️ **Explorar Eventos** | 70 | Listagem, filtros, navegação entre eventos |
-| 🆘 **Suporte e Ajuda** | 75 | Formulários, links de contato, FAQ |
+| 🔭 **Explorar Eventos** | 70 | Listagem, filtros, navegação entre eventos |
+| 🙋 **Suporte e Ajuda** | 75 | Formulários, links de contato, FAQ |
 | 🏠 **Tela Inicial** | 164 | Hero, banners, componentes visuais, responsividade |
 | 📢 **Publicar Eventos** | 98 | Cadastro de evento, validações, fluxo do produtor |
-| 🛒 **Comprar Ingressos** | 127 | Seleção, checkout, validação de formulário |
+| 🎟️ **Comprar Ingressos** | 127 | Seleção, checkout, validação de formulário |
 | 👤 **Criar Conta** | 52 | Cadastro, validação de campos, fluxo de onboarding |
 | **Total** | **586** | |
 

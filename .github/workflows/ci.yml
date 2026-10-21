@@ -1,0 +1,44 @@
+name: Testes Automatizados E2E — FasTix
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  testes-e2e:
+    name: Executar Suíte E2E
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: "1 -  Arquivos JavaScript (Testes Automatizados)"
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: "1 -  Arquivos JavaScript (Testes Automatizados)/package-lock.json"
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Instalar browsers do Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Executar testes
+        run: npx codeceptjs run --steps
+
+      - name: Publicar relatório de testes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-testes
+          path: "1 -  Arquivos JavaScript (Testes Automatizados)/output/"
+          retention-days: 7

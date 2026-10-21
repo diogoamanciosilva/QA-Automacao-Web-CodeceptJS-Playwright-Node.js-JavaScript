@@ -443,15 +443,49 @@ npx codeceptjs run --steps --verbose
 ## 📁 Estrutura do repositório
 
 ```text
+## 📁 Estrutura do Projeto
+
+```
 QA-Automacao-Web-CodeceptJS-Playwright-Node.js-JavaScript/
-├── tests/                    # Arquivos de teste JavaScript
-├── docs/
-│   ├── plano-de-testes.md    # Plano de testes em Markdown
-│   └── bugs-e-issues.md      # Registro de bugs
+│
+├── 1 -  Arquivos JavaScript (Testes Automatizados)/
+│   ├── baseline/
+│   │   ├── home-baseline.png          ← Imagem de referência para testes visuais
+│   │   ├── home-atual.png             ← Captura atual gerada pelo Playwright
+│   │   └── home-diff.png              ← Diff visual (diferença detectada)
+│   │
+│   ├── 1 - explorar_eventos_test.js
+│   ├── 2 - suporte_e_ajuda_test.js
+│   ├── 3 - tela_inicial_test.js
+│   ├── 4 - publicar_eventos_test.js
+│   ├── 5 - comprar_ingressos_test.js
+│   ├── 6 - criar_conta_test.js
+│   │
+│   ├── codecept.conf.js               ← Configuração principal do CodeceptJS + Playwright
+│   ├── package.json                   ← Dependências e scripts npm
+│   ├── package-lock.json
+│   ├── jsconfig.json
+│   ├── steps.d.ts                     ← Tipagem para autocomplete da API do CodeceptJS
+│   └── steps_file.js                  ← Custom steps globais reutilizáveis
+│
+├── 2 - Plano de Testes/
+│   └── FasTix - Plano de Testes.docx
+│
+├── 3 - Bugs e Issues/
+│   ├── 1 - FasTix - Bugs e Issues.docx
+│   └── 2 - Vídeos/
+│       ├── 1 - Vídeo - Cenário 09 - Buscar um local no campo de pesquisa.mp4
+│       ├── 2 - Vídeo - Cenário 0036 - Validar o limite máximo do campo Nome.mp4
+│       ├── 3 - Vídeo - Cenário 000000089 - Validar limite máximo de caracteres no campo E-mail via PIX.mp4
+│       ├── 4 - Vídeo - Cenário 0000000101 - Evitar múltiplos toasts ao clicar repetidamente em Copiar chave.mp4
+│       ├── 5 - Vídeo - Cenário 0000000127 - Garantir que elementos do checkout não sejam duplicados.mp4
+│       ├── 6 - Vídeo - Cenário 000097 - Stress integrado - Perfis + Permissões por seção.mp4
+│       └── 7 - Vídeo - Cenário 00028 - Clicar no ícone do Twitter no footer (Ícone desatualizado).mp4
+│
 ├── .gitignore
-├── codecept.conf.js
-├── package.json
+├── FasTix - README.docx
 └── README.md
+```
 ```
 
 

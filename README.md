@@ -3689,17 +3689,6 @@ Essa é uma decisão técnica consciente: Um cenário que documenta dois resulta
 ---
 
 
-## 👨‍💻 Sobre o Autor
-
-**Diogo Amancio** - Analista de Testes (QA), focado em automação de testes web e boas práticas de qualidade de software.
-
-Este projeto foi desenvolvido de forma independente como parte do meu portfólio profissional,  
-com o objetivo de demonstrar capacidade técnica em **CodeceptJS**, **Playwright**, **Node.js** e **JavaScript**,  
-além de habilidades em planejamento de testes e reporte de defeitos.
-
-🔗 [LinkedIn](https://linkedin.com/in/SEU-PERFIL) · 📧 diogoamanciosilva@gmail.com · 🐙 [GitHub](https://github.com/diogoamanciosilva)
-
-
 ## 📬 Contato
 
  

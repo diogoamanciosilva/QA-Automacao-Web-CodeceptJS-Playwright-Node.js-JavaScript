@@ -32,7 +32,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [📱 Sobre o app](#-sobre-o-app)
 - [🤖 CodeceptJS](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
-- [⚙️ Estrutura da Suíte de Testes FasTix](#️-estrutura-da-suíte-de-testes-fastix)
+- [⚙️ Plano de Testes FasTix](#️-estrutura-da-suíte-de-testes-fastix)
 - [📋 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
 - [▶️ Como executar este projeto](#%EF%B8%8F-como-executar-este-projeto)
 - [🧰 Ambiente e rotina diária](#-ambiente-e-rotina-diária)
@@ -99,22 +99,23 @@ O **CodeceptJS** utiliza recursos do ecossistema **Node.js e JavaScript**, dessa
 
 ---
 
-## ⚙️ Estrutura da Suíte de Testes FasTix
-
-A suíte de testes da FasTix é **organizada em 6 Features composto por 586 testes.**
+## 📋 Plano de Testes
 
 Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando pela exploração de eventos, pelo acesso ao suporte e à ajuda, pela tela inicial, pela publicação de eventos, pela compra de ingressos e pela criação de uma conta.
 
-| Feature                   |  Testes Automatizados |
-| ------------------------- | ------: |
-| Feature_Explorar Eventos            |      70 |
-| Feature_Suporte e Ajuda            |      75 |
-| Feature_Tela Inicial          |      164 |
-| Feature_Publicar Eventos|      98 |
-| Feature_Comprar Ingressos           |      127 |
-| Feature_Criar Conta           |      52 |
-| **Total**                 | **586** |
+| Feature | Testes Automatizados / Cenários | Foco Principal |
+| :--- | :---: | :--- |
+| 🎟️ **Explorar Eventos** | 70 | Listagem, filtros, navegação entre eventos |
+| 🆘 **Suporte e Ajuda** | 75 | Formulários, links de contato, FAQ |
+| 🏠 **Tela Inicial** | 164 | Hero, banners, componentes visuais, responsividade |
+| 📢 **Publicar Eventos** | 98 | Cadastro de evento, validações, fluxo do produtor |
+| 🛒 **Comprar Ingressos** | 127 | Seleção, checkout, validação de formulário |
+| 👤 **Criar Conta** | 52 | Cadastro, validação de campos, fluxo de onboarding |
+| **Total** | **586** | |
 
+A suíte de testes da FasTix é **organizada em 6 Features composto por 586 testes.**
+
+📄 O plano de testes completo está disponível em [`2 - Plano de Testes/`](./2%20-%20Plano%20de%20Testes/).
 
 ---
 

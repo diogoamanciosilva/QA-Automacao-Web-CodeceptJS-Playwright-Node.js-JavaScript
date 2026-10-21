@@ -2899,10 +2899,6 @@ Os relatórios seguem o padrão: **título · severidade · passos para reproduz
 
 📂 Acesse os registros completos em [`3 - Bugs e Issues/`](./3%20-%20Bugs%20e%20Issues/).
 
-| # | Título (resumo)                     | Severidade | Status   |
-|---|-------------------------------------|------------|----------|
-| 1 | _(exemplo — preencha com os reais)_ | Alta       | Aberto   |
-| 2 | _(exemplo)_                         | Média      | Fechado  |
 
 ## 🔭 Feature Explorar Eventos
 

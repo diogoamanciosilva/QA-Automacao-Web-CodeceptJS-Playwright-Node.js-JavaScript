@@ -442,7 +442,6 @@ npx codeceptjs run --steps --verbose
 
 ## 📁 Estrutura do repositório
 
-```text
 ## 📁 Estrutura do Projeto
 
 ```
@@ -486,8 +485,6 @@ QA-Automacao-Web-CodeceptJS-Playwright-Node.js-JavaScript/
 ├── FasTix - README.docx
 └── README.md
 ```
-```
-
 
 ---
 

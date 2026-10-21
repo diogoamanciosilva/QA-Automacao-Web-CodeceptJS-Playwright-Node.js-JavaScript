@@ -32,7 +32,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [📱 Sobre o app](#-sobre-o-app)
 - [🤖 CodeceptJS](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
-- [⚙️ Plano de Testes FasTix](#️-estrutura-da-suíte-de-testes-fastix)
+- [⚙️ Plano de Testes FasTix](#-plano-de-testes-1)
 - [📋 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
 - [▶️ Como executar este projeto](#%EF%B8%8F-como-executar-este-projeto)
 - [🧰 Ambiente e rotina diária](#-ambiente-e-rotina-diária)

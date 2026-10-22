@@ -3678,7 +3678,6 @@ https://github.com/user-attachments/assets/8a844b1e-b8fe-4c4f-bb79-eda3269cc2b2
 
 https://github.com/user-attachments/assets/4d4102a3-be32-4df5-9c8b-7f2fa2c4ce3a
 
-
 * **Acesso aos cenários de teste validados em todas as features:**
 
 https://github.com/user-attachments/assets/cbf863ed-b749-4bd8-a86c-0b1da1e0317c
@@ -3695,6 +3694,10 @@ https://github.com/user-attachments/assets/6a0990cc-01e7-45cd-bfb8-607513e20dde
 
 https://github.com/user-attachments/assets/1bedc98b-279e-47e8-bd02-eb1066747b1b
 
+
+* **É possível visualizar todas as opções disponíveis no Filtro de busca:**
+
+https://github.com/user-attachments/assets/faf1c4d7-84ff-4f11-bd10-c4e99c88f86f
 
 
 

@@ -3687,6 +3687,10 @@ https://github.com/user-attachments/assets/cbf863ed-b749-4bd8-a86c-0b1da1e0317c
 
 https://github.com/user-attachments/assets/ff5e5513-3fd0-44de-81c0-de307d6d192f
 
+* **Acesso aos cenários de teste não validados em todas as features:**
+
+https://github.com/user-attachments/assets/6a0990cc-01e7-45cd-bfb8-607513e20dde
+
 
 
 

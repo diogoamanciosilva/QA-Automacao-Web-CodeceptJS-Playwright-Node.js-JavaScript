@@ -3657,6 +3657,19 @@ Como o ciclo de compra de ingressos não foi concluído de ponta a ponta, inclui
 > [!CAUTION]
 > As 128 falhas atuais são consistentes com **alterações ocorridas no ambiente de produção nos 3 meses entre a execução original e a implementação do CI, como mudanças em seletores, estrutura HTML ou fluxos da interface.**
 
+
+## 🎬 Vídeo: Acessar o relatório de testes:
+
+https://github.com/user-attachments/assets/8a844b1e-b8fe-4c4f-bb79-eda3269cc2b2
+
+
+## 📸 Print: Após baixar o arquivo "relatorio-testes", clicar em "report":
+
+<img width="1540" height="866" alt="image" src="https://github.com/user-attachments/assets/d2398c8b-6893-4370-abe5-84d1acebe4a7" />
+
+
+
+
 > 💡 Este cenário é recorrente em projetos reais: Testes escritos contra uma versão específica de um sistema vivo requerem manutenção contínua à medida que o produto evolui. A identificação dessas falhas e o mapeamento de sua causa raiz fazem parte do ciclo natural de QA.
 
 As evidências da execução original estão disponíveis em [`3 - Bugs e Issues/2 - Vídeos/`](./3%20-%20Bugs%20e%20Issues/2%20-%20Vídeos/).

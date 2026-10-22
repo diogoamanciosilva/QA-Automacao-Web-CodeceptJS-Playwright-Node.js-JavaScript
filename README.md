@@ -3611,35 +3611,66 @@ Essas exclusões não representam falhas na cobertura, mas sim **decisões consc
 
 ---
 
-## 🚀 Próximos passos (CI/CD)
+## ⚙️ Integração Contínua (CI/CD)
 
-Atualmente, a suíte é executada manualmente via terminal com o comando `npx codeceptjs run` na máquina local. A automação da execução via **GitHub Actions** foi avaliada como evolução natural do projeto, mas não foi implementada nesta fase por razões técnicas objetivas — não por falta de planejamento.
+[![CI - Testes E2E](https://github.com/diogoamanciosilva/QA-Automacao-Web-CodeceptJS-Playwright-Node.js-JavaScript/actions/workflows/ci.yml/badge.svg)](https://github.com/diogoamanciosilva/QA-Automacao-Web-CodeceptJS-Playwright-Node.js-JavaScript/actions/workflows/ci.yml)
 
-O CodeceptJS com Playwright oferece uma vantagem estrutural importante para CI/CD: os testes rodam em **modo headless** nativamente, sem necessidade de emulador físico ou ambiente gráfico. Isso torna a integração com GitHub Actions tecnicamente mais direta do que em stacks mobile (como o Maestro, que depende de emulador Android ativo e ponte ADB). A base técnica para o pipeline já existe — o que falta é a infraestrutura de suporte necessária para executá-lo com segurança.
+### 🧭 Contexto de implementação
 
-Três fatores limitaram a implementação nesta fase:
+A suíte foi executada originalmente de forma manual via terminal (`npx codeceptjs run`) na máquina local. A automação via GitHub Actions foi avaliada como evolução natural do projeto — e implementada em outubro de 2026, após a conclusão da fase de desenvolvimento dos testes.
 
-- **Execução em produção:** automatizar a execução recorrente de 586 cenários diretamente em produção exigiria controle rigoroso sobre quais testes podem ser disparados sem gerar efeitos colaterais para usuários reais — especialmente fluxos que interagem com formulários públicos, buscas e navegação. Sem essa triagem, o risco de interferência é real.
-- **Ausência de ambiente de staging:** sem um ambiente de homologação disponível, não há destino seguro para rodar a suíte completa de forma automatizada e recorrente. Essa é a dependência mais crítica para a implementação do pipeline.
-- **Cobertura E2E parcial no checkout:** como o ciclo de compra de ingressos não foi concluído de ponta a ponta, incluir esses cenários em um pipeline automatizado exigiria definição clara de quais etapas são seguras para execução recorrente e quais precisam de ambiente controlado com dados de teste reais.
+O CodeceptJS com Playwright oferece uma vantagem estrutural para CI/CD: os testes rodam em modo **headless nativamente**, sem necessidade de ambiente gráfico ou emulador físico. Isso torna a integração com GitHub Actions mais direta do que em stacks mobile (como Maestro, que depende de emulador Android e ponte ADB ativa).
 
-Uma implementação futura seguiria estas etapas:
+---
 
-```text
-1. Provisionar ambiente de staging ou homologação para execução segura e recorrente dos testes.
-2. Separar os cenários em dois grupos: "seguros para produção" (navegação, leitura, consultas)
-   e "restritos a staging" (formulários, checkout, interações com dados).
-3. Criar workflow no GitHub Actions com gatilho em pull requests e merges para a branch principal,
-   executando inicialmente apenas o grupo seguro para produção como smoke test.
-4. Expandir gradualmente para a suíte completa à medida que o ambiente de staging estiver estável.
-5. Publicar automaticamente os relatórios de execução do CodeceptJS como artefato do workflow.
-6. Configurar notificações de falhas via Slack ou e-mail para visibilidade imediata da equipe.
-7. Avaliar serviços de nuvem (BrowserStack, Sauce Labs) para viabilizar testes transacionais reais
-   em ambiente controlado, cobrindo as etapas de pagamento ainda fora do escopo atual.
-```
+### ⚠️ Desafios reconhecidos antes da implementação
 
-O reconhecimento dessas dependências antes de iniciar a implementação é, em si, parte do planejamento de qualidade. Automatizar sem infraestrutura adequada criaria um pipeline instável e difícil de manter — o que prejudicaria a confiança da equipe nos resultados mais do que ajudaria.
+Três fatores foram identificados como riscos antes de implementar o pipeline:
 
+**1. Execução em produção**
+Automatizar a execução recorrente de 586 cenários diretamente em produção exigiria controle rigoroso sobre quais testes podem ser disparados sem gerar efeitos colaterais para usuários reais — especialmente fluxos que interagem com formulários públicos, buscas e navegação.
+
+**2. Ausência de ambiente de staging**
+Sem um ambiente de homologação disponível, não há destino seguro para rodar a suíte completa de forma automatizada e recorrente. Essa é a dependência mais crítica para uma implementação robusta do pipeline.
+
+**3. Cobertura E2E parcial no checkout**
+Como o ciclo de compra de ingressos não foi concluído de ponta a ponta, incluir esses cenários no pipeline exigiria triagem clara de quais etapas são seguras para execução recorrente e quais precisam de ambiente controlado com dados de teste reais.
+
+> O reconhecimento dessas dependências antes de iniciar a implementação é, em si, parte do planejamento de qualidade. Automatizar sem infraestrutura adequada criaria um pipeline instável — o que prejudicaria a confiança da equipe nos resultados mais do que ajudaria.
+
+---
+
+### 📊 Resultado da execução atual no CI
+
+| Item | Detalhe |
+|---|---|
+| 📅 Execução original dos testes | Julho de 2026 |
+| ✅ Resultado na execução original | 486/486 passando (exceto bugs mapeados) |
+| ⚙️ Implementação do CI | Outubro de 2026 |
+| ❌ Resultado atual no pipeline | 358 passed · 128 failed · Pass rate: 73,7% |
+| 🌐 Ambiente | Produção — [fastix.com.br](https://fastix.com.br) |
+
+As 128 falhas atuais são consistentes com **alterações ocorridas no ambiente de produção** nos ~3 meses entre a execução original e a implementação do CI, como mudanças em seletores, estrutura HTML ou fluxos da interface.
+
+> 💡 Este cenário é recorrente em projetos reais: testes escritos contra uma versão específica de um sistema vivo requerem manutenção contínua à medida que o produto evolui. A identificação dessas falhas e o mapeamento de sua causa raiz fazem parte do ciclo natural de QA.
+
+As evidências da execução original estão disponíveis em [`3 - Bugs e Issues/2 - Vídeos/`](./3%20-%20Bugs%20e%20Issues/2%20-%20Vídeos/).
+
+---
+
+### 🗺️ Roadmap para evolução do pipeline
+
+Uma implementação completa e segura seguiria estas etapas:
+
+1. Provisionar **ambiente de staging** para execução segura e recorrente
+2. Separar cenários em dois grupos:
+   - ✅ **Seguros para produção** — navegação, leitura, consultas
+   - 🔒 **Restritos a staging** — formulários, checkout, interações com dados
+3. Configurar workflow com gatilho em **pull requests e merges** para `main`, executando inicialmente apenas o grupo seguro como _smoke test_
+4. Expandir gradualmente para a suíte completa conforme o ambiente de staging for estabilizado
+5. Publicar **relatórios de execução** automaticamente como artefato do workflow
+6. Configurar **notificações de falha** via Slack ou e-mail para visibilidade imediata da equipe
+7. Avaliar serviços de nuvem (**BrowserStack**, **Sauce Labs**) para viabilizar testes transacionais em ambiente controlado, cobrindo as etapas de pagamento ainda fora do escopo atual
 ---
 
 ## 💡 Aprendizados técnicos

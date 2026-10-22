@@ -3617,7 +3617,9 @@ Essas exclusões não representam falhas na cobertura, mas sim **decisões consc
 
 ### 🧭 Contexto de implementação
 
-A suíte foi executada originalmente de forma manual via terminal (`npx codeceptjs run`) na máquina local. A automação via GitHub Actions foi avaliada como evolução natural do projeto e implementada em outubro de 2026, após a conclusão da fase de desenvolvimento dos testes.
+A suíte foi executada originalmente de forma manual via terminal (`npx codeceptjs run`) na máquina local. 
+
+A automação via GitHub Actions foi avaliada como evolução natural do projeto e **implementada em outubro de 2026**, após a conclusão da fase de desenvolvimento dos testes.
 
 O CodeceptJS com Playwright oferece uma vantagem estrutural para CI/CD: Os testes rodam em modo **headless nativamente**, sem necessidade de ambiente gráfico ou emulador físico. 
 

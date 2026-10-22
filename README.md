@@ -3683,7 +3683,9 @@ https://github.com/user-attachments/assets/4d4102a3-be32-4df5-9c8b-7f2fa2c4ce3a
 
 https://github.com/user-attachments/assets/cbf863ed-b749-4bd8-a86c-0b1da1e0317c
 
+* **Ao escolher algum cenário é possível visualizar os detalhes:**
 
+https://github.com/user-attachments/assets/ff5e5513-3fd0-44de-81c0-de307d6d192f
 
 
 

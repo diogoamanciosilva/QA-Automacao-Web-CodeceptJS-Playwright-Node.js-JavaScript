@@ -3701,9 +3701,10 @@ https://github.com/user-attachments/assets/faf1c4d7-84ff-4f11-bd10-c4e99c88f86f
 
 
 
-> 💡 Este cenário é recorrente em projetos reais: Testes escritos contra uma versão específica de um sistema vivo requerem manutenção contínua à medida que o produto evolui. A identificação dessas falhas e o mapeamento de sua causa raiz fazem parte do ciclo natural de QA.
+> ⚠️ **Importante:** Este cenário é recorrente em projetos reais: Testes escritos contra uma versão específica de um sistema vivo requerem manutenção contínua à medida que o produto evolui. A identificação dessas falhas e o mapeamento de sua causa raiz fazem parte do ciclo natural de QA.
 
-As evidências da execução original estão disponíveis em [`3 - Bugs e Issues/2 - Vídeos/`](./3%20-%20Bugs%20e%20Issues/2%20-%20Vídeos/).
+
+> ⚠️ **Importante:** As evidências da execução original estão disponíveis em [`3 - Bugs e Issues/2 - Vídeos/`](./3%20-%20Bugs%20e%20Issues/2%20-%20Vídeos/).
 
 ---
 

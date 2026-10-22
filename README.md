@@ -3679,6 +3679,14 @@ https://github.com/user-attachments/assets/8a844b1e-b8fe-4c4f-bb79-eda3269cc2b2
 https://github.com/user-attachments/assets/4d4102a3-be32-4df5-9c8b-7f2fa2c4ce3a
 
 
+* **"Acesso aos cenários de teste validados em todas as features:**
+https://github.com/user-attachments/assets/cbf863ed-b749-4bd8-a86c-0b1da1e0317c
+
+
+
+
+
+
 
 > 💡 Este cenário é recorrente em projetos reais: Testes escritos contra uma versão específica de um sistema vivo requerem manutenção contínua à medida que o produto evolui. A identificação dessas falhas e o mapeamento de sua causa raiz fazem parte do ciclo natural de QA.
 

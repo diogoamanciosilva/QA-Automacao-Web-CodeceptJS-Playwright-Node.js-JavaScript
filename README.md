@@ -3674,7 +3674,7 @@ https://github.com/user-attachments/assets/8a844b1e-b8fe-4c4f-bb79-eda3269cc2b2
 
 ## 🎬 3 - Vídeo
 
-* **Acessando o CodeceptJS Teste Report**
+* **Acessando o CodeceptJS Teste Report:**
 
 https://github.com/user-attachments/assets/4d4102a3-be32-4df5-9c8b-7f2fa2c4ce3a
 

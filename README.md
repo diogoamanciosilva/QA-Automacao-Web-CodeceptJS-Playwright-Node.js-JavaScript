@@ -3658,15 +3658,19 @@ Como o ciclo de compra de ingressos não foi concluído de ponta a ponta, inclui
 > As 128 falhas atuais são consistentes com **alterações ocorridas no ambiente de produção nos 3 meses entre a execução original e a implementação do CI, como mudanças em seletores, estrutura HTML ou fluxos da interface.**
 
 
-## 🎬 Vídeo: Acessar o relatório de testes:
+## 🎬 1 - Vídeo: Acessar o relatório de testes:
 
 https://github.com/user-attachments/assets/8a844b1e-b8fe-4c4f-bb79-eda3269cc2b2
 
 
-## 📸 Print: Após baixar o arquivo "relatorio-testes", clicar em "report":
+## 📸 2 - Print: Após baixar o arquivo "relatorio-testes", clicar em "report":
 
 <img width="1540" height="866" alt="image" src="https://github.com/user-attachments/assets/d2398c8b-6893-4370-abe5-84d1acebe4a7" />
 
+
+## 🎬 3 - Vídeo: Acessando o CodeceptJS Teste Report
+
+https://github.com/user-attachments/assets/4d4102a3-be32-4df5-9c8b-7f2fa2c4ce3a
 
 
 

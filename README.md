@@ -3617,9 +3617,11 @@ Essas exclusões não representam falhas na cobertura, mas sim **decisões consc
 
 ### 🧭 Contexto de implementação
 
-A suíte foi executada originalmente de forma manual via terminal (`npx codeceptjs run`) na máquina local. A automação via GitHub Actions foi avaliada como evolução natural do projeto — e implementada em outubro de 2026, após a conclusão da fase de desenvolvimento dos testes.
+A suíte foi executada originalmente de forma manual via terminal (`npx codeceptjs run`) na máquina local. A automação via GitHub Actions foi avaliada como evolução natural do projeto e implementada em outubro de 2026, após a conclusão da fase de desenvolvimento dos testes.
 
-O CodeceptJS com Playwright oferece uma vantagem estrutural para CI/CD: os testes rodam em modo **headless nativamente**, sem necessidade de ambiente gráfico ou emulador físico. Isso torna a integração com GitHub Actions mais direta do que em stacks mobile (como Maestro, que depende de emulador Android e ponte ADB ativa).
+O CodeceptJS com Playwright oferece uma vantagem estrutural para CI/CD: Os testes rodam em modo **headless nativamente**, sem necessidade de ambiente gráfico ou emulador físico. 
+
+Isso torna a integração com GitHub Actions mais direta do que em stacks mobile (como Maestro, que depende de emulador Android e ponte ADB ativa).
 
 ---
 
@@ -3628,7 +3630,7 @@ O CodeceptJS com Playwright oferece uma vantagem estrutural para CI/CD: os teste
 Três fatores foram identificados como riscos antes de implementar o pipeline:
 
 **1. Execução em produção**
-Automatizar a execução recorrente de 586 cenários diretamente em produção exigiria controle rigoroso sobre quais testes podem ser disparados sem gerar efeitos colaterais para usuários reais — especialmente fluxos que interagem com formulários públicos, buscas e navegação.
+Automatizar a execução recorrente de 586 cenários diretamente em produção exigiria controle rigoroso sobre quais testes podem ser disparados sem gerar efeitos colaterais para usuários reais especialmente fluxos que interagem com formulários públicos, buscas e navegação.
 
 **2. Ausência de ambiente de staging**
 Sem um ambiente de homologação disponível, não há destino seguro para rodar a suíte completa de forma automatizada e recorrente. Essa é a dependência mais crítica para uma implementação robusta do pipeline.
@@ -3636,7 +3638,7 @@ Sem um ambiente de homologação disponível, não há destino seguro para rodar
 **3. Cobertura E2E parcial no checkout**
 Como o ciclo de compra de ingressos não foi concluído de ponta a ponta, incluir esses cenários no pipeline exigiria triagem clara de quais etapas são seguras para execução recorrente e quais precisam de ambiente controlado com dados de teste reais.
 
-> O reconhecimento dessas dependências antes de iniciar a implementação é, em si, parte do planejamento de qualidade. Automatizar sem infraestrutura adequada criaria um pipeline instável — o que prejudicaria a confiança da equipe nos resultados mais do que ajudaria.
+> O reconhecimento dessas dependências antes de iniciar a implementação é, em si, parte do planejamento de qualidade. Automatizar sem infraestrutura adequada criaria um pipeline instável o que prejudicaria a confiança da equipe nos resultados mais do que ajudaria.
 
 ---
 
@@ -3650,9 +3652,10 @@ Como o ciclo de compra de ingressos não foi concluído de ponta a ponta, inclui
 | ❌ Resultado atual no pipeline | 358 passed · 128 failed · Pass rate: 73,7% |
 | 🌐 Ambiente | Produção — [fastix.com.br](https://fastix.com.br) |
 
-As 128 falhas atuais são consistentes com **alterações ocorridas no ambiente de produção** nos ~3 meses entre a execução original e a implementação do CI, como mudanças em seletores, estrutura HTML ou fluxos da interface.
+> [!CAUTION]
+> As 128 falhas atuais são consistentes com **alterações ocorridas no ambiente de produção nos 3 meses entre a execução original e a implementação do CI, como mudanças em seletores, estrutura HTML ou fluxos da interface.**
 
-> 💡 Este cenário é recorrente em projetos reais: testes escritos contra uma versão específica de um sistema vivo requerem manutenção contínua à medida que o produto evolui. A identificação dessas falhas e o mapeamento de sua causa raiz fazem parte do ciclo natural de QA.
+> 💡 Este cenário é recorrente em projetos reais: Testes escritos contra uma versão específica de um sistema vivo requerem manutenção contínua à medida que o produto evolui. A identificação dessas falhas e o mapeamento de sua causa raiz fazem parte do ciclo natural de QA.
 
 As evidências da execução original estão disponíveis em [`3 - Bugs e Issues/2 - Vídeos/`](./3%20-%20Bugs%20e%20Issues/2%20-%20Vídeos/).
 

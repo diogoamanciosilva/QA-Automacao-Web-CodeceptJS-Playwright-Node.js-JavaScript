@@ -55,7 +55,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🕵🏻‍♂️ Root Cause Analysis (RCA)](#%E2%80%8D%EF%B8%8F-root-cause-analysis-rca)
 - [🧪 Metodologia de teste](#-metodologia-de-teste)
 - [🚧 Limitações e escopo](#-limitações-e-escopo)
-- [🚀 Próximos passos (CI/CD)](#-próximos-passos-cicd)
+- [⚙️ Integração Contínua (CI/CD)](#%EF%B8%8F-integração-contínua-cicd)
 - [💡 Aprendizados técnicos](#-aprendizados-técnicos)
 - [📬 Contato](#-contato)
 

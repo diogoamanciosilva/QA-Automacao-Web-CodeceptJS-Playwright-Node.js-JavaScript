@@ -3644,7 +3644,7 @@ Como o ciclo de compra de ingressos não foi concluído de ponta a ponta, inclui
 
 ---
 
-### 📊 Resultado da execução atual no CI
+### 📊 Resultado da execução atual no CI (GitHub Actions)
 
 | Item | Detalhe |
 |---|---|

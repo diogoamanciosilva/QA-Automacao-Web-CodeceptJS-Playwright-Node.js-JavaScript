@@ -3772,12 +3772,10 @@ Essa é uma decisão técnica consciente: Um cenário que documenta dois resulta
 
 ## 📬 Contato
 
- 
-| LinkedIn                   |  https://www.linkedin.com/in/diogoamanciosilva/ |
-| ------------------------- | ------: |
-
-| E-mail                   |  diogoamanciosilva@gmail.com/ |
-| ------------------------- | ------: |
-
+| Canal | Link |
+|---|---|
+| 💼 LinkedIn | [linkedin.com/in/diogoamanciosilva](https://www.linkedin.com/in/diogoamanciosilva/) |
+| 📧 E-mail | diogoamanciosilva@gmail.com |
+| 🐙 GitHub | [github.com/diogoamanciosilva](https://github.com/diogoamanciosilva) |
 
 

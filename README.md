@@ -1329,7 +1329,7 @@ RCA / Bug Report
 | 0062 - Validar resposta da API de eventos                                                        |
 | 0063 - Validar comportamento da interface sem carregamento de imagens                            |
 | 0064 - Validar disparo de evento de Analytics ao clicar em "Explorar Eventos"                    |
-| **Total: 64 cenários**                                                                           |
+| **Total: 164 cenários**                                                                           |
 
 > ⚠️ **Importante:** Todos os testes foram classificados considerando diferentes dimensões de teste. Essa abordagem evita tratar conceitos distintos como E2E, Regressão, Acessibilidade, Estresse, Segurança e SEO como se fossem categorias equivalentes.
 

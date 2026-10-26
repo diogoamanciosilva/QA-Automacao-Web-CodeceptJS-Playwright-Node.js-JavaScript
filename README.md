@@ -37,7 +37,6 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🤖 CodeceptJS](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
 - [⚙️ Plano de Testes FasTix](#-plano-de-testes-1)
-- [📋 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
 - [▶️ Como executar este projeto](#%EF%B8%8F-como-executar-este-projeto)
 - [🧰 Ambiente e rotina diária](#-ambiente-e-rotina-diária)
 - [✅ Uso](#-uso)
@@ -122,32 +121,6 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 A suíte de testes da FasTix é **organizada em 6 Features composto por 586 testes.**
 
 📄 O plano de testes completo está disponível em [`2 - Plano de Testes/`](./2%20-%20Plano%20de%20Testes/).
-
----
-
-## 📝 Tipos de teste realizados na suíte
-
-| Tipos de Testes |
-| ------------------------- |
-| Testes End-to-End (E2E) |
-| Testes Funcionais |
-| Testes de Regressão |
-| Testes de Navegação |
-| Testes de Interface (UI) |
-| Testes de Responsividade |
-| Testes de Acessibilidade |
-| Testes de Performance |
-| Testes de Estabilidade |
-| Testes de Estresse |
-| Testes de Robustez |
-| Testes de Validação de Dados |
-| Testes de Integridade |
-| Testes de Compatibilidade de Navegação |
-| Testes de Monitoramento de Erros |
-| Testes de Integridade Visual |
-| Testes de Persistência de Estado |
-| **Total: 17 tipos de testes** |
-
 
 ---
 

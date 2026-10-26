@@ -3631,8 +3631,9 @@ Como o ciclo de compra de ingressos não foi concluído de ponta a ponta, inclui
 | ❌ Resultado atual no pipeline | 358 passed · 128 failed · Pass rate: 73,7% |
 | 🌐 Ambiente | Produção - [fastix.com.br](https://fastix.com.br) |
 
-> [!CAUTION]
-> As 128 falhas atuais são consistentes com **alterações ocorridas no ambiente de produção nos 3 meses entre a execução original e a implementação do CI, como mudanças em seletores, estrutura HTML ou fluxos da interface.**
+> ⚠️ **Importante:** As 128 falhas atuais são consistentes com alterações ocorridas
+> no ambiente de produção nos ~3 meses entre a execução original e a implementação
+> do CI, como mudanças em seletores, estrutura HTML ou fluxos da interface.
 
 
 ## 🎬 1 - Vídeo

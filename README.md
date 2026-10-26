@@ -25,6 +25,10 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 > Suíte de testes automatizados E2E desenvolvida para a plataforma de ingressos **FasTix** (fastix.com.br),  
 > cobrindo as principais jornadas do usuário com **CodeceptJS** e **Playwright**.
 
+> 📄 O arquivo `FasTix - README.docx` disponível na raiz é uma versão exportada
+> desta documentação para compartilhamento offline. A fonte atualizada é sempre
+> este `README.md`.
+
 ---
 
   ## 📑 Índice

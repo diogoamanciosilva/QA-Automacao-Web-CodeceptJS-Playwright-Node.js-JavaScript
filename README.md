@@ -78,7 +78,7 @@ Também oferece tecnologia para produtores, com controle total para os organizad
 
 ## 🤖 CodeceptJS
 
-O **CodeceptJS** utiliza recursos do ecossistema **Node.js e JavaScript**, dessa forma ele integra recursos do ecossistema **Node.js e JavaScript**, integrando o **Playwright** para a execução de testes automatizados em aplicações Web.
+O **CodeceptJS** é um framework de testes E2E orientado a cenários (BDD) que rodasobre **Node.js** e integra o **Playwright** como motor de automação para aplicações Web.
 
 ### 🛠️ Pré-requisitos para Execução no Windows
 
